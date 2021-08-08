@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LogHighlightType | kaven-utils</title>
+	<title>KavenUtility.FileSystem | kaven-utils</title>
 	<meta name="description" content="Documentation for kaven-utils">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
@@ -2704,126 +2704,681 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class="current tsd-kind-enum tsd-parent-kind-module">
-			<a href="Enums.LogHighlightType.html" class="tsd-kind-icon">Log<wbr>Highlight<wbr>Type</a>
-			<ul>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="Enums.LogHighlightType.html#All" class="tsd-kind-icon">All</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="Enums.LogHighlightType.html#DateLevel" class="tsd-kind-icon">Date<wbr>Level</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="Enums.LogHighlightType.html#OnlyDate" class="tsd-kind-icon">Only<wbr>Date</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="Enums.LogHighlightType.html#OnlyLevel" class="tsd-kind-icon">Only<wbr>Level</a>
-				</li>
-			</ul>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#CopyDirectory" class="tsd-kind-icon">Copy<wbr>Directory</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#CopyFile" class="tsd-kind-icon">Copy<wbr>File</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#CopyFileOrDirectory" class="tsd-kind-icon">Copy<wbr>File<wbr>OrDirectory</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#CopyFileSync" class="tsd-kind-icon">Copy<wbr>File<wbr>Sync</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#CopyToDirectory" class="tsd-kind-icon">Copy<wbr>ToDirectory</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#DeleteDirectory" class="tsd-kind-icon">Delete<wbr>Directory</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#DeleteFile" class="tsd-kind-icon">Delete<wbr>File</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#DeleteFileOrDirectory" class="tsd-kind-icon">Delete<wbr>File<wbr>OrDirectory</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#GetFileSize" class="tsd-kind-icon">Get<wbr>File<wbr>Size</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#GetFileSizeInBytes" class="tsd-kind-icon">Get<wbr>File<wbr>Size<wbr>InBytes</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#GetFileStats" class="tsd-kind-icon">Get<wbr>File<wbr>Stats</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#IsDirectory" class="tsd-kind-icon">Is<wbr>Directory</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#IsFile" class="tsd-kind-icon">Is<wbr>File</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#IsPathExistSync" class="tsd-kind-icon">Is<wbr>Path<wbr>Exist<wbr>Sync</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#MakeDirectory" class="tsd-kind-icon">Make<wbr>Directory</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#MakeDirectorySync" class="tsd-kind-icon">Make<wbr>Directory<wbr>Sync</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_FileSystem.html#TruncateFile" class="tsd-kind-icon">Truncate<wbr>File</a>
 		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<section class="tsd-panel tsd-comment">
-			<div class="tsd-comment tsd-typography">
-				<dl class="tsd-comment-tags">
-					<dt>author:</dt>
-					<dd><p>Kaven</p>
-					</dd>
-					<dt>email:</dt>
-					<dd><p><a href="mailto:kaven@wuwenkai.com">kaven@wuwenkai.com</a></p>
-					</dd>
-					<dt>website:</dt>
-					<dd><p><a href="http://blog.kaven.xyz">http://blog.kaven.xyz</a></p>
-					</dd>
-					<dt>file:</dt>
-					<dd><p>[Kaven-Utils] /src/Enums.ts</p>
-					</dd>
-					<dt>create:</dt>
-					<dd><p>2018-08-31 16:40:39.478</p>
-					</dd>
-					<dt>modify:</dt>
-					<dd><p>2020-06-23 17:15:04.905</p>
-					</dd>
-					<dt>version:</dt>
-					<dd><p>2.0.6</p>
-					</dd>
-					<dt>times:</dt>
-					<dd><p>19</p>
-					</dd>
-					<dt>lines:</dt>
-					<dd><p>22</p>
-					</dd>
-					<dt>copyright:</dt>
-					<dd><p>Copyright © 2018-2020 Kaven. All Rights Reserved.</p>
-					</dd>
-					<dt>description:</dt>
-					<dd><p>[description]</p>
-					</dd>
-					<dt>license:</dt>
-					<dd><p>[license]</p>
-					</dd>
-				</dl>
-			</div>
-		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Enumeration members</h3>
+						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="Enums.LogHighlightType.html#All" class="tsd-kind-icon">All</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="Enums.LogHighlightType.html#DateLevel" class="tsd-kind-icon">Date<wbr>Level</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="Enums.LogHighlightType.html#OnlyDate" class="tsd-kind-icon">Only<wbr>Date</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="Enums.LogHighlightType.html#OnlyLevel" class="tsd-kind-icon">Only<wbr>Level</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#CopyDirectory" class="tsd-kind-icon">Copy<wbr>Directory</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#CopyFile" class="tsd-kind-icon">Copy<wbr>File</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#CopyFileOrDirectory" class="tsd-kind-icon">Copy<wbr>File<wbr>OrDirectory</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#CopyFileSync" class="tsd-kind-icon">Copy<wbr>File<wbr>Sync</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#CopyToDirectory" class="tsd-kind-icon">Copy<wbr>ToDirectory</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#DeleteDirectory" class="tsd-kind-icon">Delete<wbr>Directory</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#DeleteFile" class="tsd-kind-icon">Delete<wbr>File</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#DeleteFileOrDirectory" class="tsd-kind-icon">Delete<wbr>File<wbr>OrDirectory</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#GetFileSize" class="tsd-kind-icon">Get<wbr>File<wbr>Size</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#GetFileSizeInBytes" class="tsd-kind-icon">Get<wbr>File<wbr>Size<wbr>InBytes</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#GetFileStats" class="tsd-kind-icon">Get<wbr>File<wbr>Stats</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#IsDirectory" class="tsd-kind-icon">Is<wbr>Directory</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#IsFile" class="tsd-kind-icon">Is<wbr>File</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#IsPathExistSync" class="tsd-kind-icon">Is<wbr>Path<wbr>Exist<wbr>Sync</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#MakeDirectory" class="tsd-kind-icon">Make<wbr>Directory</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#MakeDirectorySync" class="tsd-kind-icon">Make<wbr>Directory<wbr>Sync</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_FileSystem.html#TruncateFile" class="tsd-kind-icon">Truncate<wbr>File</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Enumeration members</h2>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="All" class="tsd-anchor"></a>
-				<h3>All</h3>
-				<div class="tsd-signature tsd-kind-icon">All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;All&quot;</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/Enums.ts:20</li>
-					</ul>
-				</aside>
+			<h2>Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="CopyDirectory" class="tsd-anchor"></a>
+				<h3>Copy<wbr>Directory</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Copy<wbr>Directory<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:193</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>src: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>dest: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="DateLevel" class="tsd-anchor"></a>
-				<h3>Date<wbr>Level</h3>
-				<div class="tsd-signature tsd-kind-icon">Date<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;DateLevel&quot;</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/Enums.ts:19</li>
-					</ul>
-				</aside>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="CopyFile" class="tsd-anchor"></a>
+				<h3>Copy<wbr>File</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Copy<wbr>File<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:157</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>src: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>dest: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="OnlyDate" class="tsd-anchor"></a>
-				<h3>Only<wbr>Date</h3>
-				<div class="tsd-signature tsd-kind-icon">Only<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;OnlyDate&quot;</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/Enums.ts:18</li>
-					</ul>
-				</aside>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="CopyFileOrDirectory" class="tsd-anchor"></a>
+				<h3>Copy<wbr>File<wbr>OrDirectory</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Copy<wbr>File<wbr>OrDirectory<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:224</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>src: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>dest: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="OnlyLevel" class="tsd-anchor"></a>
-				<h3>Only<wbr>Level</h3>
-				<div class="tsd-signature tsd-kind-icon">Only<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;OnlyLevel&quot;</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/Enums.ts:17</li>
-					</ul>
-				</aside>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="CopyFileSync" class="tsd-anchor"></a>
+				<h3>Copy<wbr>File<wbr>Sync</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Copy<wbr>File<wbr>Sync<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:181</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>1.0.5</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>src: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>dest: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="CopyToDirectory" class="tsd-anchor"></a>
+				<h3>Copy<wbr>ToDirectory</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Copy<wbr>ToDirectory<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, destDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:244</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li>
+								<h5>destDir: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="DeleteDirectory" class="tsd-anchor"></a>
+				<h3>Delete<wbr>Directory</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Delete<wbr>Directory<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:116</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="DeleteFile" class="tsd-anchor"></a>
+				<h3>Delete<wbr>File</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Delete<wbr>File<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:105</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="DeleteFileOrDirectory" class="tsd-anchor"></a>
+				<h3>Delete<wbr>File<wbr>OrDirectory</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Delete<wbr>File<wbr>OrDirectory<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>paths<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:266</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>1.1.21</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>paths: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="GetFileSize" class="tsd-anchor"></a>
+				<h3>Get<wbr>File<wbr>Size</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>Size<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, baseOn1024<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:89</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-07</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> baseOn1024: <span class="tsd-signature-type">boolean</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="GetFileSizeInBytes" class="tsd-anchor"></a>
+				<h3>Get<wbr>File<wbr>Size<wbr>InBytes</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>Size<wbr>InBytes<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:76</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>1.0.9</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="GetFileStats" class="tsd-anchor"></a>
+				<h3>Get<wbr>File<wbr>Stats</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>Stats<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Stats</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:41</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Stats</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="IsDirectory" class="tsd-anchor"></a>
+				<h3>Is<wbr>Directory</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Is<wbr>Directory<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:65</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>1.0.5</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="IsFile" class="tsd-anchor"></a>
+				<h3>Is<wbr>File</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Is<wbr>File<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:54</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>2.0.2</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="IsPathExistSync" class="tsd-anchor"></a>
+				<h3>Is<wbr>Path<wbr>Exist<wbr>Sync</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Is<wbr>Path<wbr>Exist<wbr>Sync<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>paths<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:30</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Simple wrap for existsSync</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>see</dt>
+								<dd><p><a href="https://nodejs.org/docs/latest-v8.x/api/html#fs_fs_existssync_path">https://nodejs.org/docs/latest-v8.x/api/html#fs_fs_existssync_path</a></p>
+								</dd>
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>since</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>paths: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="MakeDirectory" class="tsd-anchor"></a>
+				<h3>Make<wbr>Directory</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Make<wbr>Directory<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:127</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>1.0.9</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>Returns the directory path.</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="MakeDirectorySync" class="tsd-anchor"></a>
+				<h3>Make<wbr>Directory<wbr>Sync</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Make<wbr>Directory<wbr>Sync<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:142</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>1.0.9</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-06</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						<p>Returns the directory path.</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="TruncateFile" class="tsd-anchor"></a>
+				<h3>Truncate<wbr>File</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Truncate<wbr>File<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, len<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.FileSystem.ts:170</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-07</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> len: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">

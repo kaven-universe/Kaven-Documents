@@ -6,7 +6,29 @@
 	<title>KavenSSOClient | kaven-utils</title>
 	<meta name="description" content="Documentation for kaven-utils">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+	<style type="text/css">:root {
+  --color-background: #fdfdfd;
+  --color-text: #222;
+  --color-text-aside: #707070;
+  --color-link: #4da6ff;
+  --color-menu-divider: #eee;
+  --color-menu-divider-focus: #000;
+  --color-menu-label: #707070;
+  --color-panel: #fff;
+  --color-panel-divider: #eee;
+  --color-comment-tag: #707070;
+  --color-comment-tag-text: #fff;
+  --color-code-background: rgba(0, 0, 0, 0.04);
+  --color-ts: #9600ff;
+  --color-ts-interface: #647f1b;
+  --color-ts-enum: #937210;
+  --color-ts-class: #0672de;
+  --color-ts-private: #707070;
+  --color-toolbar: #fff;
+  --color-toolbar-text: #333;
+}
+
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
  * * HTML5 display definitions
  * * ========================================================================== */
@@ -1593,14 +1615,14 @@ ul.tsd-descriptions > li > :last-child > :last-child > :last-child,
   }
 }
 body {
-  background: #fdfdfd;
+  background: var(--color-background);
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
-  color: #222;
+  color: var(--color-text);
 }
 
 a {
-  color: #4da6ff;
+  color: var(--color-link);
   text-decoration: none;
 }
 a:hover {
@@ -1612,7 +1634,7 @@ code, pre {
   padding: 0.2em;
   margin: 0;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: var(--color-code-background);
 }
 
 pre {
@@ -1678,7 +1700,7 @@ blockquote {
     padding: 20px 20px 0 0;
     max-width: 450px;
     visibility: hidden;
-    background-color: #fff;
+    background-color: var(--color-panel);
     transform: translate(100%, 0);
   }
   html.default .col-menu > *:last-child {
@@ -1738,7 +1760,7 @@ html.default.has-menu .col-content {
 .tsd-page-title {
   padding: 70px 0 20px 0;
   margin: 0 0 40px 0;
-  background: #fff;
+  background: var(--color-panel);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 .tsd-page-title h1 {
@@ -1748,10 +1770,10 @@ html.default.has-menu .col-content {
 .tsd-breadcrumb {
   margin: 0;
   padding: 0;
-  color: #707070;
+  color: var(--color-text-aside);
 }
 .tsd-breadcrumb a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: none;
 }
 .tsd-breadcrumb a:hover {
@@ -1824,8 +1846,8 @@ dl.tsd-comment-tags dt {
   padding: 1px 5px;
   margin: 0 10px 0 0;
   border-radius: 4px;
-  border: 1px solid #707070;
-  color: #707070;
+  border: 1px solid var(--color-comment-tag);
+  color: var(--color-comment-tag);
   font-size: 0.8em;
   font-weight: normal;
 }
@@ -1895,7 +1917,7 @@ dl.tsd-comment-tags p {
     top: 40px;
     right: 20px;
     height: auto;
-    background-color: #fff;
+    background-color: var(--color-panel);
     visibility: hidden;
     transform: translate(50%, 0);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
@@ -1917,11 +1939,11 @@ dl.tsd-comment-tags p {
 }
 
 footer {
-  border-top: 1px solid #eee;
-  background-color: #fff;
+  border-top: 1px solid var(--color-panel-divider);
+  background-color: var(--color-panel);
 }
 footer.with-border-bottom {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 footer .tsd-legend-group {
   font-size: 0;
@@ -1959,7 +1981,7 @@ footer .tsd-legend {
 .tsd-index-panel h3 {
   margin: 0 -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-index-panel ul.tsd-index-list {
   -webkit-column-count: 3;
@@ -2003,39 +2025,39 @@ footer .tsd-legend {
 }
 .tsd-index-panel a,
 .tsd-index-panel .tsd-parent-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-parent-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-parent-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-parent-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-is-private a {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-flag {
   display: inline-block;
   padding: 1px 5px;
   border-radius: 4px;
-  color: #fff;
-  background-color: #707070;
+  color: var(--color-comment-tag-text);
+  background-color: var(--color-comment-tag);
   text-indent: 0;
   font-size: 14px;
   font-weight: normal;
@@ -2055,19 +2077,19 @@ footer .tsd-legend {
   border-bottom: none;
 }
 .tsd-member a[data-tsd-kind] {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-member a[data-tsd-kind=Interface] {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-member a[data-tsd-kind=Enum] {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-member a[data-tsd-kind=Class] {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-member a[data-tsd-kind=Private] {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-navigation {
@@ -2078,7 +2100,7 @@ footer .tsd-legend {
   padding-top: 2px;
   padding-bottom: 2px;
   border-left: 2px solid transparent;
-  color: #222;
+  color: var(--color-text);
   text-decoration: none;
   transition: border-left-color 0.1s;
 }
@@ -2121,10 +2143,10 @@ footer .tsd-legend {
   padding-left: 105px;
 }
 .tsd-navigation.primary > ul {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li.current > a {
   font-weight: bold;
@@ -2132,7 +2154,7 @@ footer .tsd-legend {
 .tsd-navigation.primary li.label span {
   display: block;
   padding: 20px 0 6px 5px;
-  color: #707070;
+  color: var(--color-menu-label);
 }
 .tsd-navigation.primary li.globals + li > span, .tsd-navigation.primary li.globals + li > a {
   padding-top: 20px;
@@ -2172,16 +2194,16 @@ footer .tsd-legend {
   padding-left: 125px;
 }
 .tsd-navigation.secondary ul.current a {
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.focus > a,
 .tsd-navigation.secondary ul.current li.focus > a {
-  border-left-color: #000;
+  border-left-color: var(--color-menu-divider-focus);
 }
 .tsd-navigation.secondary li.current {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.current > a {
   font-weight: bold;
@@ -2196,7 +2218,7 @@ footer .tsd-legend {
 .tsd-panel {
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--color-panel);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 .tsd-panel:empty {
@@ -2205,7 +2227,7 @@ footer .tsd-legend {
 .tsd-panel > h1, .tsd-panel > h2, .tsd-panel > h3 {
   margin: 1.5em -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-panel > h1.tsd-before-signature, .tsd-panel > h2.tsd-before-signature, .tsd-panel > h3.tsd-before-signature {
   margin-bottom: 0;
@@ -2267,7 +2289,7 @@ footer .tsd-legend {
   outline: 0;
   border: 0;
   background: transparent;
-  color: #222;
+  color: var(--color-text);
 }
 #tsd-search .field label {
   position: absolute;
@@ -2290,17 +2312,17 @@ footer .tsd-legend {
 }
 #tsd-search .results li {
   padding: 0 10px;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 #tsd-search .results li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 #tsd-search .results li.state {
   display: none;
 }
 #tsd-search .results li.current,
 #tsd-search .results li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search .results a {
   display: block;
@@ -2309,11 +2331,11 @@ footer .tsd-legend {
   top: 10px;
 }
 #tsd-search .results span.parent {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 #tsd-search.has-focus {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search.has-focus .field input {
   top: 0;
@@ -2336,7 +2358,7 @@ footer .tsd-legend {
 .tsd-signature {
   margin: 0 0 1em 0;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 14px;
   overflow-x: auto;
@@ -2361,7 +2383,7 @@ footer .tsd-legend {
 }
 
 .tsd-signature-symbol {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 
@@ -2373,7 +2395,7 @@ footer .tsd-legend {
 .tsd-signatures {
   padding: 0;
   margin: 0 0 1em 0;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
 }
 .tsd-signatures .tsd-signature {
   margin: 0;
@@ -2384,7 +2406,7 @@ footer .tsd-legend {
   border-top-width: 0;
 }
 .tsd-signatures .tsd-signature.current {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-signatures.active > .tsd-signature {
   cursor: pointer;
@@ -2458,11 +2480,11 @@ ul.tsd-type-parameters .tsd-comment {
 
 .tsd-sources {
   font-size: 14px;
-  color: #707070;
+  color: var(--color-text-aside);
   margin: 0 0 1em 0;
 }
 .tsd-sources a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: underline;
 }
 .tsd-sources ul, .tsd-sources p {
@@ -2480,13 +2502,13 @@ ul.tsd-type-parameters .tsd-comment {
   left: 0;
   width: 100%;
   height: 40px;
-  color: #333;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  color: var(--color-toolbar-text);
+  background: var(--color-toolbar);
+  border-bottom: 1px solid var(--color-panel-divider);
   transition: transform 0.3s linear;
 }
 .tsd-page-toolbar a {
-  color: #333;
+  color: var(--color-toolbar-text);
   text-decoration: none;
 }
 .tsd-page-toolbar a.title {
@@ -2546,7 +2568,7 @@ ul.tsd-type-parameters .tsd-comment {
 }
 .tsd-widget.active {
   opacity: 1;
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-widget.no-caption {
   width: 40px;
@@ -2615,16 +2637,16 @@ input[type=checkbox]:checked + .tsd-widget:before {
 }
 .tsd-select .tsd-select-list li {
   padding: 0 20px 0 0;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 .tsd-select .tsd-select-list li:before {
   background-position: 40px 0;
 }
 .tsd-select .tsd-select-list li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 .tsd-select .tsd-select-list li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-select .tsd-select-list li.selected:before {
   background-position: -200px 0;
@@ -2683,78 +2705,78 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class="current tsd-kind-class tsd-parent-kind-module">
-			<a href="kavensso_kavenssoclient.kavenssoclient.html" class="tsd-kind-icon">KavenSSOClient</a>
+			<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html" class="tsd-kind-icon">KavenSSOClient</a>
 			<ul>
-				<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#constructor" class="tsd-kind-icon">constructor</a>
+				<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#constructor" class="tsd-kind-icon">constructor</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#apphost" class="tsd-kind-icon">App<wbr>Host</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#AppHost" class="tsd-kind-icon">App<wbr>Host</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#appid" class="tsd-kind-icon">AppID</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#AppID" class="tsd-kind-icon">AppID</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#appnotifypath" class="tsd-kind-icon">App<wbr>Notify<wbr>Path</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#AppNotifyPath" class="tsd-kind-icon">App<wbr>Notify<wbr>Path</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#enablelog" class="tsd-kind-icon">Enable<wbr>Log</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#EnableLog" class="tsd-kind-icon">Enable<wbr>Log</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#parametername" class="tsd-kind-icon">Parameter<wbr>Name</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ParameterName" class="tsd-kind-icon">Parameter<wbr>Name</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#secret" class="tsd-kind-icon">Secret</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#Secret" class="tsd-kind-icon">Secret</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#serverhost" class="tsd-kind-icon">Server<wbr>Host</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerHost" class="tsd-kind-icon">Server<wbr>Host</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#serverloginpath" class="tsd-kind-icon">Server<wbr>Login<wbr>Path</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerLoginPath" class="tsd-kind-icon">Server<wbr>Login<wbr>Path</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#serverssopath" class="tsd-kind-icon">ServerSSOPath</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerSSOPath" class="tsd-kind-icon">ServerSSOPath</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#tokenname" class="tsd-kind-icon">Token<wbr>Name</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#TokenName" class="tsd-kind-icon">Token<wbr>Name</a>
 				</li>
 				<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#appnotifyurl" class="tsd-kind-icon">App<wbr>NotifyURL</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#AppNotifyURL" class="tsd-kind-icon">App<wbr>NotifyURL</a>
 				</li>
 				<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#serverloginurl" class="tsd-kind-icon">Server<wbr>LoginURL</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerLoginURL" class="tsd-kind-icon">Server<wbr>LoginURL</a>
 				</li>
 				<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#serverssourl" class="tsd-kind-icon">ServerSSOURL</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerSSOURL" class="tsd-kind-icon">ServerSSOURL</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#getdatafromssoserver" class="tsd-kind-icon">Get<wbr>Data<wbr>FromSSOServer</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#GetDataFromSSOServer" class="tsd-kind-icon">Get<wbr>Data<wbr>FromSSOServer</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#getredirecttoserverurl" class="tsd-kind-icon">Get<wbr>Redirect<wbr>ToServerURL</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#GetRedirectToServerURL" class="tsd-kind-icon">Get<wbr>Redirect<wbr>ToServerURL</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#logout" class="tsd-kind-icon">Logout</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#Logout" class="tsd-kind-icon">Logout</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#makeredirecturl" class="tsd-kind-icon">Make<wbr>RedirectURL</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#MakeRedirectURL" class="tsd-kind-icon">Make<wbr>RedirectURL</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#makessourl" class="tsd-kind-icon">MakeSSOURL</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#MakeSSOURL" class="tsd-kind-icon">MakeSSOURL</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#removessoparametersfromurl" class="tsd-kind-icon">RemoveSSOParameters<wbr>FromURL</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#RemoveSSOParametersFromURL" class="tsd-kind-icon">RemoveSSOParameters<wbr>FromURL</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#verify" class="tsd-kind-icon">Verify</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#Verify" class="tsd-kind-icon">Verify</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="kavensso_kavenssoclient.kavenssoclient.html#verifyclient" class="tsd-kind-icon">Verify<wbr>Client</a>
+					<a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#VerifyClient" class="tsd-kind-icon">Verify<wbr>Client</a>
 				</li>
 			</ul>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="../interfaces/kavensso_kavenssoclient.issoclientoption.html" class="tsd-kind-icon">ISSOClient<wbr>Option</a>
+			<a href="../interfaces/KavenSSO_KavenSSOClient.ISSOClientOption.html" class="tsd-kind-icon">ISSOClient<wbr>Option</a>
 		</li>
 	</ul>
 </nav>
@@ -2764,7 +2786,7 @@ img {
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<a href="kavensso_kavensso.kavensso.html" class="tsd-signature-type" data-tsd-kind="Class">KavenSSO</a>
+					<a href="KavenSSO_KavenSSO.KavenSSO.html" class="tsd-signature-type" data-tsd-kind="Class">KavenSSO</a>
 					<ul class="tsd-hierarchy">
 						<li>
 							<span class="target">KavenSSOClient</span>
@@ -2780,43 +2802,43 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Constructors</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="kavensso_kavenssoclient.kavenssoclient.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#constructor" class="tsd-kind-icon">constructor</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#apphost" class="tsd-kind-icon">App<wbr>Host</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#appid" class="tsd-kind-icon">AppID</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#appnotifypath" class="tsd-kind-icon">App<wbr>Notify<wbr>Path</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="kavensso_kavenssoclient.kavenssoclient.html#enablelog" class="tsd-kind-icon">Enable<wbr>Log</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="kavensso_kavenssoclient.kavenssoclient.html#parametername" class="tsd-kind-icon">Parameter<wbr>Name</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="kavensso_kavenssoclient.kavenssoclient.html#secret" class="tsd-kind-icon">Secret</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#serverhost" class="tsd-kind-icon">Server<wbr>Host</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#serverloginpath" class="tsd-kind-icon">Server<wbr>Login<wbr>Path</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#serverssopath" class="tsd-kind-icon">ServerSSOPath</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="kavensso_kavenssoclient.kavenssoclient.html#tokenname" class="tsd-kind-icon">Token<wbr>Name</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#AppHost" class="tsd-kind-icon">App<wbr>Host</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#AppID" class="tsd-kind-icon">AppID</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#AppNotifyPath" class="tsd-kind-icon">App<wbr>Notify<wbr>Path</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#EnableLog" class="tsd-kind-icon">Enable<wbr>Log</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ParameterName" class="tsd-kind-icon">Parameter<wbr>Name</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#Secret" class="tsd-kind-icon">Secret</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerHost" class="tsd-kind-icon">Server<wbr>Host</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerLoginPath" class="tsd-kind-icon">Server<wbr>Login<wbr>Path</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerSSOPath" class="tsd-kind-icon">ServerSSOPath</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#TokenName" class="tsd-kind-icon">Token<wbr>Name</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Accessors</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#appnotifyurl" class="tsd-kind-icon">App<wbr>NotifyURL</a></li>
-							<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#serverloginurl" class="tsd-kind-icon">Server<wbr>LoginURL</a></li>
-							<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#serverssourl" class="tsd-kind-icon">ServerSSOURL</a></li>
+							<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#AppNotifyURL" class="tsd-kind-icon">App<wbr>NotifyURL</a></li>
+							<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerLoginURL" class="tsd-kind-icon">Server<wbr>LoginURL</a></li>
+							<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#ServerSSOURL" class="tsd-kind-icon">ServerSSOURL</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Methods</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="kavensso_kavenssoclient.kavenssoclient.html#getdatafromssoserver" class="tsd-kind-icon">Get<wbr>Data<wbr>FromSSOServer</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#getredirecttoserverurl" class="tsd-kind-icon">Get<wbr>Redirect<wbr>ToServerURL</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#logout" class="tsd-kind-icon">Logout</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#makeredirecturl" class="tsd-kind-icon">Make<wbr>RedirectURL</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#makessourl" class="tsd-kind-icon">MakeSSOURL</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#removessoparametersfromurl" class="tsd-kind-icon">RemoveSSOParameters<wbr>FromURL</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#verify" class="tsd-kind-icon">Verify</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kavensso_kavenssoclient.kavenssoclient.html#verifyclient" class="tsd-kind-icon">Verify<wbr>Client</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#GetDataFromSSOServer" class="tsd-kind-icon">Get<wbr>Data<wbr>FromSSOServer</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#GetRedirectToServerURL" class="tsd-kind-icon">Get<wbr>Redirect<wbr>ToServerURL</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#Logout" class="tsd-kind-icon">Logout</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#MakeRedirectURL" class="tsd-kind-icon">Make<wbr>RedirectURL</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#MakeSSOURL" class="tsd-kind-icon">MakeSSOURL</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#RemoveSSOParametersFromURL" class="tsd-kind-icon">RemoveSSOParameters<wbr>FromURL</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#Verify" class="tsd-kind-icon">Verify</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html#VerifyClient" class="tsd-kind-icon">Verify<wbr>Client</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2824,18 +2846,18 @@ img {
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Constructors</h2>
-			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 				<a name="constructor" class="tsd-anchor"></a>
 				<h3>constructor</h3>
-				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>KavenSSOClient<span class="tsd-signature-symbol">(</span>appID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, appHost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, serverHost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/kavensso_kavenssoclient.issoclientoption.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClientOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="kavensso_kavenssoclient.kavenssoclient.html" class="tsd-signature-type" data-tsd-kind="Class">KavenSSOClient</a></li>
+				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<li class="tsd-signature tsd-kind-icon">new <wbr>KavenSSOClient<span class="tsd-signature-symbol">(</span>appID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, appHost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, serverHost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/KavenSSO_KavenSSOClient.ISSOClientOption.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClientOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="KavenSSO_KavenSSOClient.KavenSSOClient.html" class="tsd-signature-type" data-tsd-kind="Class">KavenSSOClient</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="kavensso_kavensso.kavensso.html">KavenSSO</a>.<a href="kavensso_kavensso.kavensso.html#constructor">constructor</a></p>
+							<p>Overrides <a href="KavenSSO_KavenSSO.KavenSSO.html">KavenSSO</a>.<a href="KavenSSO_KavenSSO.KavenSSO.html#constructor">constructor</a></p>
 							<ul>
-								<li>Defined in src/KavenSSO/KavenSSOClient.ts:64</li>
+								<li>Defined in src/KavenSSO/KavenSSOClient.ts:68</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2853,10 +2875,10 @@ img {
 								<h5>secret: <span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/kavensso_kavenssoclient.issoclientoption.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClientOption</a></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/KavenSSO_KavenSSOClient.ISSOClientOption.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClientOption</a></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="kavensso_kavenssoclient.kavenssoclient.html" class="tsd-signature-type" data-tsd-kind="Class">KavenSSOClient</a></h4>
+						<h4 class="tsd-returns-title">Returns <a href="KavenSSO_KavenSSOClient.KavenSSOClient.html" class="tsd-signature-type" data-tsd-kind="Class">KavenSSOClient</a></h4>
 					</li>
 				</ul>
 			</section>
@@ -2864,7 +2886,7 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="apphost" class="tsd-anchor"></a>
+				<a name="AppHost" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> App<wbr>Host</h3>
 				<div class="tsd-signature tsd-kind-icon">App<wbr>Host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
@@ -2874,7 +2896,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="appid" class="tsd-anchor"></a>
+				<a name="AppID" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> AppID</h3>
 				<div class="tsd-signature tsd-kind-icon">AppID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
@@ -2884,7 +2906,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="appnotifypath" class="tsd-anchor"></a>
+				<a name="AppNotifyPath" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> App<wbr>Notify<wbr>Path</h3>
 				<div class="tsd-signature tsd-kind-icon">App<wbr>Notify<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;/sso/notify&quot;</span></div>
 				<aside class="tsd-sources">
@@ -2894,40 +2916,40 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-				<a name="enablelog" class="tsd-anchor"></a>
+				<a name="EnableLog" class="tsd-anchor"></a>
 				<h3>Enable<wbr>Log</h3>
 				<div class="tsd-signature tsd-kind-icon">Enable<wbr>Log<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 				<aside class="tsd-sources">
-					<p>Inherited from <a href="kavensso_kavensso.kavensso.html">KavenSSO</a>.<a href="kavensso_kavensso.kavensso.html#enablelog">EnableLog</a></p>
+					<p>Inherited from <a href="KavenSSO_KavenSSO.KavenSSO.html">KavenSSO</a>.<a href="KavenSSO_KavenSSO.KavenSSO.html#EnableLog">EnableLog</a></p>
 					<ul>
 						<li>Defined in src/KavenSSO/KavenSSO.ts:96</li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-				<a name="parametername" class="tsd-anchor"></a>
+				<a name="ParameterName" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> Parameter<wbr>Name</h3>
-				<div class="tsd-signature tsd-kind-icon">Parameter<wbr>Name<span class="tsd-signature-symbol">:</span> <a href="../interfaces/kavensso_kavensso.issoparametername.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOParameterName</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<div class="tsd-signature tsd-kind-icon">Parameter<wbr>Name<span class="tsd-signature-symbol">:</span> <a href="../interfaces/KavenSSO_KavenSSO.ISSOParameterName.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOParameterName</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
-					<p>Inherited from <a href="kavensso_kavensso.kavensso.html">KavenSSO</a>.<a href="kavensso_kavensso.kavensso.html#parametername">ParameterName</a></p>
+					<p>Inherited from <a href="KavenSSO_KavenSSO.KavenSSO.html">KavenSSO</a>.<a href="KavenSSO_KavenSSO.KavenSSO.html#ParameterName">ParameterName</a></p>
 					<ul>
 						<li>Defined in src/KavenSSO/KavenSSO.ts:93</li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-				<a name="secret" class="tsd-anchor"></a>
+				<a name="Secret" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> Secret</h3>
 				<div class="tsd-signature tsd-kind-icon">Secret<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
-					<p>Inherited from <a href="kavensso_kavensso.kavensso.html">KavenSSO</a>.<a href="kavensso_kavensso.kavensso.html#secret">Secret</a></p>
+					<p>Inherited from <a href="KavenSSO_KavenSSO.KavenSSO.html">KavenSSO</a>.<a href="KavenSSO_KavenSSO.KavenSSO.html#Secret">Secret</a></p>
 					<ul>
 						<li>Defined in src/KavenSSO/KavenSSO.ts:92</li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="serverhost" class="tsd-anchor"></a>
+				<a name="ServerHost" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> Server<wbr>Host</h3>
 				<div class="tsd-signature tsd-kind-icon">Server<wbr>Host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
@@ -2937,7 +2959,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="serverloginpath" class="tsd-anchor"></a>
+				<a name="ServerLoginPath" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> Server<wbr>Login<wbr>Path</h3>
 				<div class="tsd-signature tsd-kind-icon">Server<wbr>Login<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;/login&quot;</span></div>
 				<aside class="tsd-sources">
@@ -2947,7 +2969,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="serverssopath" class="tsd-anchor"></a>
+				<a name="ServerSSOPath" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> ServerSSOPath</h3>
 				<div class="tsd-signature tsd-kind-icon">ServerSSOPath<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;/sso&quot;</span></div>
 				<aside class="tsd-sources">
@@ -2957,11 +2979,11 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-				<a name="tokenname" class="tsd-anchor"></a>
+				<a name="TokenName" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> Token<wbr>Name</h3>
 				<div class="tsd-signature tsd-kind-icon">Token<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;KAVEN-UNIFORM-SSO-TOKEN&quot;</span></div>
 				<aside class="tsd-sources">
-					<p>Inherited from <a href="kavensso_kavensso.kavensso.html">KavenSSO</a>.<a href="kavensso_kavensso.kavensso.html#tokenname">TokenName</a></p>
+					<p>Inherited from <a href="KavenSSO_KavenSSO.KavenSSO.html">KavenSSO</a>.<a href="KavenSSO_KavenSSO.KavenSSO.html#TokenName">TokenName</a></p>
 					<ul>
 						<li>Defined in src/KavenSSO/KavenSSO.ts:94</li>
 					</ul>
@@ -2971,7 +2993,7 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Accessors</h2>
 			<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-				<a name="appnotifyurl" class="tsd-anchor"></a>
+				<a name="AppNotifyURL" class="tsd-anchor"></a>
 				<h3>App<wbr>NotifyURL</h3>
 				<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
 					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> AppNotifyURL<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -2988,7 +3010,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-				<a name="serverloginurl" class="tsd-anchor"></a>
+				<a name="ServerLoginURL" class="tsd-anchor"></a>
 				<h3>Server<wbr>LoginURL</h3>
 				<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
 					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ServerLoginURL<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3005,7 +3027,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-				<a name="serverssourl" class="tsd-anchor"></a>
+				<a name="ServerSSOURL" class="tsd-anchor"></a>
 				<h3>ServerSSOURL</h3>
 				<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
 					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ServerSSOURL<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3025,10 +3047,10 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Methods</h2>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-				<a name="getdatafromssoserver" class="tsd-anchor"></a>
+				<a name="GetDataFromSSOServer" class="tsd-anchor"></a>
 				<h3>Get<wbr>Data<wbr>FromSSOServer</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">Get<wbr>Data<wbr>FromSSOServer&lt;T&gt;<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.ihttpresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHTTPResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Data<wbr>FromSSOServer&lt;T&gt;<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/Interfaces.IHTTPResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHTTPResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3049,12 +3071,12 @@ img {
 								<h5>url: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.ihttpresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHTTPResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/Interfaces.IHTTPResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHTTPResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="getredirecttoserverurl" class="tsd-anchor"></a>
+				<a name="GetRedirectToServerURL" class="tsd-anchor"></a>
 				<h3>Get<wbr>Redirect<wbr>ToServerURL</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>Redirect<wbr>ToServerURL<span class="tsd-signature-symbol">(</span>originalUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sessionID<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3080,10 +3102,10 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="logout" class="tsd-anchor"></a>
+				<a name="Logout" class="tsd-anchor"></a>
 				<h3>Logout</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">Logout<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="../interfaces/kavensso_kavensso.issoclient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a>, notifyServer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">Logout<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="../interfaces/KavenSSO_KavenSSO.ISSOClient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a>, notifyServer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3102,7 +3124,7 @@ img {
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>client: <a href="../interfaces/kavensso_kavensso.issoclient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a></h5>
+								<h5>client: <a href="../interfaces/KavenSSO_KavenSSO.ISSOClient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a></h5>
 							</li>
 							<li>
 								<h5>notifyServer: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
@@ -3113,7 +3135,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="makeredirecturl" class="tsd-anchor"></a>
+				<a name="MakeRedirectURL" class="tsd-anchor"></a>
 				<h3>Make<wbr>RedirectURL</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 					<li class="tsd-signature tsd-kind-icon">Make<wbr>RedirectURL<span class="tsd-signature-symbol">(</span>returnTo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sessionID<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3139,10 +3161,10 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="makessourl" class="tsd-anchor"></a>
+				<a name="MakeSSOURL" class="tsd-anchor"></a>
 				<h3>MakeSSOURL</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">MakeSSOURL<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../enums/kavensso_kavensso.ssoaction.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SSOAction</a>, client<span class="tsd-signature-symbol">: </span><a href="../interfaces/kavensso_kavensso.issoclient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<li class="tsd-signature tsd-kind-icon">MakeSSOURL<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../enums/KavenSSO_KavenSSO.SSOAction.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SSOAction</a>, client<span class="tsd-signature-symbol">: </span><a href="../interfaces/KavenSSO_KavenSSO.ISSOClient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3154,10 +3176,10 @@ img {
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>action: <a href="../enums/kavensso_kavensso.ssoaction.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SSOAction</a></h5>
+								<h5>action: <a href="../enums/KavenSSO_KavenSSO.SSOAction.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SSOAction</a></h5>
 							</li>
 							<li>
-								<h5>client: <a href="../interfaces/kavensso_kavensso.issoclient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a></h5>
+								<h5>client: <a href="../interfaces/KavenSSO_KavenSSO.ISSOClient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a></h5>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">string</span></h5>
@@ -3168,7 +3190,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="removessoparametersfromurl" class="tsd-anchor"></a>
+				<a name="RemoveSSOParametersFromURL" class="tsd-anchor"></a>
 				<h3>RemoveSSOParameters<wbr>FromURL</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 					<li class="tsd-signature tsd-kind-icon">RemoveSSOParameters<wbr>FromURL<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>others<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3194,10 +3216,10 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="verify" class="tsd-anchor"></a>
+				<a name="Verify" class="tsd-anchor"></a>
 				<h3>Verify</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">Verify<span class="tsd-signature-symbol">(</span>originalUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/kavensso_kavensso.issoverifyresult.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOVerifyResult</a></li>
+					<li class="tsd-signature tsd-kind-icon">Verify<span class="tsd-signature-symbol">(</span>originalUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/KavenSSO_KavenSSO.ISSOVerifyResult.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOVerifyResult</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3212,15 +3234,15 @@ img {
 								<h5>originalUrl: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/kavensso_kavensso.issoverifyresult.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOVerifyResult</a></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/KavenSSO_KavenSSO.ISSOVerifyResult.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOVerifyResult</a></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="verifyclient" class="tsd-anchor"></a>
+				<a name="VerifyClient" class="tsd-anchor"></a>
 				<h3>Verify<wbr>Client</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">Verify<wbr>Client<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="../interfaces/kavensso_kavensso.issoclient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><a href="../enums/kavensso_kavensso.ssoverifyerror.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SSOVerifyError</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">Verify<wbr>Client<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="../interfaces/KavenSSO_KavenSSO.ISSOClient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><a href="../enums/KavenSSO_KavenSSO.SSOVerifyError.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SSOVerifyError</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3232,10 +3254,10 @@ img {
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>client: <a href="../interfaces/kavensso_kavensso.issoclient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a></h5>
+								<h5>client: <a href="../interfaces/KavenSSO_KavenSSO.ISSOClient.html" class="tsd-signature-type" data-tsd-kind="Interface">ISSOClient</a></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><a href="../enums/kavensso_kavensso.ssoverifyerror.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SSOVerifyError</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><a href="../enums/KavenSSO_KavenSSO.SSOVerifyError.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SSOVerifyError</a><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3248,9 +3270,11 @@ img {
 						<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 						<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+						<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+						<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 						<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 						<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 					</ul>
@@ -3259,11 +3283,10 @@ img {
 						<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 					</ul>
 					<ul class="tsd-legend">
-						<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+						<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 					</ul>
 					<ul class="tsd-legend">
-						<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 					</ul>
 				</div>
 			</div>
@@ -3412,7 +3435,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop === 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop <= 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
 
 /***/ }),
 

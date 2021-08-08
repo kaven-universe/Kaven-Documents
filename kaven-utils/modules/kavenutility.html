@@ -6,7 +6,29 @@
 	<title>KavenUtility | kaven-utils</title>
 	<meta name="description" content="Documentation for kaven-utils">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+	<style type="text/css">:root {
+  --color-background: #fdfdfd;
+  --color-text: #222;
+  --color-text-aside: #707070;
+  --color-link: #4da6ff;
+  --color-menu-divider: #eee;
+  --color-menu-divider-focus: #000;
+  --color-menu-label: #707070;
+  --color-panel: #fff;
+  --color-panel-divider: #eee;
+  --color-comment-tag: #707070;
+  --color-comment-tag-text: #fff;
+  --color-code-background: rgba(0, 0, 0, 0.04);
+  --color-ts: #9600ff;
+  --color-ts-interface: #647f1b;
+  --color-ts-enum: #937210;
+  --color-ts-class: #0672de;
+  --color-ts-private: #707070;
+  --color-toolbar: #fff;
+  --color-toolbar-text: #333;
+}
+
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
  * * HTML5 display definitions
  * * ========================================================================== */
@@ -1593,14 +1615,14 @@ ul.tsd-descriptions > li > :last-child > :last-child > :last-child,
   }
 }
 body {
-  background: #fdfdfd;
+  background: var(--color-background);
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
-  color: #222;
+  color: var(--color-text);
 }
 
 a {
-  color: #4da6ff;
+  color: var(--color-link);
   text-decoration: none;
 }
 a:hover {
@@ -1612,7 +1634,7 @@ code, pre {
   padding: 0.2em;
   margin: 0;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: var(--color-code-background);
 }
 
 pre {
@@ -1678,7 +1700,7 @@ blockquote {
     padding: 20px 20px 0 0;
     max-width: 450px;
     visibility: hidden;
-    background-color: #fff;
+    background-color: var(--color-panel);
     transform: translate(100%, 0);
   }
   html.default .col-menu > *:last-child {
@@ -1738,7 +1760,7 @@ html.default.has-menu .col-content {
 .tsd-page-title {
   padding: 70px 0 20px 0;
   margin: 0 0 40px 0;
-  background: #fff;
+  background: var(--color-panel);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 .tsd-page-title h1 {
@@ -1748,10 +1770,10 @@ html.default.has-menu .col-content {
 .tsd-breadcrumb {
   margin: 0;
   padding: 0;
-  color: #707070;
+  color: var(--color-text-aside);
 }
 .tsd-breadcrumb a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: none;
 }
 .tsd-breadcrumb a:hover {
@@ -1824,8 +1846,8 @@ dl.tsd-comment-tags dt {
   padding: 1px 5px;
   margin: 0 10px 0 0;
   border-radius: 4px;
-  border: 1px solid #707070;
-  color: #707070;
+  border: 1px solid var(--color-comment-tag);
+  color: var(--color-comment-tag);
   font-size: 0.8em;
   font-weight: normal;
 }
@@ -1895,7 +1917,7 @@ dl.tsd-comment-tags p {
     top: 40px;
     right: 20px;
     height: auto;
-    background-color: #fff;
+    background-color: var(--color-panel);
     visibility: hidden;
     transform: translate(50%, 0);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
@@ -1917,11 +1939,11 @@ dl.tsd-comment-tags p {
 }
 
 footer {
-  border-top: 1px solid #eee;
-  background-color: #fff;
+  border-top: 1px solid var(--color-panel-divider);
+  background-color: var(--color-panel);
 }
 footer.with-border-bottom {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 footer .tsd-legend-group {
   font-size: 0;
@@ -1959,7 +1981,7 @@ footer .tsd-legend {
 .tsd-index-panel h3 {
   margin: 0 -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-index-panel ul.tsd-index-list {
   -webkit-column-count: 3;
@@ -2003,39 +2025,39 @@ footer .tsd-legend {
 }
 .tsd-index-panel a,
 .tsd-index-panel .tsd-parent-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-parent-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-parent-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-parent-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-is-private a {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-flag {
   display: inline-block;
   padding: 1px 5px;
   border-radius: 4px;
-  color: #fff;
-  background-color: #707070;
+  color: var(--color-comment-tag-text);
+  background-color: var(--color-comment-tag);
   text-indent: 0;
   font-size: 14px;
   font-weight: normal;
@@ -2055,19 +2077,19 @@ footer .tsd-legend {
   border-bottom: none;
 }
 .tsd-member a[data-tsd-kind] {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-member a[data-tsd-kind=Interface] {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-member a[data-tsd-kind=Enum] {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-member a[data-tsd-kind=Class] {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-member a[data-tsd-kind=Private] {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-navigation {
@@ -2078,7 +2100,7 @@ footer .tsd-legend {
   padding-top: 2px;
   padding-bottom: 2px;
   border-left: 2px solid transparent;
-  color: #222;
+  color: var(--color-text);
   text-decoration: none;
   transition: border-left-color 0.1s;
 }
@@ -2121,10 +2143,10 @@ footer .tsd-legend {
   padding-left: 105px;
 }
 .tsd-navigation.primary > ul {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li.current > a {
   font-weight: bold;
@@ -2132,7 +2154,7 @@ footer .tsd-legend {
 .tsd-navigation.primary li.label span {
   display: block;
   padding: 20px 0 6px 5px;
-  color: #707070;
+  color: var(--color-menu-label);
 }
 .tsd-navigation.primary li.globals + li > span, .tsd-navigation.primary li.globals + li > a {
   padding-top: 20px;
@@ -2172,16 +2194,16 @@ footer .tsd-legend {
   padding-left: 125px;
 }
 .tsd-navigation.secondary ul.current a {
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.focus > a,
 .tsd-navigation.secondary ul.current li.focus > a {
-  border-left-color: #000;
+  border-left-color: var(--color-menu-divider-focus);
 }
 .tsd-navigation.secondary li.current {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.current > a {
   font-weight: bold;
@@ -2196,7 +2218,7 @@ footer .tsd-legend {
 .tsd-panel {
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--color-panel);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 .tsd-panel:empty {
@@ -2205,7 +2227,7 @@ footer .tsd-legend {
 .tsd-panel > h1, .tsd-panel > h2, .tsd-panel > h3 {
   margin: 1.5em -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-panel > h1.tsd-before-signature, .tsd-panel > h2.tsd-before-signature, .tsd-panel > h3.tsd-before-signature {
   margin-bottom: 0;
@@ -2267,7 +2289,7 @@ footer .tsd-legend {
   outline: 0;
   border: 0;
   background: transparent;
-  color: #222;
+  color: var(--color-text);
 }
 #tsd-search .field label {
   position: absolute;
@@ -2290,17 +2312,17 @@ footer .tsd-legend {
 }
 #tsd-search .results li {
   padding: 0 10px;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 #tsd-search .results li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 #tsd-search .results li.state {
   display: none;
 }
 #tsd-search .results li.current,
 #tsd-search .results li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search .results a {
   display: block;
@@ -2309,11 +2331,11 @@ footer .tsd-legend {
   top: 10px;
 }
 #tsd-search .results span.parent {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 #tsd-search.has-focus {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search.has-focus .field input {
   top: 0;
@@ -2336,7 +2358,7 @@ footer .tsd-legend {
 .tsd-signature {
   margin: 0 0 1em 0;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 14px;
   overflow-x: auto;
@@ -2361,7 +2383,7 @@ footer .tsd-legend {
 }
 
 .tsd-signature-symbol {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 
@@ -2373,7 +2395,7 @@ footer .tsd-legend {
 .tsd-signatures {
   padding: 0;
   margin: 0 0 1em 0;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
 }
 .tsd-signatures .tsd-signature {
   margin: 0;
@@ -2384,7 +2406,7 @@ footer .tsd-legend {
   border-top-width: 0;
 }
 .tsd-signatures .tsd-signature.current {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-signatures.active > .tsd-signature {
   cursor: pointer;
@@ -2458,11 +2480,11 @@ ul.tsd-type-parameters .tsd-comment {
 
 .tsd-sources {
   font-size: 14px;
-  color: #707070;
+  color: var(--color-text-aside);
   margin: 0 0 1em 0;
 }
 .tsd-sources a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: underline;
 }
 .tsd-sources ul, .tsd-sources p {
@@ -2480,13 +2502,13 @@ ul.tsd-type-parameters .tsd-comment {
   left: 0;
   width: 100%;
   height: 40px;
-  color: #333;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  color: var(--color-toolbar-text);
+  background: var(--color-toolbar);
+  border-bottom: 1px solid var(--color-panel-divider);
   transition: transform 0.3s linear;
 }
 .tsd-page-toolbar a {
-  color: #333;
+  color: var(--color-toolbar-text);
   text-decoration: none;
 }
 .tsd-page-toolbar a.title {
@@ -2546,7 +2568,7 @@ ul.tsd-type-parameters .tsd-comment {
 }
 .tsd-widget.active {
   opacity: 1;
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-widget.no-caption {
   width: 40px;
@@ -2615,16 +2637,16 @@ input[type=checkbox]:checked + .tsd-widget:before {
 }
 .tsd-select .tsd-select-list li {
   padding: 0 20px 0 0;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 .tsd-select .tsd-select-list li:before {
   background-position: 40px 0;
 }
 .tsd-select .tsd-select-list li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 .tsd-select .tsd-select-list li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-select .tsd-select-list li.selected:before {
   background-position: -200px 0;
@@ -2682,185 +2704,137 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-variable tsd-parent-kind-module">
-			<a href="kavenutility.html#ansiupinstance" class="tsd-kind-icon">Ansi<wbr>UpInstance</a>
-		</li>
-		<li class=" tsd-kind-variable tsd-parent-kind-module">
-			<a href="kavenutility.html#chalk" class="tsd-kind-icon">Chalk</a>
-		</li>
-		<li class=" tsd-kind-variable tsd-parent-kind-module">
-			<a href="kavenutility.html#iswin32" class="tsd-kind-icon">Is<wbr>Win32</a>
-		</li>
-		<li class=" tsd-kind-variable tsd-parent-kind-module">
-			<a href="kavenutility.html#platform" class="tsd-kind-icon">Platform</a>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility.html#BackupMongoDB" class="tsd-kind-icon">Backup<wbr>MongoDB</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#backupmongodb" class="tsd-kind-icon">Backup<wbr>MongoDB</a>
+			<a href="KavenUtility.html#Base64Decode" class="tsd-kind-icon">Base64<wbr>Decode</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#base64decode" class="tsd-kind-icon">Base64<wbr>Decode</a>
+			<a href="KavenUtility.html#Base64Encode" class="tsd-kind-icon">Base64<wbr>Encode</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#base64encode" class="tsd-kind-icon">Base64<wbr>Encode</a>
+			<a href="KavenUtility.html#BuildError" class="tsd-kind-icon">Build<wbr>Error</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#builderror" class="tsd-kind-icon">Build<wbr>Error</a>
+			<a href="KavenUtility.html#BuildLogString" class="tsd-kind-icon">Build<wbr>Log<wbr>String</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#buildlogstring" class="tsd-kind-icon">Build<wbr>Log<wbr>String</a>
+			<a href="KavenUtility.html#CreateCertificate" class="tsd-kind-icon">Create<wbr>Certificate</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#copyfileordirectory" class="tsd-kind-icon">Copy<wbr>File<wbr>OrDirectory</a>
+			<a href="KavenUtility.html#CreateJWT" class="tsd-kind-icon">CreateJWT</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#copyfilesync" class="tsd-kind-icon">Copy<wbr>File<wbr>Sync</a>
+			<a href="KavenUtility.html#DecodeJWT" class="tsd-kind-icon">DecodeJWT</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#copyfilestodirectory" class="tsd-kind-icon">Copy<wbr>Files<wbr>ToDirectory</a>
+			<a href="KavenUtility.html#Exec" class="tsd-kind-icon">Exec</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#createcertificate" class="tsd-kind-icon">Create<wbr>Certificate</a>
+			<a href="KavenUtility.html#FindAndReplaceInFiles" class="tsd-kind-icon">Find<wbr>And<wbr>Replace<wbr>InFiles</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#createjwt" class="tsd-kind-icon">CreateJWT</a>
+			<a href="KavenUtility.html#GenerateQRCode" class="tsd-kind-icon">GenerateQRCode</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#decodejwt" class="tsd-kind-icon">DecodeJWT</a>
+			<a href="KavenUtility.html#GetAllFiles" class="tsd-kind-icon">Get<wbr>All<wbr>Files</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#deletefileordirectory" class="tsd-kind-icon">Delete<wbr>File<wbr>OrDirectory</a>
+			<a href="KavenUtility.html#GetAllFilesRecursively" class="tsd-kind-icon">Get<wbr>All<wbr>Files<wbr>Recursively</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#deletefolder" class="tsd-kind-icon">Delete<wbr>Folder</a>
+			<a href="KavenUtility.html#GetColoredStatus" class="tsd-kind-icon">Get<wbr>Colored<wbr>Status</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#exec" class="tsd-kind-icon">Exec</a>
+			<a href="KavenUtility.html#GetFileContent" class="tsd-kind-icon">Get<wbr>File<wbr>Content</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#findandreplaceinfiles" class="tsd-kind-icon">Find<wbr>And<wbr>Replace<wbr>InFiles</a>
+			<a href="KavenUtility.html#GetFileExtension" class="tsd-kind-icon">Get<wbr>File<wbr>Extension</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#generateqrcode" class="tsd-kind-icon">GenerateQRCode</a>
+			<a href="KavenUtility.html#GetFileList" class="tsd-kind-icon">Get<wbr>File<wbr>List</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getallfiles" class="tsd-kind-icon">Get<wbr>All<wbr>Files</a>
+			<a href="KavenUtility.html#GetFileName" class="tsd-kind-icon">Get<wbr>File<wbr>Name</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getallfilesrecursively" class="tsd-kind-icon">Get<wbr>All<wbr>Files<wbr>Recursively</a>
+			<a href="KavenUtility.html#GetFileType" class="tsd-kind-icon">Get<wbr>File<wbr>Type</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getcoloredstatus" class="tsd-kind-icon">Get<wbr>Colored<wbr>Status</a>
+			<a href="KavenUtility.html#GetFileTypeFromFile" class="tsd-kind-icon">Get<wbr>File<wbr>Type<wbr>From<wbr>File</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getfilecontent" class="tsd-kind-icon">Get<wbr>File<wbr>Content</a>
+			<a href="KavenUtility.html#GetProtocolFromURL" class="tsd-kind-icon">Get<wbr>Protocol<wbr>FromURL</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getfileextension" class="tsd-kind-icon">Get<wbr>File<wbr>Extension</a>
+			<a href="KavenUtility.html#HMAC_SHA1" class="tsd-kind-icon">HMAC_<wbr>SHA1</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getfilelist" class="tsd-kind-icon">Get<wbr>File<wbr>List</a>
+			<a href="KavenUtility.html#InitializeTextLogger" class="tsd-kind-icon">Initialize<wbr>Text<wbr>Logger</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getfilename" class="tsd-kind-icon">Get<wbr>File<wbr>Name</a>
+			<a href="KavenUtility.html#LoadJsonFile" class="tsd-kind-icon">Load<wbr>Json<wbr>File</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getfilesizeinbytes" class="tsd-kind-icon">Get<wbr>File<wbr>Size<wbr>InBytes</a>
+			<a href="KavenUtility.html#ReadFileAsBase64" class="tsd-kind-icon">Read<wbr>File<wbr>AsBase64</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getfiletype" class="tsd-kind-icon">Get<wbr>File<wbr>Type</a>
+			<a href="KavenUtility.html#ReadFileBytes" class="tsd-kind-icon">Read<wbr>File<wbr>Bytes</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getfiletypefromfile" class="tsd-kind-icon">Get<wbr>File<wbr>Type<wbr>From<wbr>File</a>
+			<a href="KavenUtility.html#ReadStringFromClipboard" class="tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#getprotocolfromurl" class="tsd-kind-icon">Get<wbr>Protocol<wbr>FromURL</a>
+			<a href="KavenUtility.html#ReadStringFromClipboardAsync" class="tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard<wbr>Async</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#hmac_sha1" class="tsd-kind-icon">HMAC_<wbr>SHA1</a>
+			<a href="KavenUtility.html#ResetLogFile" class="tsd-kind-icon">Reset<wbr>Log<wbr>File</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#initializetextlogger" class="tsd-kind-icon">Initialize<wbr>Text<wbr>Logger</a>
+			<a href="KavenUtility.html#ResetLogFileIf" class="tsd-kind-icon">Reset<wbr>Log<wbr>File<wbr>If</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#isdirectory" class="tsd-kind-icon">Is<wbr>Directory</a>
+			<a href="KavenUtility.html#Run7zCommand" class="tsd-kind-icon">Run7z<wbr>Command</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#isfile" class="tsd-kind-icon">Is<wbr>File</a>
+			<a href="KavenUtility.html#RunCommand" class="tsd-kind-icon">Run<wbr>Command</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#isfileordirectoryexist" class="tsd-kind-icon">Is<wbr>File<wbr>OrDirectory<wbr>Exist</a>
+			<a href="KavenUtility.html#RunCommandAndDecode" class="tsd-kind-icon">Run<wbr>Command<wbr>And<wbr>Decode</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#loadjsonfile" class="tsd-kind-icon">Load<wbr>Json<wbr>File</a>
+			<a href="KavenUtility.html#SaveStringToFile" class="tsd-kind-icon">Save<wbr>String<wbr>ToFile</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#makedirectory" class="tsd-kind-icon">Make<wbr>Directory</a>
+			<a href="KavenUtility.html#SendEmail" class="tsd-kind-icon">Send<wbr>Email</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#makedirectorysync" class="tsd-kind-icon">Make<wbr>Directory<wbr>Sync</a>
+			<a href="KavenUtility.html#SevenZipFiles" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Files</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#overrideconsole" class="tsd-kind-icon">Override<wbr>Console</a>
+			<a href="KavenUtility.html#SevenZipFolder" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Folder</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#readfileasbase64" class="tsd-kind-icon">Read<wbr>File<wbr>AsBase64</a>
+			<a href="KavenUtility.html#Spawn" class="tsd-kind-icon">Spawn</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#readfilebytes" class="tsd-kind-icon">Read<wbr>File<wbr>Bytes</a>
+			<a href="KavenUtility.html#StartSchedule" class="tsd-kind-icon">Start<wbr>Schedule</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#readstringfromclipboard" class="tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard</a>
+			<a href="KavenUtility.html#StartScheduleLikeCron" class="tsd-kind-icon">Start<wbr>Schedule<wbr>Like<wbr>Cron</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#readstringfromclipboardasync" class="tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard<wbr>Async</a>
+			<a href="KavenUtility.html#UploadFileToFTPServer" class="tsd-kind-icon">Upload<wbr>File<wbr>ToFTPServer</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#resetlogfile" class="tsd-kind-icon">Reset<wbr>Log<wbr>File</a>
+			<a href="KavenUtility.html#VerifyJWT" class="tsd-kind-icon">VerifyJWT</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#resetlogfileif" class="tsd-kind-icon">Reset<wbr>Log<wbr>File<wbr>If</a>
+			<a href="KavenUtility.html#WriteStringToClipboard" class="tsd-kind-icon">Write<wbr>String<wbr>ToClipboard</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#run7zcommand" class="tsd-kind-icon">Run7z<wbr>Command</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#runcommand" class="tsd-kind-icon">Run<wbr>Command</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#runcommandanddecode" class="tsd-kind-icon">Run<wbr>Command<wbr>And<wbr>Decode</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#savestringtofile" class="tsd-kind-icon">Save<wbr>String<wbr>ToFile</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#sendemail" class="tsd-kind-icon">Send<wbr>Email</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#sevenzipfiles" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Files</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#sevenzipfolder" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Folder</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#spawn" class="tsd-kind-icon">Spawn</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#startschedule" class="tsd-kind-icon">Start<wbr>Schedule</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#startschedulelikecron" class="tsd-kind-icon">Start<wbr>Schedule<wbr>Like<wbr>Cron</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#uploadfiletoftpserver" class="tsd-kind-icon">Upload<wbr>File<wbr>ToFTPServer</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#verifyjwt" class="tsd-kind-icon">VerifyJWT</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#writestringtoclipboard" class="tsd-kind-icon">Write<wbr>String<wbr>ToClipboard</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="kavenutility.html#writestringtoclipboardasync" class="tsd-kind-icon">Write<wbr>String<wbr>ToClipboard<wbr>Async</a>
+			<a href="KavenUtility.html#WriteStringToClipboardAsync" class="tsd-kind-icon">Write<wbr>String<wbr>ToClipboard<wbr>Async</a>
 		</li>
 	</ul>
 </nav>
@@ -2871,155 +2845,61 @@ img {
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Variables</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-variable tsd-parent-kind-module"><a href="kavenutility.html#ansiupinstance" class="tsd-kind-icon">Ansi<wbr>UpInstance</a></li>
-							<li class="tsd-kind-variable tsd-parent-kind-module"><a href="kavenutility.html#chalk" class="tsd-kind-icon">Chalk</a></li>
-							<li class="tsd-kind-variable tsd-parent-kind-module"><a href="kavenutility.html#iswin32" class="tsd-kind-icon">Is<wbr>Win32</a></li>
-							<li class="tsd-kind-variable tsd-parent-kind-module"><a href="kavenutility.html#platform" class="tsd-kind-icon">Platform</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#backupmongodb" class="tsd-kind-icon">Backup<wbr>MongoDB</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#base64decode" class="tsd-kind-icon">Base64<wbr>Decode</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#base64encode" class="tsd-kind-icon">Base64<wbr>Encode</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#builderror" class="tsd-kind-icon">Build<wbr>Error</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#buildlogstring" class="tsd-kind-icon">Build<wbr>Log<wbr>String</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#copyfileordirectory" class="tsd-kind-icon">Copy<wbr>File<wbr>OrDirectory</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#copyfilesync" class="tsd-kind-icon">Copy<wbr>File<wbr>Sync</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#copyfilestodirectory" class="tsd-kind-icon">Copy<wbr>Files<wbr>ToDirectory</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#createcertificate" class="tsd-kind-icon">Create<wbr>Certificate</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#createjwt" class="tsd-kind-icon">CreateJWT</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#decodejwt" class="tsd-kind-icon">DecodeJWT</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#deletefileordirectory" class="tsd-kind-icon">Delete<wbr>File<wbr>OrDirectory</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#deletefolder" class="tsd-kind-icon">Delete<wbr>Folder</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#exec" class="tsd-kind-icon">Exec</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#findandreplaceinfiles" class="tsd-kind-icon">Find<wbr>And<wbr>Replace<wbr>InFiles</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#generateqrcode" class="tsd-kind-icon">GenerateQRCode</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getallfiles" class="tsd-kind-icon">Get<wbr>All<wbr>Files</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getallfilesrecursively" class="tsd-kind-icon">Get<wbr>All<wbr>Files<wbr>Recursively</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getcoloredstatus" class="tsd-kind-icon">Get<wbr>Colored<wbr>Status</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getfilecontent" class="tsd-kind-icon">Get<wbr>File<wbr>Content</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getfileextension" class="tsd-kind-icon">Get<wbr>File<wbr>Extension</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getfilelist" class="tsd-kind-icon">Get<wbr>File<wbr>List</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getfilename" class="tsd-kind-icon">Get<wbr>File<wbr>Name</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getfilesizeinbytes" class="tsd-kind-icon">Get<wbr>File<wbr>Size<wbr>InBytes</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getfiletype" class="tsd-kind-icon">Get<wbr>File<wbr>Type</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getfiletypefromfile" class="tsd-kind-icon">Get<wbr>File<wbr>Type<wbr>From<wbr>File</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#getprotocolfromurl" class="tsd-kind-icon">Get<wbr>Protocol<wbr>FromURL</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#hmac_sha1" class="tsd-kind-icon">HMAC_<wbr>SHA1</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#initializetextlogger" class="tsd-kind-icon">Initialize<wbr>Text<wbr>Logger</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#isdirectory" class="tsd-kind-icon">Is<wbr>Directory</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#isfile" class="tsd-kind-icon">Is<wbr>File</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#isfileordirectoryexist" class="tsd-kind-icon">Is<wbr>File<wbr>OrDirectory<wbr>Exist</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#loadjsonfile" class="tsd-kind-icon">Load<wbr>Json<wbr>File</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#makedirectory" class="tsd-kind-icon">Make<wbr>Directory</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#makedirectorysync" class="tsd-kind-icon">Make<wbr>Directory<wbr>Sync</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#overrideconsole" class="tsd-kind-icon">Override<wbr>Console</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#readfileasbase64" class="tsd-kind-icon">Read<wbr>File<wbr>AsBase64</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#readfilebytes" class="tsd-kind-icon">Read<wbr>File<wbr>Bytes</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#readstringfromclipboard" class="tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#readstringfromclipboardasync" class="tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard<wbr>Async</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#resetlogfile" class="tsd-kind-icon">Reset<wbr>Log<wbr>File</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#resetlogfileif" class="tsd-kind-icon">Reset<wbr>Log<wbr>File<wbr>If</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#run7zcommand" class="tsd-kind-icon">Run7z<wbr>Command</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#runcommand" class="tsd-kind-icon">Run<wbr>Command</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#runcommandanddecode" class="tsd-kind-icon">Run<wbr>Command<wbr>And<wbr>Decode</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#savestringtofile" class="tsd-kind-icon">Save<wbr>String<wbr>ToFile</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#sendemail" class="tsd-kind-icon">Send<wbr>Email</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#sevenzipfiles" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Files</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#sevenzipfolder" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Folder</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#spawn" class="tsd-kind-icon">Spawn</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#startschedule" class="tsd-kind-icon">Start<wbr>Schedule</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#startschedulelikecron" class="tsd-kind-icon">Start<wbr>Schedule<wbr>Like<wbr>Cron</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#uploadfiletoftpserver" class="tsd-kind-icon">Upload<wbr>File<wbr>ToFTPServer</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#verifyjwt" class="tsd-kind-icon">VerifyJWT</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#writestringtoclipboard" class="tsd-kind-icon">Write<wbr>String<wbr>ToClipboard</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="kavenutility.html#writestringtoclipboardasync" class="tsd-kind-icon">Write<wbr>String<wbr>ToClipboard<wbr>Async</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#BackupMongoDB" class="tsd-kind-icon">Backup<wbr>MongoDB</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#Base64Decode" class="tsd-kind-icon">Base64<wbr>Decode</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#Base64Encode" class="tsd-kind-icon">Base64<wbr>Encode</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#BuildError" class="tsd-kind-icon">Build<wbr>Error</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#BuildLogString" class="tsd-kind-icon">Build<wbr>Log<wbr>String</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#CreateCertificate" class="tsd-kind-icon">Create<wbr>Certificate</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#CreateJWT" class="tsd-kind-icon">CreateJWT</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#DecodeJWT" class="tsd-kind-icon">DecodeJWT</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#Exec" class="tsd-kind-icon">Exec</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#FindAndReplaceInFiles" class="tsd-kind-icon">Find<wbr>And<wbr>Replace<wbr>InFiles</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GenerateQRCode" class="tsd-kind-icon">GenerateQRCode</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetAllFiles" class="tsd-kind-icon">Get<wbr>All<wbr>Files</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetAllFilesRecursively" class="tsd-kind-icon">Get<wbr>All<wbr>Files<wbr>Recursively</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetColoredStatus" class="tsd-kind-icon">Get<wbr>Colored<wbr>Status</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetFileContent" class="tsd-kind-icon">Get<wbr>File<wbr>Content</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetFileExtension" class="tsd-kind-icon">Get<wbr>File<wbr>Extension</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetFileList" class="tsd-kind-icon">Get<wbr>File<wbr>List</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetFileName" class="tsd-kind-icon">Get<wbr>File<wbr>Name</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetFileType" class="tsd-kind-icon">Get<wbr>File<wbr>Type</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetFileTypeFromFile" class="tsd-kind-icon">Get<wbr>File<wbr>Type<wbr>From<wbr>File</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#GetProtocolFromURL" class="tsd-kind-icon">Get<wbr>Protocol<wbr>FromURL</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#HMAC_SHA1" class="tsd-kind-icon">HMAC_<wbr>SHA1</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#InitializeTextLogger" class="tsd-kind-icon">Initialize<wbr>Text<wbr>Logger</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#LoadJsonFile" class="tsd-kind-icon">Load<wbr>Json<wbr>File</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#ReadFileAsBase64" class="tsd-kind-icon">Read<wbr>File<wbr>AsBase64</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#ReadFileBytes" class="tsd-kind-icon">Read<wbr>File<wbr>Bytes</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#ReadStringFromClipboard" class="tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#ReadStringFromClipboardAsync" class="tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard<wbr>Async</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#ResetLogFile" class="tsd-kind-icon">Reset<wbr>Log<wbr>File</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#ResetLogFileIf" class="tsd-kind-icon">Reset<wbr>Log<wbr>File<wbr>If</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#Run7zCommand" class="tsd-kind-icon">Run7z<wbr>Command</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#RunCommand" class="tsd-kind-icon">Run<wbr>Command</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#RunCommandAndDecode" class="tsd-kind-icon">Run<wbr>Command<wbr>And<wbr>Decode</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#SaveStringToFile" class="tsd-kind-icon">Save<wbr>String<wbr>ToFile</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#SendEmail" class="tsd-kind-icon">Send<wbr>Email</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#SevenZipFiles" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Files</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#SevenZipFolder" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Folder</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#Spawn" class="tsd-kind-icon">Spawn</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#StartSchedule" class="tsd-kind-icon">Start<wbr>Schedule</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#StartScheduleLikeCron" class="tsd-kind-icon">Start<wbr>Schedule<wbr>Like<wbr>Cron</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#UploadFileToFTPServer" class="tsd-kind-icon">Upload<wbr>File<wbr>ToFTPServer</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#VerifyJWT" class="tsd-kind-icon">VerifyJWT</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#WriteStringToClipboard" class="tsd-kind-icon">Write<wbr>String<wbr>ToClipboard</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility.html#WriteStringToClipboardAsync" class="tsd-kind-icon">Write<wbr>String<wbr>ToClipboard<wbr>Async</a></li>
 						</ul>
 					</section>
-				</div>
-			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Variables</h2>
-			<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-				<a name="ansiupinstance" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> Ansi<wbr>UpInstance</h3>
-				<div class="tsd-signature tsd-kind-icon">Ansi<wbr>UpInstance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span><span class="tsd-signature-symbol"> = ...</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/KavenUtility.ts:94</li>
-					</ul>
-				</aside>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-				<a name="chalk" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> Chalk</h3>
-				<div class="tsd-signature tsd-kind-icon">Chalk<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Chalk</span><span class="tsd-signature-symbol"> = ...</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/KavenUtility.ts:92</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>since</dt>
-						<dd><p>1.2.3</p>
-						</dd>
-						<dt>version</dt>
-						<dd><p>2019-11-13</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-				<a name="iswin32" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> Is<wbr>Win32</h3>
-				<div class="tsd-signature tsd-kind-icon">Is<wbr>Win32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = ...</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/KavenUtility.ts:86</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>since</dt>
-						<dd><p>1.1.21</p>
-						</dd>
-						<dt>version</dt>
-						<dd><p>2018-11-05</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-				<a name="platform" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> Platform</h3>
-				<div class="tsd-signature tsd-kind-icon">Platform<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Platform</span><span class="tsd-signature-symbol"> = ...</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/KavenUtility.ts:80</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>since</dt>
-						<dd><p>1.1.21</p>
-						</dd>
-						<dt>version</dt>
-						<dd><p>2018-11-05</p>
-						</dd>
-					</dl>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="backupmongodb" class="tsd-anchor"></a>
+				<a name="BackupMongoDB" class="tsd-anchor"></a>
 				<h3>Backup<wbr>MongoDB</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Backup<wbr>MongoDB<span class="tsd-signature-symbol">(</span>outputDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, databaseName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, host<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, databaseUser<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, databasePassword<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -3028,7 +2908,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:636</li>
+								<li>Defined in src/KavenUtility.ts:504</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3064,7 +2944,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="base64decode" class="tsd-anchor"></a>
+				<a name="Base64Decode" class="tsd-anchor"></a>
 				<h3>Base64<wbr>Decode</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Base64<wbr>Decode<span class="tsd-signature-symbol">(</span>base64Data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, encoding<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">BufferEncoding</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3073,7 +2953,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1017</li>
+								<li>Defined in src/KavenUtility.ts:814</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3105,7 +2985,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="base64encode" class="tsd-anchor"></a>
+				<a name="Base64Encode" class="tsd-anchor"></a>
 				<h3>Base64<wbr>Encode</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Base64<wbr>Encode<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, encoding<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">BufferEncoding</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3114,7 +2994,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:995</li>
+								<li>Defined in src/KavenUtility.ts:792</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3146,7 +3026,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="builderror" class="tsd-anchor"></a>
+				<a name="BuildError" class="tsd-anchor"></a>
 				<h3>Build<wbr>Error</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Build<wbr>Error<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>param<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3155,7 +3035,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:118</li>
+								<li>Defined in src/KavenUtility.ts:96</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3179,7 +3059,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="buildlogstring" class="tsd-anchor"></a>
+				<a name="BuildLogString" class="tsd-anchor"></a>
 				<h3>Build<wbr>Log<wbr>String</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Build<wbr>Log<wbr>String<span class="tsd-signature-symbol">(</span>level<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">LogLevel</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3188,7 +3068,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:105</li>
+								<li>Defined in src/KavenUtility.ts:83</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3215,121 +3095,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="copyfileordirectory" class="tsd-anchor"></a>
-				<h3>Copy<wbr>File<wbr>OrDirectory</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Copy<wbr>File<wbr>OrDirectory<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ncpOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:1543</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p> Simple <code>ncp</code> wrap</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>since</dt>
-								<dd><p>1.1.14</p>
-								</dd>
-								<dt>version</dt>
-								<dd><p>2020-07-26</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>src: <span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li>
-								<h5>dest: <span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">ncpOptions</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="copyfilesync" class="tsd-anchor"></a>
-				<h3>Copy<wbr>File<wbr>Sync</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Copy<wbr>File<wbr>Sync<span class="tsd-signature-symbol">(</span>dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:204</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>version</dt>
-								<dd><p>1.0.1</p>
-								</dd>
-								<dt>since</dt>
-								<dd><p>1.0.5</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>dest: <span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li>
-								<h5>src: <span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="copyfilestodirectory" class="tsd-anchor"></a>
-				<h3>Copy<wbr>Files<wbr>ToDirectory</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Copy<wbr>Files<wbr>ToDirectory<span class="tsd-signature-symbol">(</span>destDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:1583</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>since</dt>
-								<dd><p>2.0.2</p>
-								</dd>
-								<dt>version</dt>
-								<dd><p>2020-01-14</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>destDir: <span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="createcertificate" class="tsd-anchor"></a>
+				<a name="CreateCertificate" class="tsd-anchor"></a>
 				<h3>Create<wbr>Certificate</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Create<wbr>Certificate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">CertificateCreationOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CertificateCreationResult</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -3338,7 +3104,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1038</li>
+								<li>Defined in src/KavenUtility.ts:835</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3367,7 +3133,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="createjwt" class="tsd-anchor"></a>
+				<a name="CreateJWT" class="tsd-anchor"></a>
 				<h3>CreateJWT</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">CreateJWT<span class="tsd-signature-symbol">(</span>payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JWT.SignOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -3376,7 +3142,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1600</li>
+								<li>Defined in src/KavenUtility.ts:1283</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3406,16 +3172,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="decodejwt" class="tsd-anchor"></a>
+				<a name="DecodeJWT" class="tsd-anchor"></a>
 				<h3>DecodeJWT</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">DecodeJWT<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">JWT.DecodeOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></li>
+					<li class="tsd-signature tsd-kind-icon">DecodeJWT<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">JWT.DecodeOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JwtPayload</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1639</li>
+								<li>Defined in src/KavenUtility.ts:1322</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3440,87 +3206,21 @@ img {
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">JWT.DecodeOptions</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JwtPayload</span></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="deletefileordirectory" class="tsd-anchor"></a>
-				<h3>Delete<wbr>File<wbr>OrDirectory</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Delete<wbr>File<wbr>OrDirectory<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>paths<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:721</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>since</dt>
-								<dd><p>1.1.21</p>
-								</dd>
-								<dt>version</dt>
-								<dd><p>2018-11-05</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>paths: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="deletefolder" class="tsd-anchor"></a>
-				<h3>Delete<wbr>Folder</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Delete<wbr>Folder<span class="tsd-signature-symbol">(</span>folderPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:690</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>version</dt>
-								<dd><p>1.0.0</p>
-								</dd>
-								<dt>since</dt>
-								<dd><p>1.0.5</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>folderPath: <span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="exec" class="tsd-anchor"></a>
+				<a name="Exec" class="tsd-anchor"></a>
 				<h3>Exec</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Exec<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/interfaces.iexecoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IExecOptions</a>, autoDecode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChildProcess</span></li>
+					<li class="tsd-signature tsd-kind-icon">Exec<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/Interfaces.IExecOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IExecOptions</a>, autoDecode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChildProcess</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1439</li>
+								<li>Defined in src/KavenUtility.ts:1179</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3539,7 +3239,7 @@ img {
 								<h5>command: <span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/interfaces.iexecoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IExecOptions</a></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/Interfaces.IExecOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IExecOptions</a></h5>
 							</li>
 							<li>
 								<h5>autoDecode: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
@@ -3550,7 +3250,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="findandreplaceinfiles" class="tsd-anchor"></a>
+				<a name="FindAndReplaceInFiles" class="tsd-anchor"></a>
 				<h3>Find<wbr>And<wbr>Replace<wbr>InFiles</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Find<wbr>And<wbr>Replace<wbr>InFiles<span class="tsd-signature-symbol">(</span>dirOrFiles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, conditions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, newStrMethod<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span>, extensions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, showLog<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -3559,7 +3259,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1297</li>
+								<li>Defined in src/KavenUtility.ts:1037</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3618,7 +3318,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="generateqrcode" class="tsd-anchor"></a>
+				<a name="GenerateQRCode" class="tsd-anchor"></a>
 				<h3>GenerateQRCode</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">GenerateQRCode<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, version<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, errorCorrectionLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">&quot;low&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;medium&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;quartile&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;high&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;L&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;M&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;Q&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;H&quot;</span>, toSJISFunc<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>codePoint<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -3627,7 +3327,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:895</li>
+								<li>Defined in src/KavenUtility.ts:692</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3663,6 +3363,12 @@ img {
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
+												<div class="tsd-comment tsd-typography">
+													<div class="lead">
+														<p>Helper function used internally to convert a kanji to its Shift JIS value.
+														Provide this function if you need support for Kanji mode.</p>
+													</div>
+												</div>
 												<h4 class="tsd-parameters-title">Parameters</h4>
 												<ul class="tsd-parameters">
 													<li>
@@ -3681,7 +3387,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getallfiles" class="tsd-anchor"></a>
+				<a name="GetAllFiles" class="tsd-anchor"></a>
 				<h3>Get<wbr>All<wbr>Files</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>All<wbr>Files<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
@@ -3690,7 +3396,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1270</li>
+								<li>Defined in src/KavenUtility.ts:1010</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3717,7 +3423,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getallfilesrecursively" class="tsd-anchor"></a>
+				<a name="GetAllFilesRecursively" class="tsd-anchor"></a>
 				<h3>Get<wbr>All<wbr>Files<wbr>Recursively</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>All<wbr>Files<wbr>Recursively<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, extensions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, ignorePaths<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
@@ -3726,7 +3432,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1237</li>
+								<li>Defined in src/KavenUtility.ts:977</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3767,7 +3473,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getcoloredstatus" class="tsd-anchor"></a>
+				<a name="GetColoredStatus" class="tsd-anchor"></a>
 				<h3>Get<wbr>Colored<wbr>Status</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>Colored<wbr>Status<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
@@ -3776,7 +3482,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:178</li>
+								<li>Defined in src/KavenUtility.ts:106</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3800,7 +3506,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getfilecontent" class="tsd-anchor"></a>
+				<a name="GetFileContent" class="tsd-anchor"></a>
 				<h3>Get<wbr>File<wbr>Content</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>Content<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, html<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -3809,7 +3515,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:287</li>
+								<li>Defined in src/KavenUtility.ts:192</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3836,7 +3542,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getfileextension" class="tsd-anchor"></a>
+				<a name="GetFileExtension" class="tsd-anchor"></a>
 				<h3>Get<wbr>File<wbr>Extension</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>Extension<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, trimDot<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, toLowerCase<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3845,7 +3551,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:361</li>
+								<li>Defined in src/KavenUtility.ts:229</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3875,7 +3581,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getfilelist" class="tsd-anchor"></a>
+				<a name="GetFileList" class="tsd-anchor"></a>
 				<h3>Get<wbr>File<wbr>List</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>List<span class="tsd-signature-symbol">(</span>filesOrFolders<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, excludeFilesOrFolders<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, fileTypes<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
@@ -3884,7 +3590,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1375</li>
+								<li>Defined in src/KavenUtility.ts:1115</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3914,7 +3620,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getfilename" class="tsd-anchor"></a>
+				<a name="GetFileName" class="tsd-anchor"></a>
 				<h3>Get<wbr>File<wbr>Name</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>Name<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3923,7 +3629,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:386</li>
+								<li>Defined in src/KavenUtility.ts:254</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3947,40 +3653,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getfilesizeinbytes" class="tsd-anchor"></a>
-				<h3>Get<wbr>File<wbr>Size<wbr>InBytes</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>Size<wbr>InBytes<span class="tsd-signature-symbol">(</span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:1135</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>version</dt>
-								<dd><p>2018-10-28</p>
-								</dd>
-								<dt>since</dt>
-								<dd><p>1.0.9</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>filePath: <span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getfiletype" class="tsd-anchor"></a>
+				<a name="GetFileType" class="tsd-anchor"></a>
 				<h3>Get<wbr>File<wbr>Type</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>Type<span class="tsd-signature-symbol">(</span>buf<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">FileTypeResult</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -3989,7 +3662,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1351</li>
+								<li>Defined in src/KavenUtility.ts:1091</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4013,7 +3686,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getfiletypefromfile" class="tsd-anchor"></a>
+				<a name="GetFileTypeFromFile" class="tsd-anchor"></a>
 				<h3>Get<wbr>File<wbr>Type<wbr>From<wbr>File</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>File<wbr>Type<wbr>From<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">FileTypeResult</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4022,7 +3695,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1361</li>
+								<li>Defined in src/KavenUtility.ts:1101</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4046,7 +3719,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getprotocolfromurl" class="tsd-anchor"></a>
+				<a name="GetProtocolFromURL" class="tsd-anchor"></a>
 				<h3>Get<wbr>Protocol<wbr>FromURL</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>Protocol<wbr>FromURL<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
@@ -4055,7 +3728,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1716</li>
+								<li>Defined in src/KavenUtility.ts:1388</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4079,7 +3752,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="hmac_sha1" class="tsd-anchor"></a>
+				<a name="HMAC_SHA1" class="tsd-anchor"></a>
 				<h3>HMAC_<wbr>SHA1</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">HMAC_<wbr>SHA1<span class="tsd-signature-symbol">(</span>stringToSign<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
@@ -4088,7 +3761,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1220</li>
+								<li>Defined in src/KavenUtility.ts:960</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4126,16 +3799,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="initializetextlogger" class="tsd-anchor"></a>
+				<a name="InitializeTextLogger" class="tsd-anchor"></a>
 				<h3>Initialize<wbr>Text<wbr>Logger</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Initialize<wbr>Text<wbr>Logger<span class="tsd-signature-symbol">(</span>stdoutFile<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stderrFile<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">Initialize<wbr>Text<wbr>Logger<span class="tsd-signature-symbol">(</span>stdoutFile<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, stderrFile<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1734</li>
+								<li>Defined in src/KavenUtility.ts:1406</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4144,17 +3817,17 @@ img {
 								<dd><p>1.1.26</p>
 								</dd>
 								<dt>version</dt>
-								<dd><p>2019-04-28</p>
+								<dd><p>2021-03-19</p>
 								</dd>
 							</dl>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>stdoutFile: <span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> stdoutFile: <span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li>
-								<h5>stderrFile: <span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> stderrFile: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -4162,112 +3835,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="isdirectory" class="tsd-anchor"></a>
-				<h3>Is<wbr>Directory</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Is<wbr>Directory<span class="tsd-signature-symbol">(</span>strPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:324</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>version</dt>
-								<dd><p>1.0.0</p>
-								</dd>
-								<dt>since</dt>
-								<dd><p>1.0.5</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>strPath: <span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="isfile" class="tsd-anchor"></a>
-				<h3>Is<wbr>File</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Is<wbr>File<span class="tsd-signature-symbol">(</span>strPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:342</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>version</dt>
-								<dd><p>2020-01-14</p>
-								</dd>
-								<dt>since</dt>
-								<dd><p>2.0.2</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>strPath: <span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="isfileordirectoryexist" class="tsd-anchor"></a>
-				<h3>Is<wbr>File<wbr>OrDirectory<wbr>Exist</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Is<wbr>File<wbr>OrDirectory<wbr>Exist<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>paths<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:1706</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Simple wrap for existsSync</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>see</dt>
-								<dd><p><a href="https://nodejs.org/docs/latest-v8.x/api/html#fs_fs_existssync_path">https://nodejs.org/docs/latest-v8.x/api/html#fs_fs_existssync_path</a></p>
-								</dd>
-								<dt>since</dt>
-								<dd><p>1.1.20</p>
-								</dd>
-								<dt>since</dt>
-								<dd><p>2018-10-28</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>paths: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="loadjsonfile" class="tsd-anchor"></a>
+				<a name="LoadJsonFile" class="tsd-anchor"></a>
 				<h3>Load<wbr>Json<wbr>File</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Load<wbr>Json<wbr>File<span class="tsd-signature-symbol">(</span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IndexObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4276,7 +3844,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1195</li>
+								<li>Defined in src/KavenUtility.ts:935</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4302,103 +3870,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="makedirectory" class="tsd-anchor"></a>
-				<h3>Make<wbr>Directory</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Make<wbr>Directory<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:1159</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>since</dt>
-								<dd><p>1.0.9</p>
-								</dd>
-								<dt>version</dt>
-								<dd><p>2020-07-11</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>dir: <span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="makedirectorysync" class="tsd-anchor"></a>
-				<h3>Make<wbr>Directory<wbr>Sync</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Make<wbr>Directory<wbr>Sync<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:1180</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>since</dt>
-								<dd><p>1.0.9</p>
-								</dd>
-								<dt>version</dt>
-								<dd><p>2020-07-11</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>dir: <span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="overrideconsole" class="tsd-anchor"></a>
-				<h3>Override<wbr>Console</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Override<wbr>Console<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/KavenUtility.ts:127</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>version</dt>
-								<dd><p>2018-09-05</p>
-								</dd>
-								<dt>since</dt>
-								<dd><p>1.0.5</p>
-								</dd>
-								<dt>deprecated</dt>
-								<dd><p>1.1.7</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="readfileasbase64" class="tsd-anchor"></a>
+				<a name="ReadFileAsBase64" class="tsd-anchor"></a>
 				<h3>Read<wbr>File<wbr>AsBase64</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Read<wbr>File<wbr>AsBase64<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4407,7 +3879,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1687</li>
+								<li>Defined in src/KavenUtility.ts:1370</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4423,7 +3895,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="readfilebytes" class="tsd-anchor"></a>
+				<a name="ReadFileBytes" class="tsd-anchor"></a>
 				<h3>Read<wbr>File<wbr>Bytes</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Read<wbr>File<wbr>Bytes<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4432,7 +3904,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1651</li>
+								<li>Defined in src/KavenUtility.ts:1334</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4462,7 +3934,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="readstringfromclipboard" class="tsd-anchor"></a>
+				<a name="ReadStringFromClipboard" class="tsd-anchor"></a>
 				<h3>Read<wbr>String<wbr>From<wbr>Clipboard</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -4471,7 +3943,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1111</li>
+								<li>Defined in src/KavenUtility.ts:908</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4491,7 +3963,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="readstringfromclipboardasync" class="tsd-anchor"></a>
+				<a name="ReadStringFromClipboardAsync" class="tsd-anchor"></a>
 				<h3>Read<wbr>String<wbr>From<wbr>Clipboard<wbr>Async</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Read<wbr>String<wbr>From<wbr>Clipboard<wbr>Async<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4500,7 +3972,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1123</li>
+								<li>Defined in src/KavenUtility.ts:920</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4520,16 +3992,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="resetlogfile" class="tsd-anchor"></a>
+				<a name="ResetLogFile" class="tsd-anchor"></a>
 				<h3>Reset<wbr>Log<wbr>File</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Reset<wbr>Log<wbr>File<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, backupFolder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					<li class="tsd-signature tsd-kind-icon">Reset<wbr>Log<wbr>File<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, backupFolder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:233</li>
+								<li>Defined in src/KavenUtility.ts:134</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4539,12 +4011,11 @@ img {
 								change backup file name</p>
 							</div>
 							<dl class="tsd-comment-tags">
-								<dt>version</dt>
-								<dd><p>1.0.0</p>
-								</dd>
 								<dt>since</dt>
-								<dd><p>1.0.5
-									@</p>
+								<dd><p>1.0.5</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>3.0.0</p>
 								</dd>
 							</dl>
 						</div>
@@ -4557,12 +4028,12 @@ img {
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> backupFolder: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="resetlogfileif" class="tsd-anchor"></a>
+				<a name="ResetLogFileIf" class="tsd-anchor"></a>
 				<h3>Reset<wbr>Log<wbr>File<wbr>If</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Reset<wbr>Log<wbr>File<wbr>If<span class="tsd-signature-symbol">(</span>overBytes<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, logFile<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4571,7 +4042,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:269</li>
+								<li>Defined in src/KavenUtility.ts:170</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4602,7 +4073,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="run7zcommand" class="tsd-anchor"></a>
+				<a name="Run7zCommand" class="tsd-anchor"></a>
 				<h3>Run7z<wbr>Command</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Run7z<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, switches<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4611,7 +4082,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:426</li>
+								<li>Defined in src/KavenUtility.ts:294</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4644,7 +4115,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="runcommand" class="tsd-anchor"></a>
+				<a name="RunCommand" class="tsd-anchor"></a>
 				<h3>Run<wbr>Command</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Run<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>encoding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BufferEncoding</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">ExecOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>stderr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">; </span>stdout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4653,7 +4124,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1400</li>
+								<li>Defined in src/KavenUtility.ts:1140</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4683,7 +4154,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="runcommandanddecode" class="tsd-anchor"></a>
+				<a name="RunCommandAndDecode" class="tsd-anchor"></a>
 				<h3>Run<wbr>Command<wbr>And<wbr>Decode</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Run<wbr>Command<wbr>And<wbr>Decode<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, decodeEncoding<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>stderr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>stdout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4692,7 +4163,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1413</li>
+								<li>Defined in src/KavenUtility.ts:1153</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4719,7 +4190,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="savestringtofile" class="tsd-anchor"></a>
+				<a name="SaveStringToFile" class="tsd-anchor"></a>
 				<h3>Save<wbr>String<wbr>ToFile</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Save<wbr>String<wbr>ToFile<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, savePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4728,7 +4199,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1062</li>
+								<li>Defined in src/KavenUtility.ts:859</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4757,16 +4228,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="sendemail" class="tsd-anchor"></a>
+				<a name="SendEmail" class="tsd-anchor"></a>
 				<h3>Send<wbr>Email</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Send<wbr>Email<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../classes/mailconfig.mailconfig-1.html" class="tsd-signature-type" data-tsd-kind="Class">MailConfig</a>, option<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MailOption</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">Send<wbr>Email<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../classes/MailConfig.MailConfig-1.html" class="tsd-signature-type" data-tsd-kind="Class">MailConfig</a>, option<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MailOption</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:849</li>
+								<li>Defined in src/KavenUtility.ts:646</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4782,7 +4253,7 @@ img {
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>config: <a href="../classes/mailconfig.mailconfig-1.html" class="tsd-signature-type" data-tsd-kind="Class">MailConfig</a></h5>
+								<h5>config: <a href="../classes/MailConfig.MailConfig-1.html" class="tsd-signature-type" data-tsd-kind="Class">MailConfig</a></h5>
 							</li>
 							<li>
 								<h5>option: <span class="tsd-signature-type">MailOption</span></h5>
@@ -4793,7 +4264,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="sevenzipfiles" class="tsd-anchor"></a>
+				<a name="SevenZipFiles" class="tsd-anchor"></a>
 				<h3>Seven<wbr>Zip<wbr>Files</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Seven<wbr>Zip<wbr>Files<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4802,7 +4273,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:591</li>
+								<li>Defined in src/KavenUtility.ts:459</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4832,7 +4303,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="sevenzipfolder" class="tsd-anchor"></a>
+				<a name="SevenZipFolder" class="tsd-anchor"></a>
 				<h3>Seven<wbr>Zip<wbr>Folder</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Seven<wbr>Zip<wbr>Folder<span class="tsd-signature-symbol">(</span>folderPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -4841,7 +4312,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:403</li>
+								<li>Defined in src/KavenUtility.ts:271</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4876,7 +4347,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="spawn" class="tsd-anchor"></a>
+				<a name="Spawn" class="tsd-anchor"></a>
 				<h3>Spawn</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Spawn<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">SpawnOptionsWithoutStdio</span>, autoDecode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChildProcessWithoutNullStreams</span></li>
@@ -4885,7 +4356,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1500</li>
+								<li>Defined in src/KavenUtility.ts:1240</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4918,7 +4389,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="startschedule" class="tsd-anchor"></a>
+				<a name="StartSchedule" class="tsd-anchor"></a>
 				<h3>Start<wbr>Schedule</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Start<wbr>Schedule<span class="tsd-signature-symbol">(</span>func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, year<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, month<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, date<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, dayOfWeek<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, hour<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, minute<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, second<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Job</span></li>
@@ -4927,7 +4398,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:943</li>
+								<li>Defined in src/KavenUtility.ts:740</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5005,7 +4476,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="startschedulelikecron" class="tsd-anchor"></a>
+				<a name="StartScheduleLikeCron" class="tsd-anchor"></a>
 				<h3>Start<wbr>Schedule<wbr>Like<wbr>Cron</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Start<wbr>Schedule<wbr>Like<wbr>Cron<span class="tsd-signature-symbol">(</span>func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, rule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Job</span></li>
@@ -5014,7 +4485,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:976</li>
+								<li>Defined in src/KavenUtility.ts:773</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5053,7 +4524,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="uploadfiletoftpserver" class="tsd-anchor"></a>
+				<a name="UploadFileToFTPServer" class="tsd-anchor"></a>
 				<h3>Upload<wbr>File<wbr>ToFTPServer</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Upload<wbr>File<wbr>ToFTPServer<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, serverHost<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, serverPort<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, serverUserName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, serverUserPassword<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>cwd<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -5062,7 +4533,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:765</li>
+								<li>Defined in src/KavenUtility.ts:562</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5106,7 +4577,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="verifyjwt" class="tsd-anchor"></a>
+				<a name="VerifyJWT" class="tsd-anchor"></a>
 				<h3>VerifyJWT</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">VerifyJWT<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">JWT.SignOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -5115,7 +4586,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1620</li>
+								<li>Defined in src/KavenUtility.ts:1303</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5145,7 +4616,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="writestringtoclipboard" class="tsd-anchor"></a>
+				<a name="WriteStringToClipboard" class="tsd-anchor"></a>
 				<h3>Write<wbr>String<wbr>ToClipboard</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Write<wbr>String<wbr>ToClipboard<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
@@ -5154,7 +4625,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1086</li>
+								<li>Defined in src/KavenUtility.ts:883</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5180,7 +4651,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="writestringtoclipboardasync" class="tsd-anchor"></a>
+				<a name="WriteStringToClipboardAsync" class="tsd-anchor"></a>
 				<h3>Write<wbr>String<wbr>ToClipboard<wbr>Async</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Write<wbr>String<wbr>ToClipboard<wbr>Async<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -5189,7 +4660,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.ts:1099</li>
+								<li>Defined in src/KavenUtility.ts:896</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5223,6 +4694,7 @@ img {
 						<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 						<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+						<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
@@ -5381,7 +4853,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop === 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop <= 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
 
 /***/ }),
 
