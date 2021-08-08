@@ -6,7 +6,29 @@
 	<title>MIME | kaven-basic</title>
 	<meta name="description" content="Documentation for kaven-basic">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+	<style type="text/css">:root {
+  --color-background: #fdfdfd;
+  --color-text: #222;
+  --color-text-aside: #707070;
+  --color-link: #4da6ff;
+  --color-menu-divider: #eee;
+  --color-menu-divider-focus: #000;
+  --color-menu-label: #707070;
+  --color-panel: #fff;
+  --color-panel-divider: #eee;
+  --color-comment-tag: #707070;
+  --color-comment-tag-text: #fff;
+  --color-code-background: rgba(0, 0, 0, 0.04);
+  --color-ts: #9600ff;
+  --color-ts-interface: #647f1b;
+  --color-ts-enum: #937210;
+  --color-ts-class: #0672de;
+  --color-ts-private: #707070;
+  --color-toolbar: #fff;
+  --color-toolbar-text: #333;
+}
+
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
  * * HTML5 display definitions
  * * ========================================================================== */
@@ -1593,14 +1615,14 @@ ul.tsd-descriptions > li > :last-child > :last-child > :last-child,
   }
 }
 body {
-  background: #fdfdfd;
+  background: var(--color-background);
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
-  color: #222;
+  color: var(--color-text);
 }
 
 a {
-  color: #4da6ff;
+  color: var(--color-link);
   text-decoration: none;
 }
 a:hover {
@@ -1612,7 +1634,7 @@ code, pre {
   padding: 0.2em;
   margin: 0;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: var(--color-code-background);
 }
 
 pre {
@@ -1678,7 +1700,7 @@ blockquote {
     padding: 20px 20px 0 0;
     max-width: 450px;
     visibility: hidden;
-    background-color: #fff;
+    background-color: var(--color-panel);
     transform: translate(100%, 0);
   }
   html.default .col-menu > *:last-child {
@@ -1738,7 +1760,7 @@ html.default.has-menu .col-content {
 .tsd-page-title {
   padding: 70px 0 20px 0;
   margin: 0 0 40px 0;
-  background: #fff;
+  background: var(--color-panel);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 .tsd-page-title h1 {
@@ -1748,10 +1770,10 @@ html.default.has-menu .col-content {
 .tsd-breadcrumb {
   margin: 0;
   padding: 0;
-  color: #707070;
+  color: var(--color-text-aside);
 }
 .tsd-breadcrumb a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: none;
 }
 .tsd-breadcrumb a:hover {
@@ -1824,8 +1846,8 @@ dl.tsd-comment-tags dt {
   padding: 1px 5px;
   margin: 0 10px 0 0;
   border-radius: 4px;
-  border: 1px solid #707070;
-  color: #707070;
+  border: 1px solid var(--color-comment-tag);
+  color: var(--color-comment-tag);
   font-size: 0.8em;
   font-weight: normal;
 }
@@ -1895,7 +1917,7 @@ dl.tsd-comment-tags p {
     top: 40px;
     right: 20px;
     height: auto;
-    background-color: #fff;
+    background-color: var(--color-panel);
     visibility: hidden;
     transform: translate(50%, 0);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
@@ -1917,11 +1939,11 @@ dl.tsd-comment-tags p {
 }
 
 footer {
-  border-top: 1px solid #eee;
-  background-color: #fff;
+  border-top: 1px solid var(--color-panel-divider);
+  background-color: var(--color-panel);
 }
 footer.with-border-bottom {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 footer .tsd-legend-group {
   font-size: 0;
@@ -1959,7 +1981,7 @@ footer .tsd-legend {
 .tsd-index-panel h3 {
   margin: 0 -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-index-panel ul.tsd-index-list {
   -webkit-column-count: 3;
@@ -2003,39 +2025,39 @@ footer .tsd-legend {
 }
 .tsd-index-panel a,
 .tsd-index-panel .tsd-parent-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-parent-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-parent-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-parent-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-is-private a {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-flag {
   display: inline-block;
   padding: 1px 5px;
   border-radius: 4px;
-  color: #fff;
-  background-color: #707070;
+  color: var(--color-comment-tag-text);
+  background-color: var(--color-comment-tag);
   text-indent: 0;
   font-size: 14px;
   font-weight: normal;
@@ -2055,19 +2077,19 @@ footer .tsd-legend {
   border-bottom: none;
 }
 .tsd-member a[data-tsd-kind] {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-member a[data-tsd-kind=Interface] {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-member a[data-tsd-kind=Enum] {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-member a[data-tsd-kind=Class] {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-member a[data-tsd-kind=Private] {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-navigation {
@@ -2078,7 +2100,7 @@ footer .tsd-legend {
   padding-top: 2px;
   padding-bottom: 2px;
   border-left: 2px solid transparent;
-  color: #222;
+  color: var(--color-text);
   text-decoration: none;
   transition: border-left-color 0.1s;
 }
@@ -2121,10 +2143,10 @@ footer .tsd-legend {
   padding-left: 105px;
 }
 .tsd-navigation.primary > ul {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li.current > a {
   font-weight: bold;
@@ -2132,7 +2154,7 @@ footer .tsd-legend {
 .tsd-navigation.primary li.label span {
   display: block;
   padding: 20px 0 6px 5px;
-  color: #707070;
+  color: var(--color-menu-label);
 }
 .tsd-navigation.primary li.globals + li > span, .tsd-navigation.primary li.globals + li > a {
   padding-top: 20px;
@@ -2172,16 +2194,16 @@ footer .tsd-legend {
   padding-left: 125px;
 }
 .tsd-navigation.secondary ul.current a {
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.focus > a,
 .tsd-navigation.secondary ul.current li.focus > a {
-  border-left-color: #000;
+  border-left-color: var(--color-menu-divider-focus);
 }
 .tsd-navigation.secondary li.current {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.current > a {
   font-weight: bold;
@@ -2196,7 +2218,7 @@ footer .tsd-legend {
 .tsd-panel {
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--color-panel);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 .tsd-panel:empty {
@@ -2205,7 +2227,7 @@ footer .tsd-legend {
 .tsd-panel > h1, .tsd-panel > h2, .tsd-panel > h3 {
   margin: 1.5em -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-panel > h1.tsd-before-signature, .tsd-panel > h2.tsd-before-signature, .tsd-panel > h3.tsd-before-signature {
   margin-bottom: 0;
@@ -2267,7 +2289,7 @@ footer .tsd-legend {
   outline: 0;
   border: 0;
   background: transparent;
-  color: #222;
+  color: var(--color-text);
 }
 #tsd-search .field label {
   position: absolute;
@@ -2290,17 +2312,17 @@ footer .tsd-legend {
 }
 #tsd-search .results li {
   padding: 0 10px;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 #tsd-search .results li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 #tsd-search .results li.state {
   display: none;
 }
 #tsd-search .results li.current,
 #tsd-search .results li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search .results a {
   display: block;
@@ -2309,11 +2331,11 @@ footer .tsd-legend {
   top: 10px;
 }
 #tsd-search .results span.parent {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 #tsd-search.has-focus {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search.has-focus .field input {
   top: 0;
@@ -2336,7 +2358,7 @@ footer .tsd-legend {
 .tsd-signature {
   margin: 0 0 1em 0;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 14px;
   overflow-x: auto;
@@ -2361,7 +2383,7 @@ footer .tsd-legend {
 }
 
 .tsd-signature-symbol {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 
@@ -2373,7 +2395,7 @@ footer .tsd-legend {
 .tsd-signatures {
   padding: 0;
   margin: 0 0 1em 0;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
 }
 .tsd-signatures .tsd-signature {
   margin: 0;
@@ -2384,7 +2406,7 @@ footer .tsd-legend {
   border-top-width: 0;
 }
 .tsd-signatures .tsd-signature.current {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-signatures.active > .tsd-signature {
   cursor: pointer;
@@ -2458,11 +2480,11 @@ ul.tsd-type-parameters .tsd-comment {
 
 .tsd-sources {
   font-size: 14px;
-  color: #707070;
+  color: var(--color-text-aside);
   margin: 0 0 1em 0;
 }
 .tsd-sources a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: underline;
 }
 .tsd-sources ul, .tsd-sources p {
@@ -2480,13 +2502,13 @@ ul.tsd-type-parameters .tsd-comment {
   left: 0;
   width: 100%;
   height: 40px;
-  color: #333;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  color: var(--color-toolbar-text);
+  background: var(--color-toolbar);
+  border-bottom: 1px solid var(--color-panel-divider);
   transition: transform 0.3s linear;
 }
 .tsd-page-toolbar a {
-  color: #333;
+  color: var(--color-toolbar-text);
   text-decoration: none;
 }
 .tsd-page-toolbar a.title {
@@ -2546,7 +2568,7 @@ ul.tsd-type-parameters .tsd-comment {
 }
 .tsd-widget.active {
   opacity: 1;
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-widget.no-caption {
   width: 40px;
@@ -2615,16 +2637,16 @@ input[type=checkbox]:checked + .tsd-widget:before {
 }
 .tsd-select .tsd-select-list li {
   padding: 0 20px 0 0;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 .tsd-select .tsd-select-list li:before {
   background-position: 40px 0;
 }
 .tsd-select .tsd-select-list li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 .tsd-select .tsd-select-list li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-select .tsd-select-list li.selected:before {
   background-position: -200px 0;
@@ -2683,229 +2705,229 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class="current tsd-kind-class tsd-parent-kind-module">
-			<a href="libs_mime.mime.html" class="tsd-kind-icon">MIME</a>
+			<a href="libs_MIME.MIME.html" class="tsd-kind-icon">MIME</a>
 			<ul>
 				<li class=" tsd-kind-constructor tsd-parent-kind-class">
-					<a href="libs_mime.mime.html#constructor" class="tsd-kind-icon">constructor</a>
+					<a href="libs_MIME.MIME.html#constructor" class="tsd-kind-icon">constructor</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_3g2_audio" class="tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>AUDIO</a>
+					<a href="libs_MIME.MIME.html#MIME_3G2_AUDIO" class="tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>AUDIO</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_3g2_video" class="tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>VIDEO</a>
+					<a href="libs_MIME.MIME.html#MIME_3G2_VIDEO" class="tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>VIDEO</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_3gp_audio" class="tsd-kind-icon">MIME_<wbr>3GP_<wbr>AUDIO</a>
+					<a href="libs_MIME.MIME.html#MIME_3GP_AUDIO" class="tsd-kind-icon">MIME_<wbr>3GP_<wbr>AUDIO</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_3gp_video" class="tsd-kind-icon">MIME_<wbr>3GP_<wbr>VIDEO</a>
+					<a href="libs_MIME.MIME.html#MIME_3GP_VIDEO" class="tsd-kind-icon">MIME_<wbr>3GP_<wbr>VIDEO</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_7z" class="tsd-kind-icon">MIME_<wbr>7Z</a>
+					<a href="libs_MIME.MIME.html#MIME_7Z" class="tsd-kind-icon">MIME_<wbr>7Z</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_aac" class="tsd-kind-icon">MIME_<wbr>AAC</a>
+					<a href="libs_MIME.MIME.html#MIME_AAC" class="tsd-kind-icon">MIME_<wbr>AAC</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_abw" class="tsd-kind-icon">MIME_<wbr>ABW</a>
+					<a href="libs_MIME.MIME.html#MIME_ABW" class="tsd-kind-icon">MIME_<wbr>ABW</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_arc" class="tsd-kind-icon">MIME_<wbr>ARC</a>
+					<a href="libs_MIME.MIME.html#MIME_ARC" class="tsd-kind-icon">MIME_<wbr>ARC</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_avi" class="tsd-kind-icon">MIME_<wbr>AVI</a>
+					<a href="libs_MIME.MIME.html#MIME_AVI" class="tsd-kind-icon">MIME_<wbr>AVI</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_azw" class="tsd-kind-icon">MIME_<wbr>AZW</a>
+					<a href="libs_MIME.MIME.html#MIME_AZW" class="tsd-kind-icon">MIME_<wbr>AZW</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_bin" class="tsd-kind-icon">MIME_<wbr>BIN</a>
+					<a href="libs_MIME.MIME.html#MIME_BIN" class="tsd-kind-icon">MIME_<wbr>BIN</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_bmp" class="tsd-kind-icon">MIME_<wbr>BMP</a>
+					<a href="libs_MIME.MIME.html#MIME_BMP" class="tsd-kind-icon">MIME_<wbr>BMP</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_bz" class="tsd-kind-icon">MIME_<wbr>BZ</a>
+					<a href="libs_MIME.MIME.html#MIME_BZ" class="tsd-kind-icon">MIME_<wbr>BZ</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_bz2" class="tsd-kind-icon">MIME_<wbr>BZ2</a>
+					<a href="libs_MIME.MIME.html#MIME_BZ2" class="tsd-kind-icon">MIME_<wbr>BZ2</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_csh" class="tsd-kind-icon">MIME_<wbr>CSH</a>
+					<a href="libs_MIME.MIME.html#MIME_CSH" class="tsd-kind-icon">MIME_<wbr>CSH</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_css" class="tsd-kind-icon">MIME_<wbr>CSS</a>
+					<a href="libs_MIME.MIME.html#MIME_CSS" class="tsd-kind-icon">MIME_<wbr>CSS</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_csv" class="tsd-kind-icon">MIME_<wbr>CSV</a>
+					<a href="libs_MIME.MIME.html#MIME_CSV" class="tsd-kind-icon">MIME_<wbr>CSV</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_doc" class="tsd-kind-icon">MIME_<wbr>DOC</a>
+					<a href="libs_MIME.MIME.html#MIME_DOC" class="tsd-kind-icon">MIME_<wbr>DOC</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_docx" class="tsd-kind-icon">MIME_<wbr>DOCX</a>
+					<a href="libs_MIME.MIME.html#MIME_DOCX" class="tsd-kind-icon">MIME_<wbr>DOCX</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_eot" class="tsd-kind-icon">MIME_<wbr>EOT</a>
+					<a href="libs_MIME.MIME.html#MIME_EOT" class="tsd-kind-icon">MIME_<wbr>EOT</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_epub" class="tsd-kind-icon">MIME_<wbr>EPUB</a>
+					<a href="libs_MIME.MIME.html#MIME_EPUB" class="tsd-kind-icon">MIME_<wbr>EPUB</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_es" class="tsd-kind-icon">MIME_<wbr>ES</a>
+					<a href="libs_MIME.MIME.html#MIME_ES" class="tsd-kind-icon">MIME_<wbr>ES</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_extension" class="tsd-kind-icon">MIME_<wbr>EXTENSION</a>
+					<a href="libs_MIME.MIME.html#MIME_EXTENSION" class="tsd-kind-icon">MIME_<wbr>EXTENSION</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_gif" class="tsd-kind-icon">MIME_<wbr>GIF</a>
+					<a href="libs_MIME.MIME.html#MIME_GIF" class="tsd-kind-icon">MIME_<wbr>GIF</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_htm" class="tsd-kind-icon">MIME_<wbr>HTM</a>
+					<a href="libs_MIME.MIME.html#MIME_HTM" class="tsd-kind-icon">MIME_<wbr>HTM</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_html" class="tsd-kind-icon">MIME_<wbr>HTML</a>
+					<a href="libs_MIME.MIME.html#MIME_HTML" class="tsd-kind-icon">MIME_<wbr>HTML</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_ico" class="tsd-kind-icon">MIME_<wbr>ICO</a>
+					<a href="libs_MIME.MIME.html#MIME_ICO" class="tsd-kind-icon">MIME_<wbr>ICO</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_ics" class="tsd-kind-icon">MIME_<wbr>ICS</a>
+					<a href="libs_MIME.MIME.html#MIME_ICS" class="tsd-kind-icon">MIME_<wbr>ICS</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_jar" class="tsd-kind-icon">MIME_<wbr>JAR</a>
+					<a href="libs_MIME.MIME.html#MIME_JAR" class="tsd-kind-icon">MIME_<wbr>JAR</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_jpeg" class="tsd-kind-icon">MIME_<wbr>JPEG</a>
+					<a href="libs_MIME.MIME.html#MIME_JPEG" class="tsd-kind-icon">MIME_<wbr>JPEG</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_jpg" class="tsd-kind-icon">MIME_<wbr>JPG</a>
+					<a href="libs_MIME.MIME.html#MIME_JPG" class="tsd-kind-icon">MIME_<wbr>JPG</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_js" class="tsd-kind-icon">MIME_<wbr>JS</a>
+					<a href="libs_MIME.MIME.html#MIME_JS" class="tsd-kind-icon">MIME_<wbr>JS</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_json" class="tsd-kind-icon">MIME_<wbr>JSON</a>
+					<a href="libs_MIME.MIME.html#MIME_JSON" class="tsd-kind-icon">MIME_<wbr>JSON</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_mid" class="tsd-kind-icon">MIME_<wbr>MID</a>
+					<a href="libs_MIME.MIME.html#MIME_MID" class="tsd-kind-icon">MIME_<wbr>MID</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_midi" class="tsd-kind-icon">MIME_<wbr>MIDI</a>
+					<a href="libs_MIME.MIME.html#MIME_MIDI" class="tsd-kind-icon">MIME_<wbr>MIDI</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_mpeg" class="tsd-kind-icon">MIME_<wbr>MPEG</a>
+					<a href="libs_MIME.MIME.html#MIME_MPEG" class="tsd-kind-icon">MIME_<wbr>MPEG</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_mpkg" class="tsd-kind-icon">MIME_<wbr>MPKG</a>
+					<a href="libs_MIME.MIME.html#MIME_MPKG" class="tsd-kind-icon">MIME_<wbr>MPKG</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_odp" class="tsd-kind-icon">MIME_<wbr>ODP</a>
+					<a href="libs_MIME.MIME.html#MIME_ODP" class="tsd-kind-icon">MIME_<wbr>ODP</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_ods" class="tsd-kind-icon">MIME_<wbr>ODS</a>
+					<a href="libs_MIME.MIME.html#MIME_ODS" class="tsd-kind-icon">MIME_<wbr>ODS</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_odt" class="tsd-kind-icon">MIME_<wbr>ODT</a>
+					<a href="libs_MIME.MIME.html#MIME_ODT" class="tsd-kind-icon">MIME_<wbr>ODT</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_oga" class="tsd-kind-icon">MIME_<wbr>OGA</a>
+					<a href="libs_MIME.MIME.html#MIME_OGA" class="tsd-kind-icon">MIME_<wbr>OGA</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_ogv" class="tsd-kind-icon">MIME_<wbr>OGV</a>
+					<a href="libs_MIME.MIME.html#MIME_OGV" class="tsd-kind-icon">MIME_<wbr>OGV</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_ogx" class="tsd-kind-icon">MIME_<wbr>OGX</a>
+					<a href="libs_MIME.MIME.html#MIME_OGX" class="tsd-kind-icon">MIME_<wbr>OGX</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_otf" class="tsd-kind-icon">MIME_<wbr>OTF</a>
+					<a href="libs_MIME.MIME.html#MIME_OTF" class="tsd-kind-icon">MIME_<wbr>OTF</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_pdf" class="tsd-kind-icon">MIME_<wbr>PDF</a>
+					<a href="libs_MIME.MIME.html#MIME_PDF" class="tsd-kind-icon">MIME_<wbr>PDF</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_png" class="tsd-kind-icon">MIME_<wbr>PNG</a>
+					<a href="libs_MIME.MIME.html#MIME_PNG" class="tsd-kind-icon">MIME_<wbr>PNG</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_ppt" class="tsd-kind-icon">MIME_<wbr>PPT</a>
+					<a href="libs_MIME.MIME.html#MIME_PPT" class="tsd-kind-icon">MIME_<wbr>PPT</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_pptx" class="tsd-kind-icon">MIME_<wbr>PPTX</a>
+					<a href="libs_MIME.MIME.html#MIME_PPTX" class="tsd-kind-icon">MIME_<wbr>PPTX</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_rar" class="tsd-kind-icon">MIME_<wbr>RAR</a>
+					<a href="libs_MIME.MIME.html#MIME_RAR" class="tsd-kind-icon">MIME_<wbr>RAR</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_rtf" class="tsd-kind-icon">MIME_<wbr>RTF</a>
+					<a href="libs_MIME.MIME.html#MIME_RTF" class="tsd-kind-icon">MIME_<wbr>RTF</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_sh" class="tsd-kind-icon">MIME_<wbr>SH</a>
+					<a href="libs_MIME.MIME.html#MIME_SH" class="tsd-kind-icon">MIME_<wbr>SH</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_svg" class="tsd-kind-icon">MIME_<wbr>SVG</a>
+					<a href="libs_MIME.MIME.html#MIME_SVG" class="tsd-kind-icon">MIME_<wbr>SVG</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_swf" class="tsd-kind-icon">MIME_<wbr>SWF</a>
+					<a href="libs_MIME.MIME.html#MIME_SWF" class="tsd-kind-icon">MIME_<wbr>SWF</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_tar" class="tsd-kind-icon">MIME_<wbr>TAR</a>
+					<a href="libs_MIME.MIME.html#MIME_TAR" class="tsd-kind-icon">MIME_<wbr>TAR</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_tif" class="tsd-kind-icon">MIME_<wbr>TIF</a>
+					<a href="libs_MIME.MIME.html#MIME_TIF" class="tsd-kind-icon">MIME_<wbr>TIF</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_tiff" class="tsd-kind-icon">MIME_<wbr>TIFF</a>
+					<a href="libs_MIME.MIME.html#MIME_TIFF" class="tsd-kind-icon">MIME_<wbr>TIFF</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_ts" class="tsd-kind-icon">MIME_<wbr>TS</a>
+					<a href="libs_MIME.MIME.html#MIME_TS" class="tsd-kind-icon">MIME_<wbr>TS</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_ttf" class="tsd-kind-icon">MIME_<wbr>TTF</a>
+					<a href="libs_MIME.MIME.html#MIME_TTF" class="tsd-kind-icon">MIME_<wbr>TTF</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_txt" class="tsd-kind-icon">MIME_<wbr>TXT</a>
+					<a href="libs_MIME.MIME.html#MIME_TXT" class="tsd-kind-icon">MIME_<wbr>TXT</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_vsd" class="tsd-kind-icon">MIME_<wbr>VSD</a>
+					<a href="libs_MIME.MIME.html#MIME_VSD" class="tsd-kind-icon">MIME_<wbr>VSD</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_wav" class="tsd-kind-icon">MIME_<wbr>WAV</a>
+					<a href="libs_MIME.MIME.html#MIME_WAV" class="tsd-kind-icon">MIME_<wbr>WAV</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_weba" class="tsd-kind-icon">MIME_<wbr>WEBA</a>
+					<a href="libs_MIME.MIME.html#MIME_WEBA" class="tsd-kind-icon">MIME_<wbr>WEBA</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_webm" class="tsd-kind-icon">MIME_<wbr>WEBM</a>
+					<a href="libs_MIME.MIME.html#MIME_WEBM" class="tsd-kind-icon">MIME_<wbr>WEBM</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_webp" class="tsd-kind-icon">MIME_<wbr>WEBP</a>
+					<a href="libs_MIME.MIME.html#MIME_WEBP" class="tsd-kind-icon">MIME_<wbr>WEBP</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_woff" class="tsd-kind-icon">MIME_<wbr>WOFF</a>
+					<a href="libs_MIME.MIME.html#MIME_WOFF" class="tsd-kind-icon">MIME_<wbr>WOFF</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_woff2" class="tsd-kind-icon">MIME_<wbr>WOFF2</a>
+					<a href="libs_MIME.MIME.html#MIME_WOFF2" class="tsd-kind-icon">MIME_<wbr>WOFF2</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_xhtml" class="tsd-kind-icon">MIME_<wbr>XHTML</a>
+					<a href="libs_MIME.MIME.html#MIME_XHTML" class="tsd-kind-icon">MIME_<wbr>XHTML</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_xls" class="tsd-kind-icon">MIME_<wbr>XLS</a>
+					<a href="libs_MIME.MIME.html#MIME_XLS" class="tsd-kind-icon">MIME_<wbr>XLS</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_xlsx" class="tsd-kind-icon">MIME_<wbr>XLSX</a>
+					<a href="libs_MIME.MIME.html#MIME_XLSX" class="tsd-kind-icon">MIME_<wbr>XLSX</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_xml" class="tsd-kind-icon">MIME_<wbr>XML</a>
+					<a href="libs_MIME.MIME.html#MIME_XML" class="tsd-kind-icon">MIME_<wbr>XML</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_xul" class="tsd-kind-icon">MIME_<wbr>XUL</a>
+					<a href="libs_MIME.MIME.html#MIME_XUL" class="tsd-kind-icon">MIME_<wbr>XUL</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#mime_zip" class="tsd-kind-icon">MIME_<wbr>ZIP</a>
+					<a href="libs_MIME.MIME.html#MIME_ZIP" class="tsd-kind-icon">MIME_<wbr>ZIP</a>
 				</li>
 				<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
-					<a href="libs_mime.mime.html#all" class="tsd-kind-icon">All</a>
+					<a href="libs_MIME.MIME.html#All" class="tsd-kind-icon">All</a>
 				</li>
 			</ul>
 		</li>
@@ -2941,12 +2963,7 @@ img {
 		</section>
 		<section class="tsd-panel tsd-kind-class tsd-parent-kind-module">
 			<h3 class="tsd-before-signature">Indexable</h3>
-			<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>index: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a></div>
-			<div class="tsd-comment tsd-typography">
-				<div class="lead">
-					<p>Incomplete list of MIME types</p>
-				</div>
-			</div>
+			<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>index: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a></div>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
@@ -2955,90 +2972,90 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Constructors</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="libs_mime.mime.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="libs_MIME.MIME.html#constructor" class="tsd-kind-icon">constructor</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_3g2_audio" class="tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>AUDIO</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_3g2_video" class="tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>VIDEO</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_3gp_audio" class="tsd-kind-icon">MIME_<wbr>3GP_<wbr>AUDIO</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_3gp_video" class="tsd-kind-icon">MIME_<wbr>3GP_<wbr>VIDEO</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_7z" class="tsd-kind-icon">MIME_<wbr>7Z</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_aac" class="tsd-kind-icon">MIME_<wbr>AAC</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_abw" class="tsd-kind-icon">MIME_<wbr>ABW</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_arc" class="tsd-kind-icon">MIME_<wbr>ARC</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_avi" class="tsd-kind-icon">MIME_<wbr>AVI</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_azw" class="tsd-kind-icon">MIME_<wbr>AZW</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_bin" class="tsd-kind-icon">MIME_<wbr>BIN</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_bmp" class="tsd-kind-icon">MIME_<wbr>BMP</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_bz" class="tsd-kind-icon">MIME_<wbr>BZ</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_bz2" class="tsd-kind-icon">MIME_<wbr>BZ2</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_csh" class="tsd-kind-icon">MIME_<wbr>CSH</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_css" class="tsd-kind-icon">MIME_<wbr>CSS</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_csv" class="tsd-kind-icon">MIME_<wbr>CSV</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_doc" class="tsd-kind-icon">MIME_<wbr>DOC</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_docx" class="tsd-kind-icon">MIME_<wbr>DOCX</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_eot" class="tsd-kind-icon">MIME_<wbr>EOT</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_epub" class="tsd-kind-icon">MIME_<wbr>EPUB</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_es" class="tsd-kind-icon">MIME_<wbr>ES</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_extension" class="tsd-kind-icon">MIME_<wbr>EXTENSION</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_gif" class="tsd-kind-icon">MIME_<wbr>GIF</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_htm" class="tsd-kind-icon">MIME_<wbr>HTM</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_html" class="tsd-kind-icon">MIME_<wbr>HTML</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_ico" class="tsd-kind-icon">MIME_<wbr>ICO</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_ics" class="tsd-kind-icon">MIME_<wbr>ICS</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_jar" class="tsd-kind-icon">MIME_<wbr>JAR</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_jpeg" class="tsd-kind-icon">MIME_<wbr>JPEG</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_jpg" class="tsd-kind-icon">MIME_<wbr>JPG</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_js" class="tsd-kind-icon">MIME_<wbr>JS</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_json" class="tsd-kind-icon">MIME_<wbr>JSON</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_mid" class="tsd-kind-icon">MIME_<wbr>MID</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_midi" class="tsd-kind-icon">MIME_<wbr>MIDI</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_mpeg" class="tsd-kind-icon">MIME_<wbr>MPEG</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_mpkg" class="tsd-kind-icon">MIME_<wbr>MPKG</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_odp" class="tsd-kind-icon">MIME_<wbr>ODP</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_ods" class="tsd-kind-icon">MIME_<wbr>ODS</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_odt" class="tsd-kind-icon">MIME_<wbr>ODT</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_oga" class="tsd-kind-icon">MIME_<wbr>OGA</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_ogv" class="tsd-kind-icon">MIME_<wbr>OGV</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_ogx" class="tsd-kind-icon">MIME_<wbr>OGX</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_otf" class="tsd-kind-icon">MIME_<wbr>OTF</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_pdf" class="tsd-kind-icon">MIME_<wbr>PDF</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_png" class="tsd-kind-icon">MIME_<wbr>PNG</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_ppt" class="tsd-kind-icon">MIME_<wbr>PPT</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_pptx" class="tsd-kind-icon">MIME_<wbr>PPTX</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_rar" class="tsd-kind-icon">MIME_<wbr>RAR</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_rtf" class="tsd-kind-icon">MIME_<wbr>RTF</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_sh" class="tsd-kind-icon">MIME_<wbr>SH</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_svg" class="tsd-kind-icon">MIME_<wbr>SVG</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_swf" class="tsd-kind-icon">MIME_<wbr>SWF</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_tar" class="tsd-kind-icon">MIME_<wbr>TAR</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_tif" class="tsd-kind-icon">MIME_<wbr>TIF</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_tiff" class="tsd-kind-icon">MIME_<wbr>TIFF</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_ts" class="tsd-kind-icon">MIME_<wbr>TS</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_ttf" class="tsd-kind-icon">MIME_<wbr>TTF</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_txt" class="tsd-kind-icon">MIME_<wbr>TXT</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_vsd" class="tsd-kind-icon">MIME_<wbr>VSD</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_wav" class="tsd-kind-icon">MIME_<wbr>WAV</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_weba" class="tsd-kind-icon">MIME_<wbr>WEBA</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_webm" class="tsd-kind-icon">MIME_<wbr>WEBM</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_webp" class="tsd-kind-icon">MIME_<wbr>WEBP</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_woff" class="tsd-kind-icon">MIME_<wbr>WOFF</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_woff2" class="tsd-kind-icon">MIME_<wbr>WOFF2</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_xhtml" class="tsd-kind-icon">MIME_<wbr>XHTML</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_xls" class="tsd-kind-icon">MIME_<wbr>XLS</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_xlsx" class="tsd-kind-icon">MIME_<wbr>XLSX</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_xml" class="tsd-kind-icon">MIME_<wbr>XML</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_xul" class="tsd-kind-icon">MIME_<wbr>XUL</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#mime_zip" class="tsd-kind-icon">MIME_<wbr>ZIP</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_3G2_AUDIO" class="tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>AUDIO</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_3G2_VIDEO" class="tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>VIDEO</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_3GP_AUDIO" class="tsd-kind-icon">MIME_<wbr>3GP_<wbr>AUDIO</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_3GP_VIDEO" class="tsd-kind-icon">MIME_<wbr>3GP_<wbr>VIDEO</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_7Z" class="tsd-kind-icon">MIME_<wbr>7Z</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_AAC" class="tsd-kind-icon">MIME_<wbr>AAC</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_ABW" class="tsd-kind-icon">MIME_<wbr>ABW</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_ARC" class="tsd-kind-icon">MIME_<wbr>ARC</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_AVI" class="tsd-kind-icon">MIME_<wbr>AVI</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_AZW" class="tsd-kind-icon">MIME_<wbr>AZW</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_BIN" class="tsd-kind-icon">MIME_<wbr>BIN</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_BMP" class="tsd-kind-icon">MIME_<wbr>BMP</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_BZ" class="tsd-kind-icon">MIME_<wbr>BZ</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_BZ2" class="tsd-kind-icon">MIME_<wbr>BZ2</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_CSH" class="tsd-kind-icon">MIME_<wbr>CSH</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_CSS" class="tsd-kind-icon">MIME_<wbr>CSS</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_CSV" class="tsd-kind-icon">MIME_<wbr>CSV</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_DOC" class="tsd-kind-icon">MIME_<wbr>DOC</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_DOCX" class="tsd-kind-icon">MIME_<wbr>DOCX</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_EOT" class="tsd-kind-icon">MIME_<wbr>EOT</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_EPUB" class="tsd-kind-icon">MIME_<wbr>EPUB</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_ES" class="tsd-kind-icon">MIME_<wbr>ES</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_EXTENSION" class="tsd-kind-icon">MIME_<wbr>EXTENSION</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_GIF" class="tsd-kind-icon">MIME_<wbr>GIF</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_HTM" class="tsd-kind-icon">MIME_<wbr>HTM</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_HTML" class="tsd-kind-icon">MIME_<wbr>HTML</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_ICO" class="tsd-kind-icon">MIME_<wbr>ICO</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_ICS" class="tsd-kind-icon">MIME_<wbr>ICS</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_JAR" class="tsd-kind-icon">MIME_<wbr>JAR</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_JPEG" class="tsd-kind-icon">MIME_<wbr>JPEG</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_JPG" class="tsd-kind-icon">MIME_<wbr>JPG</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_JS" class="tsd-kind-icon">MIME_<wbr>JS</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_JSON" class="tsd-kind-icon">MIME_<wbr>JSON</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_MID" class="tsd-kind-icon">MIME_<wbr>MID</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_MIDI" class="tsd-kind-icon">MIME_<wbr>MIDI</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_MPEG" class="tsd-kind-icon">MIME_<wbr>MPEG</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_MPKG" class="tsd-kind-icon">MIME_<wbr>MPKG</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_ODP" class="tsd-kind-icon">MIME_<wbr>ODP</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_ODS" class="tsd-kind-icon">MIME_<wbr>ODS</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_ODT" class="tsd-kind-icon">MIME_<wbr>ODT</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_OGA" class="tsd-kind-icon">MIME_<wbr>OGA</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_OGV" class="tsd-kind-icon">MIME_<wbr>OGV</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_OGX" class="tsd-kind-icon">MIME_<wbr>OGX</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_OTF" class="tsd-kind-icon">MIME_<wbr>OTF</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_PDF" class="tsd-kind-icon">MIME_<wbr>PDF</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_PNG" class="tsd-kind-icon">MIME_<wbr>PNG</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_PPT" class="tsd-kind-icon">MIME_<wbr>PPT</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_PPTX" class="tsd-kind-icon">MIME_<wbr>PPTX</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_RAR" class="tsd-kind-icon">MIME_<wbr>RAR</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_RTF" class="tsd-kind-icon">MIME_<wbr>RTF</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_SH" class="tsd-kind-icon">MIME_<wbr>SH</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_SVG" class="tsd-kind-icon">MIME_<wbr>SVG</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_SWF" class="tsd-kind-icon">MIME_<wbr>SWF</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_TAR" class="tsd-kind-icon">MIME_<wbr>TAR</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_TIF" class="tsd-kind-icon">MIME_<wbr>TIF</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_TIFF" class="tsd-kind-icon">MIME_<wbr>TIFF</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_TS" class="tsd-kind-icon">MIME_<wbr>TS</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_TTF" class="tsd-kind-icon">MIME_<wbr>TTF</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_TXT" class="tsd-kind-icon">MIME_<wbr>TXT</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_VSD" class="tsd-kind-icon">MIME_<wbr>VSD</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_WAV" class="tsd-kind-icon">MIME_<wbr>WAV</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_WEBA" class="tsd-kind-icon">MIME_<wbr>WEBA</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_WEBM" class="tsd-kind-icon">MIME_<wbr>WEBM</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_WEBP" class="tsd-kind-icon">MIME_<wbr>WEBP</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_WOFF" class="tsd-kind-icon">MIME_<wbr>WOFF</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_WOFF2" class="tsd-kind-icon">MIME_<wbr>WOFF2</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_XHTML" class="tsd-kind-icon">MIME_<wbr>XHTML</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_XLS" class="tsd-kind-icon">MIME_<wbr>XLS</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_XLSX" class="tsd-kind-icon">MIME_<wbr>XLSX</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_XML" class="tsd-kind-icon">MIME_<wbr>XML</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_XUL" class="tsd-kind-icon">MIME_<wbr>XUL</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#MIME_ZIP" class="tsd-kind-icon">MIME_<wbr>ZIP</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Accessors</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-static"><a href="libs_mime.mime.html#all" class="tsd-kind-icon">All</a></li>
+							<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-static"><a href="libs_MIME.MIME.html#All" class="tsd-kind-icon">All</a></li>
 						</ul>
 					</section>
 				</div>
@@ -3050,13 +3067,13 @@ img {
 				<a name="constructor" class="tsd-anchor"></a>
 				<h3>constructor</h3>
 				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">new MIME<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="libs_mime.mime.html" class="tsd-signature-type" data-tsd-kind="Class">MIME</a></li>
+					<li class="tsd-signature tsd-kind-icon">new MIME<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="libs_MIME.MIME.html" class="tsd-signature-type" data-tsd-kind="Class">MIME</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 						</aside>
-						<h4 class="tsd-returns-title">Returns <a href="libs_mime.mime.html" class="tsd-signature-type" data-tsd-kind="Class">MIME</a></h4>
+						<h4 class="tsd-returns-title">Returns <a href="libs_MIME.MIME.html" class="tsd-signature-type" data-tsd-kind="Class">MIME</a></h4>
 					</li>
 				</ul>
 			</section>
@@ -3064,9 +3081,9 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_3g2_audio" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>3<wbr>G2_<wbr>AUDIO</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>AUDIO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_3G2_AUDIO" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>3<wbr>G2_<wbr>AUDIO</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>AUDIO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:671</li>
@@ -3079,9 +3096,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_3g2_video" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>3<wbr>G2_<wbr>VIDEO</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>VIDEO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_3G2_VIDEO" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>3<wbr>G2_<wbr>VIDEO</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>3<wbr>G2_<wbr>VIDEO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:680</li>
@@ -3094,9 +3111,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_3gp_audio" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>3GP_<wbr>AUDIO</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>3GP_<wbr>AUDIO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_3GP_AUDIO" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>3GP_<wbr>AUDIO</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>3GP_<wbr>AUDIO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:653</li>
@@ -3109,9 +3126,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_3gp_video" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>3GP_<wbr>VIDEO</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>3GP_<wbr>VIDEO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_3GP_VIDEO" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>3GP_<wbr>VIDEO</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>3GP_<wbr>VIDEO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:662</li>
@@ -3124,9 +3141,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_7z" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>7Z</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>7Z<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_7Z" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>7Z</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>7Z<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:689</li>
@@ -3139,9 +3156,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_aac" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>AAC</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>AAC<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_AAC" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>AAC</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>AAC<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:54</li>
@@ -3154,9 +3171,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_abw" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>ABW</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ABW<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_ABW" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>ABW</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ABW<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:63</li>
@@ -3169,9 +3186,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_arc" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>ARC</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ARC<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_ARC" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>ARC</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ARC<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:72</li>
@@ -3184,9 +3201,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_avi" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>AVI</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>AVI<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_AVI" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>AVI</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>AVI<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:81</li>
@@ -3199,9 +3216,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_azw" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>AZW</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>AZW<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_AZW" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>AZW</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>AZW<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:90</li>
@@ -3214,9 +3231,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_bin" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>BIN</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>BIN<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_BIN" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>BIN</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>BIN<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:99</li>
@@ -3229,9 +3246,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_bmp" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>BMP</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>BMP<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_BMP" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>BMP</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>BMP<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:108</li>
@@ -3244,9 +3261,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_bz" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>BZ</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>BZ<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_BZ" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>BZ</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>BZ<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:117</li>
@@ -3259,9 +3276,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_bz2" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>BZ2</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>BZ2<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_BZ2" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>BZ2</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>BZ2<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:126</li>
@@ -3274,9 +3291,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_csh" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>CSH</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>CSH<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_CSH" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>CSH</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>CSH<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:135</li>
@@ -3289,9 +3306,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_css" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>CSS</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>CSS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_CSS" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>CSS</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>CSS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:144</li>
@@ -3304,9 +3321,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_csv" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>CSV</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>CSV<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_CSV" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>CSV</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>CSV<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:153</li>
@@ -3319,9 +3336,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_doc" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>DOC</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>DOC<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_DOC" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>DOC</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>DOC<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:162</li>
@@ -3334,9 +3351,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_docx" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>DOCX</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>DOCX<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_DOCX" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>DOCX</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>DOCX<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:171</li>
@@ -3349,9 +3366,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_eot" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>EOT</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>EOT<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_EOT" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>EOT</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>EOT<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:181</li>
@@ -3364,9 +3381,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_epub" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>EPUB</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>EPUB<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_EPUB" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>EPUB</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>EPUB<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:190</li>
@@ -3379,9 +3396,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_es" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>ES</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ES<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_ES" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>ES</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ES<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:199</li>
@@ -3394,9 +3411,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_extension" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>EXTENSION</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>EXTENSION<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_EXTENSION" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>EXTENSION</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>EXTENSION<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:45</li>
@@ -3409,9 +3426,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_gif" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>GIF</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>GIF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_GIF" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>GIF</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>GIF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:209</li>
@@ -3424,9 +3441,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_htm" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>HTM</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>HTM<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_HTM" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>HTM</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>HTM<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:218</li>
@@ -3439,9 +3456,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_html" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>HTML</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>HTML<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_HTML" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>HTML</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>HTML<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:227</li>
@@ -3454,9 +3471,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_ico" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>ICO</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ICO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_ICO" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>ICO</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ICO<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:236</li>
@@ -3469,9 +3486,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_ics" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>ICS</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ICS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_ICS" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>ICS</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ICS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:245</li>
@@ -3484,9 +3501,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_jar" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>JAR</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JAR<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_JAR" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>JAR</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JAR<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:254</li>
@@ -3499,9 +3516,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_jpeg" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>JPEG</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JPEG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_JPEG" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>JPEG</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JPEG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:263</li>
@@ -3514,9 +3531,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_jpg" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>JPG</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JPG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_JPG" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>JPG</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JPG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:272</li>
@@ -3529,9 +3546,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_js" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>JS</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_JS" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>JS</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:281</li>
@@ -3544,9 +3561,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_json" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>JSON</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JSON<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_JSON" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>JSON</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>JSON<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:291</li>
@@ -3559,9 +3576,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_mid" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>MID</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>MID<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_MID" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>MID</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>MID<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:300</li>
@@ -3574,9 +3591,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_midi" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>MIDI</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>MIDI<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_MIDI" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>MIDI</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>MIDI<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:309</li>
@@ -3589,9 +3606,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_mpeg" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>MPEG</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>MPEG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_MPEG" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>MPEG</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>MPEG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:318</li>
@@ -3604,9 +3621,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_mpkg" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>MPKG</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>MPKG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_MPKG" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>MPKG</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>MPKG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:327</li>
@@ -3619,9 +3636,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_odp" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>ODP</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ODP<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_ODP" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>ODP</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ODP<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:336</li>
@@ -3634,9 +3651,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_ods" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>ODS</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ODS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_ODS" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>ODS</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ODS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:345</li>
@@ -3649,9 +3666,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_odt" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>ODT</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ODT<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_ODT" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>ODT</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ODT<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:354</li>
@@ -3664,9 +3681,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_oga" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>OGA</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>OGA<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_OGA" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>OGA</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>OGA<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:363</li>
@@ -3679,9 +3696,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_ogv" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>OGV</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>OGV<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_OGV" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>OGV</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>OGV<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:372</li>
@@ -3694,9 +3711,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_ogx" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>OGX</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>OGX<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_OGX" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>OGX</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>OGX<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:381</li>
@@ -3709,9 +3726,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_otf" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>OTF</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>OTF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_OTF" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>OTF</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>OTF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:390</li>
@@ -3724,9 +3741,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_pdf" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>PDF</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>PDF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_PDF" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>PDF</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>PDF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:408</li>
@@ -3739,9 +3756,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_png" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>PNG</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>PNG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_PNG" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>PNG</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>PNG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:399</li>
@@ -3754,9 +3771,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_ppt" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>PPT</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>PPT<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_PPT" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>PPT</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>PPT<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:417</li>
@@ -3769,9 +3786,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_pptx" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>PPTX</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>PPTX<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_PPTX" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>PPTX</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>PPTX<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:426</li>
@@ -3784,9 +3801,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_rar" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>RAR</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>RAR<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_RAR" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>RAR</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>RAR<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:436</li>
@@ -3799,9 +3816,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_rtf" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>RTF</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>RTF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_RTF" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>RTF</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>RTF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:445</li>
@@ -3814,9 +3831,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_sh" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>SH</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>SH<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_SH" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>SH</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>SH<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:454</li>
@@ -3829,9 +3846,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_svg" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>SVG</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>SVG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_SVG" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>SVG</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>SVG<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:463</li>
@@ -3844,9 +3861,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_swf" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>SWF</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>SWF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_SWF" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>SWF</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>SWF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:472</li>
@@ -3859,9 +3876,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_tar" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>TAR</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TAR<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_TAR" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>TAR</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TAR<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:481</li>
@@ -3874,9 +3891,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_tif" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>TIF</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TIF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_TIF" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>TIF</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TIF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:490</li>
@@ -3889,9 +3906,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_tiff" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>TIFF</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TIFF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_TIFF" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>TIFF</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TIFF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:499</li>
@@ -3904,9 +3921,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_ts" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>TS</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_TS" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>TS</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:508</li>
@@ -3919,9 +3936,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_ttf" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>TTF</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TTF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_TTF" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>TTF</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TTF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:517</li>
@@ -3934,9 +3951,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_txt" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>TXT</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TXT<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_TXT" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>TXT</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>TXT<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:526</li>
@@ -3949,9 +3966,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_vsd" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>VSD</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>VSD<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_VSD" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>VSD</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>VSD<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:535</li>
@@ -3964,9 +3981,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_wav" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>WAV</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WAV<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_WAV" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>WAV</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WAV<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:544</li>
@@ -3979,9 +3996,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_weba" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>WEBA</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WEBA<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_WEBA" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>WEBA</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WEBA<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:553</li>
@@ -3994,9 +4011,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_webm" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>WEBM</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WEBM<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_WEBM" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>WEBM</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WEBM<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:562</li>
@@ -4009,9 +4026,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_webp" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>WEBP</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WEBP<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_WEBP" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>WEBP</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WEBP<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:571</li>
@@ -4024,9 +4041,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_woff" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>WOFF</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WOFF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_WOFF" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>WOFF</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WOFF<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:580</li>
@@ -4039,9 +4056,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_woff2" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>WOFF2</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WOFF2<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_WOFF2" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>WOFF2</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>WOFF2<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:589</li>
@@ -4054,9 +4071,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_xhtml" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>XHTML</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XHTML<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_XHTML" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>XHTML</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XHTML<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:598</li>
@@ -4069,9 +4086,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_xls" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>XLS</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XLS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_XLS" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>XLS</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XLS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:607</li>
@@ -4084,9 +4101,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_xlsx" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>XLSX</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XLSX<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_XLSX" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>XLSX</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XLSX<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:616</li>
@@ -4099,9 +4116,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_xml" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>XML</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XML<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_XML" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>XML</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XML<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:626</li>
@@ -4114,9 +4131,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_xul" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>XUL</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XUL<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_XUL" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>XUL</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>XUL<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:635</li>
@@ -4129,9 +4146,9 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-				<a name="mime_zip" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> <span class="tsd-flag ts-flagStatic">Static</span> MIME_<wbr>ZIP</h3>
-				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ZIP<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
+				<a name="MIME_ZIP" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MIME_<wbr>ZIP</h3>
+				<div class="tsd-signature tsd-kind-icon">MIME_<wbr>ZIP<span class="tsd-signature-symbol">:</span> <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in libs/MIME.ts:644</li>
@@ -4147,10 +4164,10 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Accessors</h2>
 			<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
-				<a name="all" class="tsd-anchor"></a>
+				<a name="All" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> All</h3>
 				<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol">[]</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -4159,7 +4176,7 @@ img {
 								<li>Defined in libs/MIME.ts:698</li>
 							</ul>
 						</aside>
-						<h4 class="tsd-returns-title">Returns <a href="../interfaces/libs_interfaces.imime.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol">[]</span></h4>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/libs_Interfaces.IMIME.html" class="tsd-signature-type" data-tsd-kind="Interface">IMIME</a><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -4169,6 +4186,7 @@ img {
 				<h2>Legend</h2>
 				<div class="tsd-legend-group">
 					<ul class="tsd-legend">
+						<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 						<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 						<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
@@ -4336,7 +4354,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop === 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop <= 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
 
 /***/ }),
 

@@ -3,10 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HttpStatusCode | kaven-basic</title>
+	<title>DayOfWeek | kaven-basic</title>
 	<meta name="description" content="Documentation for kaven-basic">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+	<style type="text/css">:root {
+  --color-background: #fdfdfd;
+  --color-text: #222;
+  --color-text-aside: #707070;
+  --color-link: #4da6ff;
+  --color-menu-divider: #eee;
+  --color-menu-divider-focus: #000;
+  --color-menu-label: #707070;
+  --color-panel: #fff;
+  --color-panel-divider: #eee;
+  --color-comment-tag: #707070;
+  --color-comment-tag-text: #fff;
+  --color-code-background: rgba(0, 0, 0, 0.04);
+  --color-ts: #9600ff;
+  --color-ts-interface: #647f1b;
+  --color-ts-enum: #937210;
+  --color-ts-class: #0672de;
+  --color-ts-private: #707070;
+  --color-toolbar: #fff;
+  --color-toolbar-text: #333;
+}
+
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
  * * HTML5 display definitions
  * * ========================================================================== */
@@ -1593,14 +1615,14 @@ ul.tsd-descriptions > li > :last-child > :last-child > :last-child,
   }
 }
 body {
-  background: #fdfdfd;
+  background: var(--color-background);
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
-  color: #222;
+  color: var(--color-text);
 }
 
 a {
-  color: #4da6ff;
+  color: var(--color-link);
   text-decoration: none;
 }
 a:hover {
@@ -1612,7 +1634,7 @@ code, pre {
   padding: 0.2em;
   margin: 0;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: var(--color-code-background);
 }
 
 pre {
@@ -1678,7 +1700,7 @@ blockquote {
     padding: 20px 20px 0 0;
     max-width: 450px;
     visibility: hidden;
-    background-color: #fff;
+    background-color: var(--color-panel);
     transform: translate(100%, 0);
   }
   html.default .col-menu > *:last-child {
@@ -1738,7 +1760,7 @@ html.default.has-menu .col-content {
 .tsd-page-title {
   padding: 70px 0 20px 0;
   margin: 0 0 40px 0;
-  background: #fff;
+  background: var(--color-panel);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 .tsd-page-title h1 {
@@ -1748,10 +1770,10 @@ html.default.has-menu .col-content {
 .tsd-breadcrumb {
   margin: 0;
   padding: 0;
-  color: #707070;
+  color: var(--color-text-aside);
 }
 .tsd-breadcrumb a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: none;
 }
 .tsd-breadcrumb a:hover {
@@ -1824,8 +1846,8 @@ dl.tsd-comment-tags dt {
   padding: 1px 5px;
   margin: 0 10px 0 0;
   border-radius: 4px;
-  border: 1px solid #707070;
-  color: #707070;
+  border: 1px solid var(--color-comment-tag);
+  color: var(--color-comment-tag);
   font-size: 0.8em;
   font-weight: normal;
 }
@@ -1895,7 +1917,7 @@ dl.tsd-comment-tags p {
     top: 40px;
     right: 20px;
     height: auto;
-    background-color: #fff;
+    background-color: var(--color-panel);
     visibility: hidden;
     transform: translate(50%, 0);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
@@ -1917,11 +1939,11 @@ dl.tsd-comment-tags p {
 }
 
 footer {
-  border-top: 1px solid #eee;
-  background-color: #fff;
+  border-top: 1px solid var(--color-panel-divider);
+  background-color: var(--color-panel);
 }
 footer.with-border-bottom {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 footer .tsd-legend-group {
   font-size: 0;
@@ -1959,7 +1981,7 @@ footer .tsd-legend {
 .tsd-index-panel h3 {
   margin: 0 -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-index-panel ul.tsd-index-list {
   -webkit-column-count: 3;
@@ -2003,39 +2025,39 @@ footer .tsd-legend {
 }
 .tsd-index-panel a,
 .tsd-index-panel .tsd-parent-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-parent-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-parent-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-parent-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-is-private a {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-flag {
   display: inline-block;
   padding: 1px 5px;
   border-radius: 4px;
-  color: #fff;
-  background-color: #707070;
+  color: var(--color-comment-tag-text);
+  background-color: var(--color-comment-tag);
   text-indent: 0;
   font-size: 14px;
   font-weight: normal;
@@ -2055,19 +2077,19 @@ footer .tsd-legend {
   border-bottom: none;
 }
 .tsd-member a[data-tsd-kind] {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-member a[data-tsd-kind=Interface] {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-member a[data-tsd-kind=Enum] {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-member a[data-tsd-kind=Class] {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-member a[data-tsd-kind=Private] {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-navigation {
@@ -2078,7 +2100,7 @@ footer .tsd-legend {
   padding-top: 2px;
   padding-bottom: 2px;
   border-left: 2px solid transparent;
-  color: #222;
+  color: var(--color-text);
   text-decoration: none;
   transition: border-left-color 0.1s;
 }
@@ -2121,10 +2143,10 @@ footer .tsd-legend {
   padding-left: 105px;
 }
 .tsd-navigation.primary > ul {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li.current > a {
   font-weight: bold;
@@ -2132,7 +2154,7 @@ footer .tsd-legend {
 .tsd-navigation.primary li.label span {
   display: block;
   padding: 20px 0 6px 5px;
-  color: #707070;
+  color: var(--color-menu-label);
 }
 .tsd-navigation.primary li.globals + li > span, .tsd-navigation.primary li.globals + li > a {
   padding-top: 20px;
@@ -2172,16 +2194,16 @@ footer .tsd-legend {
   padding-left: 125px;
 }
 .tsd-navigation.secondary ul.current a {
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.focus > a,
 .tsd-navigation.secondary ul.current li.focus > a {
-  border-left-color: #000;
+  border-left-color: var(--color-menu-divider-focus);
 }
 .tsd-navigation.secondary li.current {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.current > a {
   font-weight: bold;
@@ -2196,7 +2218,7 @@ footer .tsd-legend {
 .tsd-panel {
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--color-panel);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 .tsd-panel:empty {
@@ -2205,7 +2227,7 @@ footer .tsd-legend {
 .tsd-panel > h1, .tsd-panel > h2, .tsd-panel > h3 {
   margin: 1.5em -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-panel > h1.tsd-before-signature, .tsd-panel > h2.tsd-before-signature, .tsd-panel > h3.tsd-before-signature {
   margin-bottom: 0;
@@ -2267,7 +2289,7 @@ footer .tsd-legend {
   outline: 0;
   border: 0;
   background: transparent;
-  color: #222;
+  color: var(--color-text);
 }
 #tsd-search .field label {
   position: absolute;
@@ -2290,17 +2312,17 @@ footer .tsd-legend {
 }
 #tsd-search .results li {
   padding: 0 10px;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 #tsd-search .results li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 #tsd-search .results li.state {
   display: none;
 }
 #tsd-search .results li.current,
 #tsd-search .results li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search .results a {
   display: block;
@@ -2309,11 +2331,11 @@ footer .tsd-legend {
   top: 10px;
 }
 #tsd-search .results span.parent {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 #tsd-search.has-focus {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search.has-focus .field input {
   top: 0;
@@ -2336,7 +2358,7 @@ footer .tsd-legend {
 .tsd-signature {
   margin: 0 0 1em 0;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 14px;
   overflow-x: auto;
@@ -2361,7 +2383,7 @@ footer .tsd-legend {
 }
 
 .tsd-signature-symbol {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 
@@ -2373,7 +2395,7 @@ footer .tsd-legend {
 .tsd-signatures {
   padding: 0;
   margin: 0 0 1em 0;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
 }
 .tsd-signatures .tsd-signature {
   margin: 0;
@@ -2384,7 +2406,7 @@ footer .tsd-legend {
   border-top-width: 0;
 }
 .tsd-signatures .tsd-signature.current {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-signatures.active > .tsd-signature {
   cursor: pointer;
@@ -2458,11 +2480,11 @@ ul.tsd-type-parameters .tsd-comment {
 
 .tsd-sources {
   font-size: 14px;
-  color: #707070;
+  color: var(--color-text-aside);
   margin: 0 0 1em 0;
 }
 .tsd-sources a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: underline;
 }
 .tsd-sources ul, .tsd-sources p {
@@ -2480,13 +2502,13 @@ ul.tsd-type-parameters .tsd-comment {
   left: 0;
   width: 100%;
   height: 40px;
-  color: #333;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  color: var(--color-toolbar-text);
+  background: var(--color-toolbar);
+  border-bottom: 1px solid var(--color-panel-divider);
   transition: transform 0.3s linear;
 }
 .tsd-page-toolbar a {
-  color: #333;
+  color: var(--color-toolbar-text);
   text-decoration: none;
 }
 .tsd-page-toolbar a.title {
@@ -2546,7 +2568,7 @@ ul.tsd-type-parameters .tsd-comment {
 }
 .tsd-widget.active {
   opacity: 1;
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-widget.no-caption {
   width: 40px;
@@ -2615,16 +2637,16 @@ input[type=checkbox]:checked + .tsd-widget:before {
 }
 .tsd-select .tsd-select-list li {
   padding: 0 20px 0 0;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 .tsd-select .tsd-select-list li:before {
   background-position: 40px 0;
 }
 .tsd-select .tsd-select-list li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 .tsd-select .tsd-select-list li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-select .tsd-select-list li.selected:before {
   background-position: -200px 0;
@@ -2682,165 +2704,54 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-enum tsd-parent-kind-module">
+			<a href="libs_Enums.BitStringType.html" class="tsd-kind-icon">Bit<wbr>String<wbr>Type</a>
+		</li>
+		<li class=" tsd-kind-enum tsd-parent-kind-module">
+			<a href="libs_Enums.DateTimeFormat.html" class="tsd-kind-icon">Date<wbr>Time<wbr>Format</a>
+		</li>
 		<li class="current tsd-kind-enum tsd-parent-kind-module">
-			<a href="index.httpstatuscode.html" class="tsd-kind-icon">Http<wbr>Status<wbr>Code</a>
+			<a href="libs_Enums.DayOfWeek.html" class="tsd-kind-icon">Day<wbr>OfWeek</a>
 			<ul>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#accepted" class="tsd-kind-icon">Accepted</a>
+					<a href="libs_Enums.DayOfWeek.html#Friday" class="tsd-kind-icon">Friday</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#ambiguous" class="tsd-kind-icon">Ambiguous</a>
+					<a href="libs_Enums.DayOfWeek.html#Monday" class="tsd-kind-icon">Monday</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#badgateway" class="tsd-kind-icon">Bad<wbr>Gateway</a>
+					<a href="libs_Enums.DayOfWeek.html#Saturday" class="tsd-kind-icon">Saturday</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#badrequest" class="tsd-kind-icon">Bad<wbr>Request</a>
+					<a href="libs_Enums.DayOfWeek.html#Sunday" class="tsd-kind-icon">Sunday</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#conflict" class="tsd-kind-icon">Conflict</a>
+					<a href="libs_Enums.DayOfWeek.html#Thursday" class="tsd-kind-icon">Thursday</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#continue" class="tsd-kind-icon">Continue</a>
+					<a href="libs_Enums.DayOfWeek.html#Tuesday" class="tsd-kind-icon">Tuesday</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#created" class="tsd-kind-icon">Created</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#expectationfailed" class="tsd-kind-icon">Expectation<wbr>Failed</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#forbidden" class="tsd-kind-icon">Forbidden</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#found" class="tsd-kind-icon">Found</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#gatewaytimeout" class="tsd-kind-icon">Gateway<wbr>Timeout</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#gone" class="tsd-kind-icon">Gone</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#httpversionnotsupported" class="tsd-kind-icon">Http<wbr>Version<wbr>Not<wbr>Supported</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#internalservererror" class="tsd-kind-icon">Internal<wbr>Server<wbr>Error</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#lengthrequired" class="tsd-kind-icon">Length<wbr>Required</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#methodnotallowed" class="tsd-kind-icon">Method<wbr>Not<wbr>Allowed</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#moved" class="tsd-kind-icon">Moved</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#movedpermanently" class="tsd-kind-icon">Moved<wbr>Permanently</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#multiplechoices" class="tsd-kind-icon">Multiple<wbr>Choices</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#nocontent" class="tsd-kind-icon">No<wbr>Content</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#nonauthoritativeinformation" class="tsd-kind-icon">Non<wbr>Authoritative<wbr>Information</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#notacceptable" class="tsd-kind-icon">Not<wbr>Acceptable</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#notfound" class="tsd-kind-icon">Not<wbr>Found</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#notimplemented" class="tsd-kind-icon">Not<wbr>Implemented</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#notmodified" class="tsd-kind-icon">Not<wbr>Modified</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#ok" class="tsd-kind-icon">OK</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#partialcontent" class="tsd-kind-icon">Partial<wbr>Content</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#paymentrequired" class="tsd-kind-icon">Payment<wbr>Required</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#preconditionfailed" class="tsd-kind-icon">Precondition<wbr>Failed</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#proxyauthenticationrequired" class="tsd-kind-icon">Proxy<wbr>Authentication<wbr>Required</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#redirect" class="tsd-kind-icon">Redirect</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#redirectkeepverb" class="tsd-kind-icon">Redirect<wbr>Keep<wbr>Verb</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#redirectmethod" class="tsd-kind-icon">Redirect<wbr>Method</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#requestentitytoolarge" class="tsd-kind-icon">Request<wbr>Entity<wbr>Too<wbr>Large</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#requesttimeout" class="tsd-kind-icon">Request<wbr>Timeout</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#requesturitoolong" class="tsd-kind-icon">Request<wbr>Uri<wbr>Too<wbr>Long</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#requestedrangenotsatisfiable" class="tsd-kind-icon">Requested<wbr>Range<wbr>Not<wbr>Satisfiable</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#resetcontent" class="tsd-kind-icon">Reset<wbr>Content</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#seeother" class="tsd-kind-icon">See<wbr>Other</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#serviceunavailable" class="tsd-kind-icon">Service<wbr>Unavailable</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#switchingprotocols" class="tsd-kind-icon">Switching<wbr>Protocols</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#temporaryredirect" class="tsd-kind-icon">Temporary<wbr>Redirect</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#unauthorized" class="tsd-kind-icon">Unauthorized</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#unsupportedmediatype" class="tsd-kind-icon">Unsupported<wbr>Media<wbr>Type</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#unused" class="tsd-kind-icon">Unused</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="index.httpstatuscode.html#useproxy" class="tsd-kind-icon">Use<wbr>Proxy</a>
+					<a href="libs_Enums.DayOfWeek.html#Wednesday" class="tsd-kind-icon">Wednesday</a>
 				</li>
 			</ul>
+		</li>
+		<li class=" tsd-kind-enum tsd-parent-kind-module">
+			<a href="libs_Enums.LogLevel.html" class="tsd-kind-icon">Log<wbr>Level</a>
+		</li>
+		<li class=" tsd-kind-enum tsd-parent-kind-module">
+			<a href="libs_Enums.TimeFactor.html" class="tsd-kind-icon">Time<wbr>Factor</a>
+		</li>
+		<li class=" tsd-kind-enum tsd-parent-kind-module">
+			<a href="libs_Enums.TimeUnit.html" class="tsd-kind-icon">Time<wbr>Unit</a>
+		</li>
+		<li class=" tsd-kind-enum tsd-parent-kind-module">
+			<a href="libs_Enums.TypeofResult.html" class="tsd-kind-icon">Typeof<wbr>Result</a>
 		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<section class="tsd-panel tsd-comment">
-			<div class="tsd-comment tsd-typography">
-				<dl class="tsd-comment-tags">
-					<dt>version</dt>
-					<dd><p>2020-06-24</p>
-					</dd>
-					<dt>since</dt>
-					<dd><p>1.0.5</p>
-					</dd>
-				</dl>
-			</div>
-		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
@@ -2848,52 +2759,13 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Enumeration members</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#accepted" class="tsd-kind-icon">Accepted</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#ambiguous" class="tsd-kind-icon">Ambiguous</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#badgateway" class="tsd-kind-icon">Bad<wbr>Gateway</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#badrequest" class="tsd-kind-icon">Bad<wbr>Request</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#conflict" class="tsd-kind-icon">Conflict</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#continue" class="tsd-kind-icon">Continue</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#created" class="tsd-kind-icon">Created</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#expectationfailed" class="tsd-kind-icon">Expectation<wbr>Failed</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#forbidden" class="tsd-kind-icon">Forbidden</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#found" class="tsd-kind-icon">Found</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#gatewaytimeout" class="tsd-kind-icon">Gateway<wbr>Timeout</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#gone" class="tsd-kind-icon">Gone</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#httpversionnotsupported" class="tsd-kind-icon">Http<wbr>Version<wbr>Not<wbr>Supported</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#internalservererror" class="tsd-kind-icon">Internal<wbr>Server<wbr>Error</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#lengthrequired" class="tsd-kind-icon">Length<wbr>Required</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#methodnotallowed" class="tsd-kind-icon">Method<wbr>Not<wbr>Allowed</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#moved" class="tsd-kind-icon">Moved</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#movedpermanently" class="tsd-kind-icon">Moved<wbr>Permanently</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#multiplechoices" class="tsd-kind-icon">Multiple<wbr>Choices</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#nocontent" class="tsd-kind-icon">No<wbr>Content</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#nonauthoritativeinformation" class="tsd-kind-icon">Non<wbr>Authoritative<wbr>Information</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#notacceptable" class="tsd-kind-icon">Not<wbr>Acceptable</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#notfound" class="tsd-kind-icon">Not<wbr>Found</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#notimplemented" class="tsd-kind-icon">Not<wbr>Implemented</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#notmodified" class="tsd-kind-icon">Not<wbr>Modified</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#ok" class="tsd-kind-icon">OK</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#partialcontent" class="tsd-kind-icon">Partial<wbr>Content</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#paymentrequired" class="tsd-kind-icon">Payment<wbr>Required</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#preconditionfailed" class="tsd-kind-icon">Precondition<wbr>Failed</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#proxyauthenticationrequired" class="tsd-kind-icon">Proxy<wbr>Authentication<wbr>Required</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#redirect" class="tsd-kind-icon">Redirect</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#redirectkeepverb" class="tsd-kind-icon">Redirect<wbr>Keep<wbr>Verb</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#redirectmethod" class="tsd-kind-icon">Redirect<wbr>Method</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#requestentitytoolarge" class="tsd-kind-icon">Request<wbr>Entity<wbr>Too<wbr>Large</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#requesttimeout" class="tsd-kind-icon">Request<wbr>Timeout</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#requesturitoolong" class="tsd-kind-icon">Request<wbr>Uri<wbr>Too<wbr>Long</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#requestedrangenotsatisfiable" class="tsd-kind-icon">Requested<wbr>Range<wbr>Not<wbr>Satisfiable</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#resetcontent" class="tsd-kind-icon">Reset<wbr>Content</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#seeother" class="tsd-kind-icon">See<wbr>Other</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#serviceunavailable" class="tsd-kind-icon">Service<wbr>Unavailable</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#switchingprotocols" class="tsd-kind-icon">Switching<wbr>Protocols</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#temporaryredirect" class="tsd-kind-icon">Temporary<wbr>Redirect</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#unauthorized" class="tsd-kind-icon">Unauthorized</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#unsupportedmediatype" class="tsd-kind-icon">Unsupported<wbr>Media<wbr>Type</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#unused" class="tsd-kind-icon">Unused</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="index.httpstatuscode.html#useproxy" class="tsd-kind-icon">Use<wbr>Proxy</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_Enums.DayOfWeek.html#Friday" class="tsd-kind-icon">Friday</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_Enums.DayOfWeek.html#Monday" class="tsd-kind-icon">Monday</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_Enums.DayOfWeek.html#Saturday" class="tsd-kind-icon">Saturday</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_Enums.DayOfWeek.html#Sunday" class="tsd-kind-icon">Sunday</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_Enums.DayOfWeek.html#Thursday" class="tsd-kind-icon">Thursday</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_Enums.DayOfWeek.html#Tuesday" class="tsd-kind-icon">Tuesday</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_Enums.DayOfWeek.html#Wednesday" class="tsd-kind-icon">Wednesday</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2902,783 +2774,74 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Enumeration members</h2>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="accepted" class="tsd-anchor"></a>
-				<h3>Accepted</h3>
-				<div class="tsd-signature tsd-kind-icon">Accepted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 202</span></div>
+				<a name="Friday" class="tsd-anchor"></a>
+				<h3>Friday</h3>
+				<div class="tsd-signature tsd-kind-icon">Friday<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 5</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:68</li>
+						<li>Defined in libs/Enums.ts:280</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>202: Accepted</p>
-					</div>
-					<p>indicates that the request has been accepted for further processing.</p>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="ambiguous" class="tsd-anchor"></a>
-				<h3>Ambiguous</h3>
-				<div class="tsd-signature tsd-kind-icon">Ambiguous<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 300</span></div>
+				<a name="Monday" class="tsd-anchor"></a>
+				<h3>Monday</h3>
+				<div class="tsd-signature tsd-kind-icon">Monday<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:111</li>
+						<li>Defined in libs/Enums.ts:276</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>300: Ambiguous</p>
-					</div>
-					<p>indicates that the requested information has multiple representations. The default action
-						is to treat this status as a redirect and follow the contents of the Location
-					header associated with this response.</p>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="badgateway" class="tsd-anchor"></a>
-				<h3>Bad<wbr>Gateway</h3>
-				<div class="tsd-signature tsd-kind-icon">Bad<wbr>Gateway<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 502</span></div>
+				<a name="Saturday" class="tsd-anchor"></a>
+				<h3>Saturday</h3>
+				<div class="tsd-signature tsd-kind-icon">Saturday<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 6</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:337</li>
+						<li>Defined in libs/Enums.ts:281</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>502: BadGateway</p>
-					</div>
-					<p>indicates that an intermediate proxy server received a bad response from another proxy
-					or the origin server.</p>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="badrequest" class="tsd-anchor"></a>
-				<h3>Bad<wbr>Request</h3>
-				<div class="tsd-signature tsd-kind-icon">Bad<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 400</span></div>
+				<a name="Sunday" class="tsd-anchor"></a>
+				<h3>Sunday</h3>
+				<div class="tsd-signature tsd-kind-icon">Sunday<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:208</li>
+						<li>Defined in libs/Enums.ts:275</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>400: BadRequest</p>
-					</div>
-					<p>indicates that the request could not be understood by the server: BadRequest
-						is sent when no other error is applicable, or if the exact error is unknown or
-					does not have its own error code.</p>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="conflict" class="tsd-anchor"></a>
-				<h3>Conflict</h3>
-				<div class="tsd-signature tsd-kind-icon">Conflict<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 409</span></div>
+				<a name="Thursday" class="tsd-anchor"></a>
+				<h3>Thursday</h3>
+				<div class="tsd-signature tsd-kind-icon">Thursday<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 4</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:266</li>
+						<li>Defined in libs/Enums.ts:279</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>409: Conflict</p>
-					</div>
-					<p>indicates that the request could not be carried out because of a conflict on the server.</p>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="continue" class="tsd-anchor"></a>
-				<h3>Continue</h3>
-				<div class="tsd-signature tsd-kind-icon">Continue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 100</span></div>
+				<a name="Tuesday" class="tsd-anchor"></a>
+				<h3>Tuesday</h3>
+				<div class="tsd-signature tsd-kind-icon">Tuesday<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:43</li>
+						<li>Defined in libs/Enums.ts:277</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>100: Continue</p>
-					</div>
-					<p>indicates that the client can continue with its request.</p>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="created" class="tsd-anchor"></a>
-				<h3>Created</h3>
-				<div class="tsd-signature tsd-kind-icon">Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 201</span></div>
+				<a name="Wednesday" class="tsd-anchor"></a>
+				<h3>Wednesday</h3>
+				<div class="tsd-signature tsd-kind-icon">Wednesday<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:62</li>
+						<li>Defined in libs/Enums.ts:278</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>201: Created</p>
-					</div>
-					<p>indicates that the request resulted in a new resource created before the response was sent.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="expectationfailed" class="tsd-anchor"></a>
-				<h3>Expectation<wbr>Failed</h3>
-				<div class="tsd-signature tsd-kind-icon">Expectation<wbr>Failed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 417</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:318</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>417: ExpectationFailed</p>
-					</div>
-					<p>indicates that an expectation given in an Expect header could not be met by the server.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="forbidden" class="tsd-anchor"></a>
-				<h3>Forbidden</h3>
-				<div class="tsd-signature tsd-kind-icon">Forbidden<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 403</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:227</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>403: Forbidden</p>
-					</div>
-					<p>indicates that the server refuses to fulfill the request.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="found" class="tsd-anchor"></a>
-				<h3>Found</h3>
-				<div class="tsd-signature tsd-kind-icon">Found<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 302</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:137</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>302: Found</p>
-					</div>
-					<p>indicates that the requested information is located at the URI specified in the Location header.
-						The default action when this status is received is to follow the Location header
-						associated with the response. When the original request method was POST, the
-					redirected request will use the GET method.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="gatewaytimeout" class="tsd-anchor"></a>
-				<h3>Gateway<wbr>Timeout</h3>
-				<div class="tsd-signature tsd-kind-icon">Gateway<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 504</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:350</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>504: GatewayTimeout</p>
-					</div>
-					<p>indicates that an intermediate proxy server timed out while waiting for a response from
-					another proxy or the origin server.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="gone" class="tsd-anchor"></a>
-				<h3>Gone</h3>
-				<div class="tsd-signature tsd-kind-icon">Gone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 410</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:272</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>410: Gone</p>
-					</div>
-					<p>indicates that the requested resource is no longer available.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="httpversionnotsupported" class="tsd-anchor"></a>
-				<h3>Http<wbr>Version<wbr>Not<wbr>Supported</h3>
-				<div class="tsd-signature tsd-kind-icon">Http<wbr>Version<wbr>Not<wbr>Supported<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 505</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:356</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>505: HttpVersionNotSupported</p>
-					</div>
-					<p>indicates that the requested HTTP version is not supported by the server.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="internalservererror" class="tsd-anchor"></a>
-				<h3>Internal<wbr>Server<wbr>Error</h3>
-				<div class="tsd-signature tsd-kind-icon">Internal<wbr>Server<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 500</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:324</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>500: InternalServerError</p>
-					</div>
-					<p>indicates that a generic error has occurred on the server.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="lengthrequired" class="tsd-anchor"></a>
-				<h3>Length<wbr>Required</h3>
-				<div class="tsd-signature tsd-kind-icon">Length<wbr>Required<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 411</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:278</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>411: LengthRequired</p>
-					</div>
-					<p>indicates that the required Content-length header is missing.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="methodnotallowed" class="tsd-anchor"></a>
-				<h3>Method<wbr>Not<wbr>Allowed</h3>
-				<div class="tsd-signature tsd-kind-icon">Method<wbr>Not<wbr>Allowed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 405</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:239</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>405: MethodNotAllowed</p>
-					</div>
-					<p>indicates that the request method (POST or GET) is not allowed on the requested resource.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="moved" class="tsd-anchor"></a>
-				<h3>Moved</h3>
-				<div class="tsd-signature tsd-kind-icon">Moved<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 301</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:128</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>301: Moved</p>
-					</div>
-					<p>indicates that the requested information has been moved to the URI specified in the Location
-						header. The default action when this status is received is to follow the Location
-						header associated with the response. When the original request method was POST,
-					the redirected request will use the GET method.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="movedpermanently" class="tsd-anchor"></a>
-				<h3>Moved<wbr>Permanently</h3>
-				<div class="tsd-signature tsd-kind-icon">Moved<wbr>Permanently<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 301</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:119</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>301: MovedPermanently</p>
-					</div>
-					<p>indicates that the requested information has been moved to the URI specified in the Location
-						header. The default action when this status is received is to follow the Location
-					header associated with the response.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="multiplechoices" class="tsd-anchor"></a>
-				<h3>Multiple<wbr>Choices</h3>
-				<div class="tsd-signature tsd-kind-icon">Multiple<wbr>Choices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 300</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:103</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>300: MultipleChoices</p>
-					</div>
-					<p>indicates that the requested information has multiple representations. The default action
-						is to treat this status as a redirect and follow the contents of the Location
-					header associated with this response.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="nocontent" class="tsd-anchor"></a>
-				<h3>No<wbr>Content</h3>
-				<div class="tsd-signature tsd-kind-icon">No<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 204</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:82</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>204: NoContent</p>
-					</div>
-					<p>indicates that the request has been successfully processed and that the response is intentionally
-					blank.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="nonauthoritativeinformation" class="tsd-anchor"></a>
-				<h3>Non<wbr>Authoritative<wbr>Information</h3>
-				<div class="tsd-signature tsd-kind-icon">Non<wbr>Authoritative<wbr>Information<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 203</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:75</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>203: NonAuthoritativeInformation</p>
-					</div>
-					<p>indicates that the returned metainformation is from a cached copy instead of
-					the origin server and therefore may be incorrect.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="notacceptable" class="tsd-anchor"></a>
-				<h3>Not<wbr>Acceptable</h3>
-				<div class="tsd-signature tsd-kind-icon">Not<wbr>Acceptable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 406</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:246</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>406: NotAcceptable</p>
-					</div>
-					<p>indicates that the client has indicated with Accept headers that it will not accept any
-					of the available representations of the resource.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="notfound" class="tsd-anchor"></a>
-				<h3>Not<wbr>Found</h3>
-				<div class="tsd-signature tsd-kind-icon">Not<wbr>Found<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 404</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:233</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>404: NotFound</p>
-					</div>
-					<p>indicates that the requested resource does not exist on the server.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="notimplemented" class="tsd-anchor"></a>
-				<h3>Not<wbr>Implemented</h3>
-				<div class="tsd-signature tsd-kind-icon">Not<wbr>Implemented<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 501</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:330</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>501: NotImplemented</p>
-					</div>
-					<p>indicates that the server does not support the requested function.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="notmodified" class="tsd-anchor"></a>
-				<h3>Not<wbr>Modified</h3>
-				<div class="tsd-signature tsd-kind-icon">Not<wbr>Modified<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 304</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:169</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>304: NotModified</p>
-					</div>
-					<p>indicates that the client&#39;s cached copy is up to date. The contents of the resource are
-					not transferred.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="ok" class="tsd-anchor"></a>
-				<h3>OK</h3>
-				<div class="tsd-signature tsd-kind-icon">OK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 200</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:56</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>200: OK</p>
-					</div>
-					<p>indicates that the request succeeded and that the requested information is in the response. This
-					is the most common status code to receive.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="partialcontent" class="tsd-anchor"></a>
-				<h3>Partial<wbr>Content</h3>
-				<div class="tsd-signature tsd-kind-icon">Partial<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 206</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:95</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>206: PartialContent</p>
-					</div>
-					<p>indicates that the response is a partial response as requested by a GET request that includes
-					a byte range.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="paymentrequired" class="tsd-anchor"></a>
-				<h3>Payment<wbr>Required</h3>
-				<div class="tsd-signature tsd-kind-icon">Payment<wbr>Required<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 402</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:221</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>402: PaymentRequired</p>
-					</div>
-					<p>is reserved for future use.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="preconditionfailed" class="tsd-anchor"></a>
-				<h3>Precondition<wbr>Failed</h3>
-				<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Failed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 412</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:286</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>412: PreconditionFailed</p>
-					</div>
-					<p>indicates that a condition set for this request failed, and the request cannot be carried
-						out. Conditions are set with conditional request headers like If-Match, If-None-Match,
-					or If-Unmodified-Since.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="proxyauthenticationrequired" class="tsd-anchor"></a>
-				<h3>Proxy<wbr>Authentication<wbr>Required</h3>
-				<div class="tsd-signature tsd-kind-icon">Proxy<wbr>Authentication<wbr>Required<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 407</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:253</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>407: ProxyAuthenticationRequired</p>
-					</div>
-					<p>indicates that the requested proxy requires authentication. The Proxy-authenticate
-					header contains the details of how to perform the authentication.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="redirect" class="tsd-anchor"></a>
-				<h3>Redirect</h3>
-				<div class="tsd-signature tsd-kind-icon">Redirect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 302</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:146</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>302: Redirect</p>
-					</div>
-					<p>indicates that the requested information is located at the URI specified in the Location header.
-						The default action when this status is received is to follow the Location header
-						associated with the response. When the original request method was POST, the
-					redirected request will use the GET method.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="redirectkeepverb" class="tsd-anchor"></a>
-				<h3>Redirect<wbr>Keep<wbr>Verb</h3>
-				<div class="tsd-signature tsd-kind-icon">Redirect<wbr>Keep<wbr>Verb<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 307</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:200</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>307: RedirectKeepVerb</p>
-					</div>
-					<p>indicates that the request information is located at the URI specified in the Location
-						header. The default action when this status is received is to follow the Location
-						header associated with the response. When the original request method was POST,
-					the redirected request will also use the POST method.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="redirectmethod" class="tsd-anchor"></a>
-				<h3>Redirect<wbr>Method</h3>
-				<div class="tsd-signature tsd-kind-icon">Redirect<wbr>Method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 303</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:162</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>303: RedirectMethod</p>
-					</div>
-					<p>automatically redirects the client to the URI specified in the Location header as the result
-						of a POST. The request to the resource specified by the Location header will
-					be made with a GET.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="requestentitytoolarge" class="tsd-anchor"></a>
-				<h3>Request<wbr>Entity<wbr>Too<wbr>Large</h3>
-				<div class="tsd-signature tsd-kind-icon">Request<wbr>Entity<wbr>Too<wbr>Large<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 413</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:292</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>413: RequestEntityTooLarge</p>
-					</div>
-					<p>indicates that the request is too large for the server to process.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="requesttimeout" class="tsd-anchor"></a>
-				<h3>Request<wbr>Timeout</h3>
-				<div class="tsd-signature tsd-kind-icon">Request<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 408</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:260</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>408: RequestTimeout</p>
-					</div>
-					<p>indicates that the client did not send a request within the time the server was expecting
-					the request.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="requesturitoolong" class="tsd-anchor"></a>
-				<h3>Request<wbr>Uri<wbr>Too<wbr>Long</h3>
-				<div class="tsd-signature tsd-kind-icon">Request<wbr>Uri<wbr>Too<wbr>Long<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 414</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:298</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>414: RequestUriTooLong</p>
-					</div>
-					<p>indicates that the URI is too long.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="requestedrangenotsatisfiable" class="tsd-anchor"></a>
-				<h3>Requested<wbr>Range<wbr>Not<wbr>Satisfiable</h3>
-				<div class="tsd-signature tsd-kind-icon">Requested<wbr>Range<wbr>Not<wbr>Satisfiable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 416</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:312</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>416: RequestedRangeNotSatisfiable</p>
-					</div>
-					<p>indicates that the range of data requested from the resource cannot be returned,
-						either because the beginning of the range is before the beginning of the resource,
-					or the end of the range is after the end of the resource.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="resetcontent" class="tsd-anchor"></a>
-				<h3>Reset<wbr>Content</h3>
-				<div class="tsd-signature tsd-kind-icon">Reset<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 205</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:88</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>205: ResetContent</p>
-					</div>
-					<p>indicates that the client should reset (not reload) the current resource.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="seeother" class="tsd-anchor"></a>
-				<h3>See<wbr>Other</h3>
-				<div class="tsd-signature tsd-kind-icon">See<wbr>Other<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 303</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:154</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>303: SeeOther</p>
-					</div>
-					<p>automatically redirects the client to the URI specified in the Location header as the result
-						of a POST. The request to the resource specified by the Location header will
-					be made with a GET.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="serviceunavailable" class="tsd-anchor"></a>
-				<h3>Service<wbr>Unavailable</h3>
-				<div class="tsd-signature tsd-kind-icon">Service<wbr>Unavailable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 503</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:343</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>503: ServiceUnavailable</p>
-					</div>
-					<p>indicates that the server is temporarily unavailable, usually due to high load or maintenance.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="switchingprotocols" class="tsd-anchor"></a>
-				<h3>Switching<wbr>Protocols</h3>
-				<div class="tsd-signature tsd-kind-icon">Switching<wbr>Protocols<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 101</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:49</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>101: SwitchingProtocols</p>
-					</div>
-					<p>indicates that the protocol version or protocol is being changed.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="temporaryredirect" class="tsd-anchor"></a>
-				<h3>Temporary<wbr>Redirect</h3>
-				<div class="tsd-signature tsd-kind-icon">Temporary<wbr>Redirect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 307</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:191</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>307: TemporaryRedirect</p>
-					</div>
-					<p>indicates that the request information is located at the URI specified in the Location
-						header. The default action when this status is received is to follow the Location
-						header associated with the response. When the original request method was POST,
-					the redirected request will also use the POST method.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="unauthorized" class="tsd-anchor"></a>
-				<h3>Unauthorized</h3>
-				<div class="tsd-signature tsd-kind-icon">Unauthorized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 401</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:215</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>401: Unauthorized</p>
-					</div>
-					<p>indicates that the requested resource requires authentication. The WWW-Authenticate header
-					contains the details of how to perform the authentication.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="unsupportedmediatype" class="tsd-anchor"></a>
-				<h3>Unsupported<wbr>Media<wbr>Type</h3>
-				<div class="tsd-signature tsd-kind-icon">Unsupported<wbr>Media<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 415</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:304</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>415: UnsupportedMediaType</p>
-					</div>
-					<p>indicates that the request is an unsupported type.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="unused" class="tsd-anchor"></a>
-				<h3>Unused</h3>
-				<div class="tsd-signature tsd-kind-icon">Unused<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 306</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:182</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>306: Unused</p>
-					</div>
-					<p>is a proposed extension to the HTTP/1.1 specification that is not fully specified.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="useproxy" class="tsd-anchor"></a>
-				<h3>Use<wbr>Proxy</h3>
-				<div class="tsd-signature tsd-kind-icon">Use<wbr>Proxy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 305</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in libs/HttpStatusCode.ts:176</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>305: UseProxy</p>
-					</div>
-					<p>indicates that the request should use the proxy server at the URI specified in the Location
-					header.</p>
-				</div>
 			</section>
 		</section>
 		<footer class="with-border-bottom">
@@ -3686,6 +2849,7 @@ img {
 				<h2>Legend</h2>
 				<div class="tsd-legend-group">
 					<ul class="tsd-legend">
+						<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 						<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 						<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
@@ -3849,7 +3013,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop === 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop <= 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
 
 /***/ }),
 

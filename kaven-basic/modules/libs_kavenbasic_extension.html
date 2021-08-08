@@ -6,7 +6,29 @@
 	<title>libs/KavenBasic.Extension | kaven-basic</title>
 	<meta name="description" content="Documentation for kaven-basic">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+	<style type="text/css">:root {
+  --color-background: #fdfdfd;
+  --color-text: #222;
+  --color-text-aside: #707070;
+  --color-link: #4da6ff;
+  --color-menu-divider: #eee;
+  --color-menu-divider-focus: #000;
+  --color-menu-label: #707070;
+  --color-panel: #fff;
+  --color-panel-divider: #eee;
+  --color-comment-tag: #707070;
+  --color-comment-tag-text: #fff;
+  --color-code-background: rgba(0, 0, 0, 0.04);
+  --color-ts: #9600ff;
+  --color-ts-interface: #647f1b;
+  --color-ts-enum: #937210;
+  --color-ts-class: #0672de;
+  --color-ts-private: #707070;
+  --color-toolbar: #fff;
+  --color-toolbar-text: #333;
+}
+
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
  * * HTML5 display definitions
  * * ========================================================================== */
@@ -1593,14 +1615,14 @@ ul.tsd-descriptions > li > :last-child > :last-child > :last-child,
   }
 }
 body {
-  background: #fdfdfd;
+  background: var(--color-background);
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
-  color: #222;
+  color: var(--color-text);
 }
 
 a {
-  color: #4da6ff;
+  color: var(--color-link);
   text-decoration: none;
 }
 a:hover {
@@ -1612,7 +1634,7 @@ code, pre {
   padding: 0.2em;
   margin: 0;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: var(--color-code-background);
 }
 
 pre {
@@ -1678,7 +1700,7 @@ blockquote {
     padding: 20px 20px 0 0;
     max-width: 450px;
     visibility: hidden;
-    background-color: #fff;
+    background-color: var(--color-panel);
     transform: translate(100%, 0);
   }
   html.default .col-menu > *:last-child {
@@ -1738,7 +1760,7 @@ html.default.has-menu .col-content {
 .tsd-page-title {
   padding: 70px 0 20px 0;
   margin: 0 0 40px 0;
-  background: #fff;
+  background: var(--color-panel);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 .tsd-page-title h1 {
@@ -1748,10 +1770,10 @@ html.default.has-menu .col-content {
 .tsd-breadcrumb {
   margin: 0;
   padding: 0;
-  color: #707070;
+  color: var(--color-text-aside);
 }
 .tsd-breadcrumb a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: none;
 }
 .tsd-breadcrumb a:hover {
@@ -1824,8 +1846,8 @@ dl.tsd-comment-tags dt {
   padding: 1px 5px;
   margin: 0 10px 0 0;
   border-radius: 4px;
-  border: 1px solid #707070;
-  color: #707070;
+  border: 1px solid var(--color-comment-tag);
+  color: var(--color-comment-tag);
   font-size: 0.8em;
   font-weight: normal;
 }
@@ -1895,7 +1917,7 @@ dl.tsd-comment-tags p {
     top: 40px;
     right: 20px;
     height: auto;
-    background-color: #fff;
+    background-color: var(--color-panel);
     visibility: hidden;
     transform: translate(50%, 0);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
@@ -1917,11 +1939,11 @@ dl.tsd-comment-tags p {
 }
 
 footer {
-  border-top: 1px solid #eee;
-  background-color: #fff;
+  border-top: 1px solid var(--color-panel-divider);
+  background-color: var(--color-panel);
 }
 footer.with-border-bottom {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 footer .tsd-legend-group {
   font-size: 0;
@@ -1959,7 +1981,7 @@ footer .tsd-legend {
 .tsd-index-panel h3 {
   margin: 0 -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-index-panel ul.tsd-index-list {
   -webkit-column-count: 3;
@@ -2003,39 +2025,39 @@ footer .tsd-legend {
 }
 .tsd-index-panel a,
 .tsd-index-panel .tsd-parent-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-parent-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-parent-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-parent-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-is-private a {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-flag {
   display: inline-block;
   padding: 1px 5px;
   border-radius: 4px;
-  color: #fff;
-  background-color: #707070;
+  color: var(--color-comment-tag-text);
+  background-color: var(--color-comment-tag);
   text-indent: 0;
   font-size: 14px;
   font-weight: normal;
@@ -2055,19 +2077,19 @@ footer .tsd-legend {
   border-bottom: none;
 }
 .tsd-member a[data-tsd-kind] {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-member a[data-tsd-kind=Interface] {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-member a[data-tsd-kind=Enum] {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-member a[data-tsd-kind=Class] {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-member a[data-tsd-kind=Private] {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-navigation {
@@ -2078,7 +2100,7 @@ footer .tsd-legend {
   padding-top: 2px;
   padding-bottom: 2px;
   border-left: 2px solid transparent;
-  color: #222;
+  color: var(--color-text);
   text-decoration: none;
   transition: border-left-color 0.1s;
 }
@@ -2121,10 +2143,10 @@ footer .tsd-legend {
   padding-left: 105px;
 }
 .tsd-navigation.primary > ul {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li.current > a {
   font-weight: bold;
@@ -2132,7 +2154,7 @@ footer .tsd-legend {
 .tsd-navigation.primary li.label span {
   display: block;
   padding: 20px 0 6px 5px;
-  color: #707070;
+  color: var(--color-menu-label);
 }
 .tsd-navigation.primary li.globals + li > span, .tsd-navigation.primary li.globals + li > a {
   padding-top: 20px;
@@ -2172,16 +2194,16 @@ footer .tsd-legend {
   padding-left: 125px;
 }
 .tsd-navigation.secondary ul.current a {
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.focus > a,
 .tsd-navigation.secondary ul.current li.focus > a {
-  border-left-color: #000;
+  border-left-color: var(--color-menu-divider-focus);
 }
 .tsd-navigation.secondary li.current {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.current > a {
   font-weight: bold;
@@ -2196,7 +2218,7 @@ footer .tsd-legend {
 .tsd-panel {
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--color-panel);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 .tsd-panel:empty {
@@ -2205,7 +2227,7 @@ footer .tsd-legend {
 .tsd-panel > h1, .tsd-panel > h2, .tsd-panel > h3 {
   margin: 1.5em -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-panel > h1.tsd-before-signature, .tsd-panel > h2.tsd-before-signature, .tsd-panel > h3.tsd-before-signature {
   margin-bottom: 0;
@@ -2267,7 +2289,7 @@ footer .tsd-legend {
   outline: 0;
   border: 0;
   background: transparent;
-  color: #222;
+  color: var(--color-text);
 }
 #tsd-search .field label {
   position: absolute;
@@ -2290,17 +2312,17 @@ footer .tsd-legend {
 }
 #tsd-search .results li {
   padding: 0 10px;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 #tsd-search .results li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 #tsd-search .results li.state {
   display: none;
 }
 #tsd-search .results li.current,
 #tsd-search .results li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search .results a {
   display: block;
@@ -2309,11 +2331,11 @@ footer .tsd-legend {
   top: 10px;
 }
 #tsd-search .results span.parent {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 #tsd-search.has-focus {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search.has-focus .field input {
   top: 0;
@@ -2336,7 +2358,7 @@ footer .tsd-legend {
 .tsd-signature {
   margin: 0 0 1em 0;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 14px;
   overflow-x: auto;
@@ -2361,7 +2383,7 @@ footer .tsd-legend {
 }
 
 .tsd-signature-symbol {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 
@@ -2373,7 +2395,7 @@ footer .tsd-legend {
 .tsd-signatures {
   padding: 0;
   margin: 0 0 1em 0;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
 }
 .tsd-signatures .tsd-signature {
   margin: 0;
@@ -2384,7 +2406,7 @@ footer .tsd-legend {
   border-top-width: 0;
 }
 .tsd-signatures .tsd-signature.current {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-signatures.active > .tsd-signature {
   cursor: pointer;
@@ -2458,11 +2480,11 @@ ul.tsd-type-parameters .tsd-comment {
 
 .tsd-sources {
   font-size: 14px;
-  color: #707070;
+  color: var(--color-text-aside);
   margin: 0 0 1em 0;
 }
 .tsd-sources a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: underline;
 }
 .tsd-sources ul, .tsd-sources p {
@@ -2480,13 +2502,13 @@ ul.tsd-type-parameters .tsd-comment {
   left: 0;
   width: 100%;
   height: 40px;
-  color: #333;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  color: var(--color-toolbar-text);
+  background: var(--color-toolbar);
+  border-bottom: 1px solid var(--color-panel-divider);
   transition: transform 0.3s linear;
 }
 .tsd-page-toolbar a {
-  color: #333;
+  color: var(--color-toolbar-text);
   text-decoration: none;
 }
 .tsd-page-toolbar a.title {
@@ -2546,7 +2568,7 @@ ul.tsd-type-parameters .tsd-comment {
 }
 .tsd-widget.active {
   opacity: 1;
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-widget.no-caption {
   width: 40px;
@@ -2615,16 +2637,16 @@ input[type=checkbox]:checked + .tsd-widget:before {
 }
 .tsd-select .tsd-select-list li {
   padding: 0 20px 0 0;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 .tsd-select .tsd-select-list li:before {
   background-position: 40px 0;
 }
 .tsd-select .tsd-select-list li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 .tsd-select .tsd-select-list li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-select .tsd-select-list li.selected:before {
   background-position: -200px 0;
@@ -2682,188 +2704,128 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#adddays" class="tsd-kind-icon">Add<wbr>Days</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#addhours" class="tsd-kind-icon">Add<wbr>Hours</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#addmilliseconds" class="tsd-kind-icon">Add<wbr>Milliseconds</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#addminutes" class="tsd-kind-icon">Add<wbr>Minutes</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#addmonths" class="tsd-kind-icon">Add<wbr>Months</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#addquarters" class="tsd-kind-icon">Add<wbr>Quarters</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#addseconds" class="tsd-kind-icon">Add<wbr>Seconds</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#addweeks" class="tsd-kind-icon">Add<wbr>Weeks</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#addyears" class="tsd-kind-icon">Add<wbr>Years</a>
+		<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+			<a href="libs_KavenBasic_Extension.html#All" class="tsd-kind-icon">All</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="libs_kavenbasic_extension.html#all" class="tsd-kind-icon">All</a>
+			<a href="libs_KavenBasic_Extension.html#Any" class="tsd-kind-icon">Any</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="libs_KavenBasic_Extension.html#CapitalizeSentences" class="tsd-kind-icon">Capitalize<wbr>Sentences</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="libs_KavenBasic_Extension.html#CapitalizeWords" class="tsd-kind-icon">Capitalize<wbr>Words</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="libs_KavenBasic_Extension.html#CharactersCount" class="tsd-kind-icon">Characters<wbr>Count</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="libs_kavenbasic_extension.html#any" class="tsd-kind-icon">Any</a>
+			<a href="libs_KavenBasic_Extension.html#CloneArray" class="tsd-kind-icon">Clone<wbr>Array</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#capitalizesentences" class="tsd-kind-icon">Capitalize<wbr>Sentences</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#capitalizewords" class="tsd-kind-icon">Capitalize<wbr>Words</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#characterscount" class="tsd-kind-icon">Characters<wbr>Count</a>
+			<a href="libs_KavenBasic_Extension.html#ContainsSubstringOnlyOnce" class="tsd-kind-icon">Contains<wbr>Substring<wbr>Only<wbr>Once</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="libs_kavenbasic_extension.html#clonearray" class="tsd-kind-icon">Clone<wbr>Array</a>
+			<a href="libs_KavenBasic_Extension.html#Distinct" class="tsd-kind-icon">Distinct</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#containssubstringonlyonce" class="tsd-kind-icon">Contains<wbr>Substring<wbr>Only<wbr>Once</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#diffmilliseconds" class="tsd-kind-icon">Diff<wbr>Milliseconds</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#diffmonths" class="tsd-kind-icon">Diff<wbr>Months</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#diffyears" class="tsd-kind-icon">Diff<wbr>Years</a>
+			<a href="libs_KavenBasic_Extension.html#FileSize" class="tsd-kind-icon">File<wbr>Size</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="libs_kavenbasic_extension.html#distinct" class="tsd-kind-icon">Distinct</a>
+			<a href="libs_KavenBasic_Extension.html#First" class="tsd-kind-icon">First</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#filesize" class="tsd-kind-icon">File<wbr>Size</a>
+			<a href="libs_KavenBasic_Extension.html#FormatString" class="tsd-kind-icon">Format<wbr>String</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="libs_KavenBasic_Extension.html#GetBaseLog" class="tsd-kind-icon">Get<wbr>Base<wbr>Log</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="libs_KavenBasic_Extension.html#GetIndent" class="tsd-kind-icon">Get<wbr>Indent</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="libs_KavenBasic_Extension.html#GetLeadingNumber" class="tsd-kind-icon">Get<wbr>Leading<wbr>Number</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="libs_KavenBasic_Extension.html#GetSubstring" class="tsd-kind-icon">Get<wbr>Substring</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="libs_kavenbasic_extension.html#first" class="tsd-kind-icon">First</a>
+			<a href="libs_KavenBasic_Extension.html#Last" class="tsd-kind-icon">Last</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#formatdate" class="tsd-kind-icon">Format<wbr>Date</a>
+			<a href="libs_KavenBasic_Extension.html#Mod" class="tsd-kind-icon">Mod</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#formatstring" class="tsd-kind-icon">Format<wbr>String</a>
+			<a href="libs_KavenBasic_Extension.html#OnlyContains" class="tsd-kind-icon">Only<wbr>Contains</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#getbaselog" class="tsd-kind-icon">Get<wbr>Base<wbr>Log</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#getindent" class="tsd-kind-icon">Get<wbr>Indent</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#getsubstring" class="tsd-kind-icon">Get<wbr>Substring</a>
+			<a href="libs_KavenBasic_Extension.html#ParseFileSize" class="tsd-kind-icon">Parse<wbr>File<wbr>Size</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="libs_kavenbasic_extension.html#last" class="tsd-kind-icon">Last</a>
+			<a href="libs_KavenBasic_Extension.html#Remove" class="tsd-kind-icon">Remove</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#mod" class="tsd-kind-icon">Mod</a>
+			<a href="libs_KavenBasic_Extension.html#ReplaceAll" class="tsd-kind-icon">Replace<wbr>All</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#onlycontains" class="tsd-kind-icon">Only<wbr>Contains</a>
+			<a href="libs_KavenBasic_Extension.html#ReplaceAt" class="tsd-kind-icon">Replace<wbr>At</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="libs_KavenBasic_Extension.html#ReplaceAtPos" class="tsd-kind-icon">Replace<wbr>AtPos</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="libs_KavenBasic_Extension.html#Reverse" class="tsd-kind-icon">Reverse</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="libs_kavenbasic_extension.html#remove" class="tsd-kind-icon">Remove</a>
+			<a href="libs_KavenBasic_Extension.html#SequenceEqual" class="tsd-kind-icon">Sequence<wbr>Equal</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#replaceall" class="tsd-kind-icon">Replace<wbr>All</a>
+			<a href="libs_KavenBasic_Extension.html#Swap32" class="tsd-kind-icon">Swap32</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#replaceat" class="tsd-kind-icon">Replace<wbr>At</a>
+			<a href="libs_KavenBasic_Extension.html#ToArray" class="tsd-kind-icon">To<wbr>Array</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#replaceatpos" class="tsd-kind-icon">Replace<wbr>AtPos</a>
+			<a href="libs_KavenBasic_Extension.html#ToDays" class="tsd-kind-icon">To<wbr>Days</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#reverse" class="tsd-kind-icon">Reverse</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="libs_kavenbasic_extension.html#sequenceequal" class="tsd-kind-icon">Sequence<wbr>Equal</a>
+			<a href="libs_KavenBasic_Extension.html#ToHEX" class="tsd-kind-icon">ToHEX</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#subtractdays" class="tsd-kind-icon">Subtract<wbr>Days</a>
+			<a href="libs_KavenBasic_Extension.html#ToHours" class="tsd-kind-icon">To<wbr>Hours</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#subtracthours" class="tsd-kind-icon">Subtract<wbr>Hours</a>
+			<a href="libs_KavenBasic_Extension.html#ToMilliseconds" class="tsd-kind-icon">To<wbr>Milliseconds</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#subtractmilliseconds" class="tsd-kind-icon">Subtract<wbr>Milliseconds</a>
+			<a href="libs_KavenBasic_Extension.html#ToMinutes" class="tsd-kind-icon">To<wbr>Minutes</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#subtractminutes" class="tsd-kind-icon">Subtract<wbr>Minutes</a>
+			<a href="libs_KavenBasic_Extension.html#ToMonths" class="tsd-kind-icon">To<wbr>Months</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#subtractmonths" class="tsd-kind-icon">Subtract<wbr>Months</a>
+			<a href="libs_KavenBasic_Extension.html#ToSeconds" class="tsd-kind-icon">To<wbr>Seconds</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#subtractquarters" class="tsd-kind-icon">Subtract<wbr>Quarters</a>
+			<a href="libs_KavenBasic_Extension.html#ToUInt32" class="tsd-kind-icon">ToUInt32</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#subtractseconds" class="tsd-kind-icon">Subtract<wbr>Seconds</a>
+			<a href="libs_KavenBasic_Extension.html#ToWeeks" class="tsd-kind-icon">To<wbr>Weeks</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#subtractweeks" class="tsd-kind-icon">Subtract<wbr>Weeks</a>
+			<a href="libs_KavenBasic_Extension.html#ToYears" class="tsd-kind-icon">To<wbr>Years</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#subtractyears" class="tsd-kind-icon">Subtract<wbr>Years</a>
+			<a href="libs_KavenBasic_Extension.html#TrimAll" class="tsd-kind-icon">Trim<wbr>All</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#swap32" class="tsd-kind-icon">Swap32</a>
+			<a href="libs_KavenBasic_Extension.html#TrimEnd" class="tsd-kind-icon">Trim<wbr>End</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#toarray" class="tsd-kind-icon">To<wbr>Array</a>
+			<a href="libs_KavenBasic_Extension.html#UTF8Encode" class="tsd-kind-icon">UTF8<wbr>Encode</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#todays" class="tsd-kind-icon">To<wbr>Days</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#tohex" class="tsd-kind-icon">ToHEX</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#tohours" class="tsd-kind-icon">To<wbr>Hours</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#tomilliseconds" class="tsd-kind-icon">To<wbr>Milliseconds</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#tominutes" class="tsd-kind-icon">To<wbr>Minutes</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#tomonths" class="tsd-kind-icon">To<wbr>Months</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#toseconds" class="tsd-kind-icon">To<wbr>Seconds</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#touint32" class="tsd-kind-icon">ToUInt32</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#toweeks" class="tsd-kind-icon">To<wbr>Weeks</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#toyears" class="tsd-kind-icon">To<wbr>Years</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#trimall" class="tsd-kind-icon">Trim<wbr>All</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#trimend" class="tsd-kind-icon">Trim<wbr>End</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#utf8encode" class="tsd-kind-icon">UTF8<wbr>Encode</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="libs_kavenbasic_extension.html#padstart" class="tsd-kind-icon">pad<wbr>Start</a>
+			<a href="libs_KavenBasic_Extension.html#padStart" class="tsd-kind-icon">pad<wbr>Start</a>
 		</li>
 	</ul>
 </nav>
@@ -2876,67 +2838,47 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#adddays" class="tsd-kind-icon">Add<wbr>Days</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#addhours" class="tsd-kind-icon">Add<wbr>Hours</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#addmilliseconds" class="tsd-kind-icon">Add<wbr>Milliseconds</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#addminutes" class="tsd-kind-icon">Add<wbr>Minutes</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#addmonths" class="tsd-kind-icon">Add<wbr>Months</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#addquarters" class="tsd-kind-icon">Add<wbr>Quarters</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#addseconds" class="tsd-kind-icon">Add<wbr>Seconds</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#addweeks" class="tsd-kind-icon">Add<wbr>Weeks</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#addyears" class="tsd-kind-icon">Add<wbr>Years</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_kavenbasic_extension.html#all" class="tsd-kind-icon">All</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_kavenbasic_extension.html#any" class="tsd-kind-icon">Any</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#capitalizesentences" class="tsd-kind-icon">Capitalize<wbr>Sentences</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#capitalizewords" class="tsd-kind-icon">Capitalize<wbr>Words</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#characterscount" class="tsd-kind-icon">Characters<wbr>Count</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_kavenbasic_extension.html#clonearray" class="tsd-kind-icon">Clone<wbr>Array</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#containssubstringonlyonce" class="tsd-kind-icon">Contains<wbr>Substring<wbr>Only<wbr>Once</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#diffmilliseconds" class="tsd-kind-icon">Diff<wbr>Milliseconds</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#diffmonths" class="tsd-kind-icon">Diff<wbr>Months</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#diffyears" class="tsd-kind-icon">Diff<wbr>Years</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_kavenbasic_extension.html#distinct" class="tsd-kind-icon">Distinct</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#filesize" class="tsd-kind-icon">File<wbr>Size</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_kavenbasic_extension.html#first" class="tsd-kind-icon">First</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#formatdate" class="tsd-kind-icon">Format<wbr>Date</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#formatstring" class="tsd-kind-icon">Format<wbr>String</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#getbaselog" class="tsd-kind-icon">Get<wbr>Base<wbr>Log</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#getindent" class="tsd-kind-icon">Get<wbr>Indent</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#getsubstring" class="tsd-kind-icon">Get<wbr>Substring</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_kavenbasic_extension.html#last" class="tsd-kind-icon">Last</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#mod" class="tsd-kind-icon">Mod</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#onlycontains" class="tsd-kind-icon">Only<wbr>Contains</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_kavenbasic_extension.html#remove" class="tsd-kind-icon">Remove</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#replaceall" class="tsd-kind-icon">Replace<wbr>All</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#replaceat" class="tsd-kind-icon">Replace<wbr>At</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#replaceatpos" class="tsd-kind-icon">Replace<wbr>AtPos</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#reverse" class="tsd-kind-icon">Reverse</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_kavenbasic_extension.html#sequenceequal" class="tsd-kind-icon">Sequence<wbr>Equal</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#subtractdays" class="tsd-kind-icon">Subtract<wbr>Days</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#subtracthours" class="tsd-kind-icon">Subtract<wbr>Hours</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#subtractmilliseconds" class="tsd-kind-icon">Subtract<wbr>Milliseconds</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#subtractminutes" class="tsd-kind-icon">Subtract<wbr>Minutes</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#subtractmonths" class="tsd-kind-icon">Subtract<wbr>Months</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#subtractquarters" class="tsd-kind-icon">Subtract<wbr>Quarters</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#subtractseconds" class="tsd-kind-icon">Subtract<wbr>Seconds</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#subtractweeks" class="tsd-kind-icon">Subtract<wbr>Weeks</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#subtractyears" class="tsd-kind-icon">Subtract<wbr>Years</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#swap32" class="tsd-kind-icon">Swap32</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#toarray" class="tsd-kind-icon">To<wbr>Array</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#todays" class="tsd-kind-icon">To<wbr>Days</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#tohex" class="tsd-kind-icon">ToHEX</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#tohours" class="tsd-kind-icon">To<wbr>Hours</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#tomilliseconds" class="tsd-kind-icon">To<wbr>Milliseconds</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#tominutes" class="tsd-kind-icon">To<wbr>Minutes</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#tomonths" class="tsd-kind-icon">To<wbr>Months</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#toseconds" class="tsd-kind-icon">To<wbr>Seconds</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#touint32" class="tsd-kind-icon">ToUInt32</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#toweeks" class="tsd-kind-icon">To<wbr>Weeks</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#toyears" class="tsd-kind-icon">To<wbr>Years</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#trimall" class="tsd-kind-icon">Trim<wbr>All</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#trimend" class="tsd-kind-icon">Trim<wbr>End</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#utf8encode" class="tsd-kind-icon">UTF8<wbr>Encode</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_kavenbasic_extension.html#padstart" class="tsd-kind-icon">pad<wbr>Start</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_KavenBasic_Extension.html#All" class="tsd-kind-icon">All</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_KavenBasic_Extension.html#Any" class="tsd-kind-icon">Any</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#CapitalizeSentences" class="tsd-kind-icon">Capitalize<wbr>Sentences</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#CapitalizeWords" class="tsd-kind-icon">Capitalize<wbr>Words</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#CharactersCount" class="tsd-kind-icon">Characters<wbr>Count</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_KavenBasic_Extension.html#CloneArray" class="tsd-kind-icon">Clone<wbr>Array</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ContainsSubstringOnlyOnce" class="tsd-kind-icon">Contains<wbr>Substring<wbr>Only<wbr>Once</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_KavenBasic_Extension.html#Distinct" class="tsd-kind-icon">Distinct</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#FileSize" class="tsd-kind-icon">File<wbr>Size</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_KavenBasic_Extension.html#First" class="tsd-kind-icon">First</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#FormatString" class="tsd-kind-icon">Format<wbr>String</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#GetBaseLog" class="tsd-kind-icon">Get<wbr>Base<wbr>Log</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#GetIndent" class="tsd-kind-icon">Get<wbr>Indent</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#GetLeadingNumber" class="tsd-kind-icon">Get<wbr>Leading<wbr>Number</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#GetSubstring" class="tsd-kind-icon">Get<wbr>Substring</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_KavenBasic_Extension.html#Last" class="tsd-kind-icon">Last</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#Mod" class="tsd-kind-icon">Mod</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#OnlyContains" class="tsd-kind-icon">Only<wbr>Contains</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ParseFileSize" class="tsd-kind-icon">Parse<wbr>File<wbr>Size</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_KavenBasic_Extension.html#Remove" class="tsd-kind-icon">Remove</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ReplaceAll" class="tsd-kind-icon">Replace<wbr>All</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ReplaceAt" class="tsd-kind-icon">Replace<wbr>At</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ReplaceAtPos" class="tsd-kind-icon">Replace<wbr>AtPos</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#Reverse" class="tsd-kind-icon">Reverse</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="libs_KavenBasic_Extension.html#SequenceEqual" class="tsd-kind-icon">Sequence<wbr>Equal</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#Swap32" class="tsd-kind-icon">Swap32</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToArray" class="tsd-kind-icon">To<wbr>Array</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToDays" class="tsd-kind-icon">To<wbr>Days</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToHEX" class="tsd-kind-icon">ToHEX</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToHours" class="tsd-kind-icon">To<wbr>Hours</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToMilliseconds" class="tsd-kind-icon">To<wbr>Milliseconds</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToMinutes" class="tsd-kind-icon">To<wbr>Minutes</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToMonths" class="tsd-kind-icon">To<wbr>Months</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToSeconds" class="tsd-kind-icon">To<wbr>Seconds</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToUInt32" class="tsd-kind-icon">ToUInt32</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToWeeks" class="tsd-kind-icon">To<wbr>Weeks</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#ToYears" class="tsd-kind-icon">To<wbr>Years</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#TrimAll" class="tsd-kind-icon">Trim<wbr>All</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#TrimEnd" class="tsd-kind-icon">Trim<wbr>End</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#UTF8Encode" class="tsd-kind-icon">UTF8<wbr>Encode</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="libs_KavenBasic_Extension.html#padStart" class="tsd-kind-icon">pad<wbr>Start</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2944,251 +2886,17 @@ img {
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="adddays" class="tsd-anchor"></a>
-				<h3>Add<wbr>Days</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Add<wbr>Days<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, days<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:86</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>days: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="addhours" class="tsd-anchor"></a>
-				<h3>Add<wbr>Hours</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Add<wbr>Hours<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, hours<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:80</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>hours: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="addmilliseconds" class="tsd-anchor"></a>
-				<h3>Add<wbr>Milliseconds</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Add<wbr>Milliseconds<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, milliseconds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:62</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>milliseconds: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="addminutes" class="tsd-anchor"></a>
-				<h3>Add<wbr>Minutes</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Add<wbr>Minutes<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, minutes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:74</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>minutes: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="addmonths" class="tsd-anchor"></a>
-				<h3>Add<wbr>Months</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Add<wbr>Months<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, months<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:98</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>months: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="addquarters" class="tsd-anchor"></a>
-				<h3>Add<wbr>Quarters</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Add<wbr>Quarters<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, quarters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:104</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>quarters: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="addseconds" class="tsd-anchor"></a>
-				<h3>Add<wbr>Seconds</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Add<wbr>Seconds<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, seconds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:68</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>seconds: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="addweeks" class="tsd-anchor"></a>
-				<h3>Add<wbr>Weeks</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Add<wbr>Weeks<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, weeks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:92</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>weeks: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="addyears" class="tsd-anchor"></a>
-				<h3>Add<wbr>Years</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Add<wbr>Years<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, years<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:110</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>years: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-				<a name="all" class="tsd-anchor"></a>
+				<a name="All" class="tsd-anchor"></a>
 				<h3>All</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">All&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, func<span class="tsd-signature-symbol">: </span><a href="libs_types.html#booleanmethod" class="tsd-signature-type" data-tsd-kind="Type alias">BooleanMethod</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					<li class="tsd-signature tsd-kind-icon">All&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, func<span class="tsd-signature-symbol">: </span><a href="libs_Types.html#BooleanMethod" class="tsd-signature-type" data-tsd-kind="Type alias">BooleanMethod</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:529</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:381</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -3203,7 +2911,7 @@ img {
 								<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
 							<li>
-								<h5>func: <a href="libs_types.html#booleanmethod" class="tsd-signature-type" data-tsd-kind="Type alias">BooleanMethod</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5>func: <a href="libs_Types.html#BooleanMethod" class="tsd-signature-type" data-tsd-kind="Type alias">BooleanMethod</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -3211,16 +2919,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-				<a name="any" class="tsd-anchor"></a>
+				<a name="Any" class="tsd-anchor"></a>
 				<h3>Any</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">Any&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, func<span class="tsd-signature-symbol">: </span><a href="libs_types.html#booleanmethod" class="tsd-signature-type" data-tsd-kind="Type alias">BooleanMethod</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					<li class="tsd-signature tsd-kind-icon">Any&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, func<span class="tsd-signature-symbol">: </span><a href="libs_Types.html#BooleanMethod" class="tsd-signature-type" data-tsd-kind="Type alias">BooleanMethod</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:515</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:367</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -3235,7 +2943,7 @@ img {
 								<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
 							<li>
-								<h5>func: <a href="libs_types.html#booleanmethod" class="tsd-signature-type" data-tsd-kind="Type alias">BooleanMethod</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5>func: <a href="libs_Types.html#BooleanMethod" class="tsd-signature-type" data-tsd-kind="Type alias">BooleanMethod</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -3243,7 +2951,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="capitalizesentences" class="tsd-anchor"></a>
+				<a name="CapitalizeSentences" class="tsd-anchor"></a>
 				<h3>Capitalize<wbr>Sentences</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Capitalize<wbr>Sentences<span class="tsd-signature-symbol">(</span>sentences<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3252,7 +2960,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:345</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:197</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3266,7 +2974,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="capitalizewords" class="tsd-anchor"></a>
+				<a name="CapitalizeWords" class="tsd-anchor"></a>
 				<h3>Capitalize<wbr>Words</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Capitalize<wbr>Words<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3275,7 +2983,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:399</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:251</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3289,7 +2997,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="characterscount" class="tsd-anchor"></a>
+				<a name="CharactersCount" class="tsd-anchor"></a>
 				<h3>Characters<wbr>Count</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Characters<wbr>Count<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>characters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
@@ -3298,7 +3006,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:299</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:151</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3315,7 +3023,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-				<a name="clonearray" class="tsd-anchor"></a>
+				<a name="CloneArray" class="tsd-anchor"></a>
 				<h3>Clone<wbr>Array</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<li class="tsd-signature tsd-kind-icon">Clone<wbr>Array&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
@@ -3324,7 +3032,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:636</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:560</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3357,7 +3065,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="containssubstringonlyonce" class="tsd-anchor"></a>
+				<a name="ContainsSubstringOnlyOnce" class="tsd-anchor"></a>
 				<h3>Contains<wbr>Substring<wbr>Only<wbr>Once</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Contains<wbr>Substring<wbr>Only<wbr>Once<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>substrings<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
@@ -3366,7 +3074,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:282</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:134</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3382,86 +3090,8 @@ img {
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="diffmilliseconds" class="tsd-anchor"></a>
-				<h3>Diff<wbr>Milliseconds</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Diff<wbr>Milliseconds<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, anotherDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:173</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>anotherDate: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="diffmonths" class="tsd-anchor"></a>
-				<h3>Diff<wbr>Months</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Diff<wbr>Months<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, anotherDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:177</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>anotherDate: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="diffyears" class="tsd-anchor"></a>
-				<h3>Diff<wbr>Years</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Diff<wbr>Years<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, anotherDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:181</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>anotherDate: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-				<a name="distinct" class="tsd-anchor"></a>
+				<a name="Distinct" class="tsd-anchor"></a>
 				<h3>Distinct</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<li class="tsd-signature tsd-kind-icon">Distinct&lt;T&gt;<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
@@ -3470,7 +3100,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:328</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:180</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -3490,25 +3120,41 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="filesize" class="tsd-anchor"></a>
+				<a name="FileSize" class="tsd-anchor"></a>
 				<h3>File<wbr>Size</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">File<wbr>Size<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, baseOn1024<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<li class="tsd-signature tsd-kind-icon">File<wbr>Size<span class="tsd-signature-symbol">(</span>bytes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, baseOn1024<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:613</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:473</li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Humanize bytes</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-07</p>
+								</dd>
+							</dl>
+						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>num: <span class="tsd-signature-type">number</span></h5>
+								<h5>bytes: <span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li>
-								<h5>baseOn1024: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+								<h5>baseOn1024: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>default <code>false</code></p>
+								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -3516,7 +3162,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-				<a name="first" class="tsd-anchor"></a>
+				<a name="First" class="tsd-anchor"></a>
 				<h3>First</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<li class="tsd-signature tsd-kind-icon">First&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></li>
@@ -3525,7 +3171,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:469</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:321</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -3545,49 +3191,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="formatdate" class="tsd-anchor"></a>
-				<h3>Format<wbr>Date</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Format<wbr>Date<span class="tsd-signature-symbol">(</span>dt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, format<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:49</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<dl class="tsd-comment-tags">
-								<dt>since</dt>
-								<dd><p>1.0.5</p>
-								</dd>
-								<dt>version</dt>
-								<dd><p>2020-07-11</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> dt: <span class="tsd-signature-type">Date</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>default <code>new Date()</code></p>
-								</div>
-							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> format: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>default <code>DateTimeFormat.FullDataTime</code></p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="formatstring" class="tsd-anchor"></a>
+				<a name="FormatString" class="tsd-anchor"></a>
 				<h3>Format<wbr>String</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Format<wbr>String<span class="tsd-signature-symbol">(</span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3596,7 +3200,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:451</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:303</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3613,7 +3217,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getbaselog" class="tsd-anchor"></a>
+				<a name="GetBaseLog" class="tsd-anchor"></a>
 				<h3>Get<wbr>Base<wbr>Log</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>Base<wbr>Log<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, baseNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
@@ -3622,7 +3226,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:603</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:455</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3639,7 +3243,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getindent" class="tsd-anchor"></a>
+				<a name="GetIndent" class="tsd-anchor"></a>
 				<h3>Get<wbr>Indent</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Get<wbr>Indent<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3648,7 +3252,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:248</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:100</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3662,16 +3266,52 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="getsubstring" class="tsd-anchor"></a>
-				<h3>Get<wbr>Substring</h3>
+				<a name="GetLeadingNumber" class="tsd-anchor"></a>
+				<h3>Get<wbr>Leading<wbr>Number</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Get<wbr>Substring<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, pos<span class="tsd-signature-symbol">: </span><a href="../classes/libs_stringposition.stringposition.html" class="tsd-signature-type" data-tsd-kind="Class">StringPosition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Leading<wbr>Number<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, float<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:341</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:498</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-07</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>str: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>float: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="GetSubstring" class="tsd-anchor"></a>
+				<h3>Get<wbr>Substring</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Substring<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, pos<span class="tsd-signature-symbol">: </span><a href="../classes/libs_StringPosition.StringPosition.html" class="tsd-signature-type" data-tsd-kind="Class">StringPosition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in libs/KavenBasic.Extension.ts:193</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3680,7 +3320,7 @@ img {
 								<h5>str: <span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li>
-								<h5>pos: <a href="../classes/libs_stringposition.stringposition.html" class="tsd-signature-type" data-tsd-kind="Class">StringPosition</a></h5>
+								<h5>pos: <a href="../classes/libs_StringPosition.StringPosition.html" class="tsd-signature-type" data-tsd-kind="Class">StringPosition</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -3688,7 +3328,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-				<a name="last" class="tsd-anchor"></a>
+				<a name="Last" class="tsd-anchor"></a>
 				<h3>Last</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<li class="tsd-signature tsd-kind-icon">Last&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></li>
@@ -3697,7 +3337,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:477</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:329</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -3717,7 +3357,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="mod" class="tsd-anchor"></a>
+				<a name="Mod" class="tsd-anchor"></a>
 				<h3>Mod</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Mod<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
@@ -3726,7 +3366,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:607</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:459</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3743,7 +3383,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="onlycontains" class="tsd-anchor"></a>
+				<a name="OnlyContains" class="tsd-anchor"></a>
 				<h3>Only<wbr>Contains</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Only<wbr>Contains<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>characters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
@@ -3752,7 +3392,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:266</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:118</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3768,8 +3408,41 @@ img {
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="ParseFileSize" class="tsd-anchor"></a>
+				<h3>Parse<wbr>File<wbr>Size</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Parse<wbr>File<wbr>Size<span class="tsd-signature-symbol">(</span>fileSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in libs/KavenBasic.Extension.ts:509</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.0.0</p>
+								</dd>
+								<dt>version</dt>
+								<dd><p>2021-08-07</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>fileSize: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-				<a name="remove" class="tsd-anchor"></a>
+				<a name="Remove" class="tsd-anchor"></a>
 				<h3>Remove</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<li class="tsd-signature tsd-kind-icon">Remove&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
@@ -3778,7 +3451,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:465</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:317</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -3801,7 +3474,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="replaceall" class="tsd-anchor"></a>
+				<a name="ReplaceAll" class="tsd-anchor"></a>
 				<h3>Replace<wbr>All</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Replace<wbr>All<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, old<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, rep<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3810,7 +3483,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:188</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:40</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3830,7 +3503,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="replaceat" class="tsd-anchor"></a>
+				<a name="ReplaceAt" class="tsd-anchor"></a>
 				<h3>Replace<wbr>At</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Replace<wbr>At<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, rep<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, length<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3839,7 +3512,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:192</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:44</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3862,16 +3535,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="replaceatpos" class="tsd-anchor"></a>
+				<a name="ReplaceAtPos" class="tsd-anchor"></a>
 				<h3>Replace<wbr>AtPos</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Replace<wbr>AtPos<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, pos<span class="tsd-signature-symbol">: </span><a href="../classes/libs_stringposition.stringposition.html" class="tsd-signature-type" data-tsd-kind="Class">StringPosition</a>, rep<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<li class="tsd-signature tsd-kind-icon">Replace<wbr>AtPos<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, pos<span class="tsd-signature-symbol">: </span><a href="../classes/libs_StringPosition.StringPosition.html" class="tsd-signature-type" data-tsd-kind="Class">StringPosition</a>, rep<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:200</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:52</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3880,7 +3553,7 @@ img {
 								<h5>str: <span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li>
-								<h5>pos: <a href="../classes/libs_stringposition.stringposition.html" class="tsd-signature-type" data-tsd-kind="Class">StringPosition</a></h5>
+								<h5>pos: <a href="../classes/libs_StringPosition.StringPosition.html" class="tsd-signature-type" data-tsd-kind="Class">StringPosition</a></h5>
 							</li>
 							<li>
 								<h5>rep: <span class="tsd-signature-type">string</span></h5>
@@ -3891,7 +3564,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="reverse" class="tsd-anchor"></a>
+				<a name="Reverse" class="tsd-anchor"></a>
 				<h3>Reverse</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Reverse<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -3900,7 +3573,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:447</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:299</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3914,7 +3587,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-				<a name="sequenceequal" class="tsd-anchor"></a>
+				<a name="SequenceEqual" class="tsd-anchor"></a>
 				<h3>Sequence<wbr>Equal</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<li class="tsd-signature tsd-kind-icon">Sequence<wbr>Equal&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, second<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
@@ -3923,7 +3596,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:489</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:341</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -3946,241 +3619,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="subtractdays" class="tsd-anchor"></a>
-				<h3>Subtract<wbr>Days</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Subtract<wbr>Days<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, days<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:142</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>days: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="subtracthours" class="tsd-anchor"></a>
-				<h3>Subtract<wbr>Hours</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Subtract<wbr>Hours<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, hours<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:136</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>hours: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="subtractmilliseconds" class="tsd-anchor"></a>
-				<h3>Subtract<wbr>Milliseconds</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Subtract<wbr>Milliseconds<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, milliseconds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:118</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>milliseconds: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="subtractminutes" class="tsd-anchor"></a>
-				<h3>Subtract<wbr>Minutes</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Subtract<wbr>Minutes<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, minutes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:130</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>minutes: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="subtractmonths" class="tsd-anchor"></a>
-				<h3>Subtract<wbr>Months</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Subtract<wbr>Months<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, months<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:154</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>months: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="subtractquarters" class="tsd-anchor"></a>
-				<h3>Subtract<wbr>Quarters</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Subtract<wbr>Quarters<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, quarters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:160</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>quarters: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="subtractseconds" class="tsd-anchor"></a>
-				<h3>Subtract<wbr>Seconds</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Subtract<wbr>Seconds<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, seconds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:124</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>seconds: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="subtractweeks" class="tsd-anchor"></a>
-				<h3>Subtract<wbr>Weeks</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Subtract<wbr>Weeks<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, weeks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:148</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>weeks: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="subtractyears" class="tsd-anchor"></a>
-				<h3>Subtract<wbr>Years</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">Subtract<wbr>Years<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, years<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:166</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>date: <span class="tsd-signature-type">Date</span></h5>
-							</li>
-							<li>
-								<h5>years: <span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="swap32" class="tsd-anchor"></a>
+				<a name="Swap32" class="tsd-anchor"></a>
 				<h3>Swap32</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Swap32<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
@@ -4189,7 +3628,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:599</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:451</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4197,7 +3636,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="toarray" class="tsd-anchor"></a>
+				<a name="ToArray" class="tsd-anchor"></a>
 				<h3>To<wbr>Array</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">To<wbr>Array<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
@@ -4206,7 +3645,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:316</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:168</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4220,16 +3659,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="todays" class="tsd-anchor"></a>
+				<a name="ToDays" class="tsd-anchor"></a>
 				<h3>To<wbr>Days</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">To<wbr>Days<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					<li class="tsd-signature tsd-kind-icon">To<wbr>Days<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:573</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:425</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4238,7 +3677,7 @@ img {
 								<h5>num: <span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li>
-								<h5>currentUnit: <a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
+								<h5>currentUnit: <a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4246,7 +3685,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="tohex" class="tsd-anchor"></a>
+				<a name="ToHEX" class="tsd-anchor"></a>
 				<h3>ToHEX</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">ToHEX<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -4255,7 +3694,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:485</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:337</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4269,16 +3708,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="tohours" class="tsd-anchor"></a>
+				<a name="ToHours" class="tsd-anchor"></a>
 				<h3>To<wbr>Hours</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">To<wbr>Hours<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					<li class="tsd-signature tsd-kind-icon">To<wbr>Hours<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:569</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:421</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4287,7 +3726,7 @@ img {
 								<h5>num: <span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li>
-								<h5>currentUnit: <a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
+								<h5>currentUnit: <a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4295,16 +3734,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="tomilliseconds" class="tsd-anchor"></a>
+				<a name="ToMilliseconds" class="tsd-anchor"></a>
 				<h3>To<wbr>Milliseconds</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">To<wbr>Milliseconds<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					<li class="tsd-signature tsd-kind-icon">To<wbr>Milliseconds<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:539</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:391</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4313,7 +3752,7 @@ img {
 								<h5>num: <span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li>
-								<h5>currentUnit: <a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
+								<h5>currentUnit: <a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4321,16 +3760,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="tominutes" class="tsd-anchor"></a>
+				<a name="ToMinutes" class="tsd-anchor"></a>
 				<h3>To<wbr>Minutes</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">To<wbr>Minutes<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					<li class="tsd-signature tsd-kind-icon">To<wbr>Minutes<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:565</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:417</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4339,7 +3778,7 @@ img {
 								<h5>num: <span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li>
-								<h5>currentUnit: <a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
+								<h5>currentUnit: <a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4347,16 +3786,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="tomonths" class="tsd-anchor"></a>
+				<a name="ToMonths" class="tsd-anchor"></a>
 				<h3>To<wbr>Months</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">To<wbr>Months<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					<li class="tsd-signature tsd-kind-icon">To<wbr>Months<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:581</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:433</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4365,7 +3804,7 @@ img {
 								<h5>num: <span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li>
-								<h5>currentUnit: <a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
+								<h5>currentUnit: <a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4373,16 +3812,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="toseconds" class="tsd-anchor"></a>
+				<a name="ToSeconds" class="tsd-anchor"></a>
 				<h3>To<wbr>Seconds</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">To<wbr>Seconds<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					<li class="tsd-signature tsd-kind-icon">To<wbr>Seconds<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:561</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:413</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4391,7 +3830,7 @@ img {
 								<h5>num: <span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li>
-								<h5>currentUnit: <a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
+								<h5>currentUnit: <a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4399,7 +3838,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="touint32" class="tsd-anchor"></a>
+				<a name="ToUInt32" class="tsd-anchor"></a>
 				<h3>ToUInt32</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">ToUInt32<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
@@ -4408,7 +3847,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:589</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:441</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4416,16 +3855,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="toweeks" class="tsd-anchor"></a>
+				<a name="ToWeeks" class="tsd-anchor"></a>
 				<h3>To<wbr>Weeks</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">To<wbr>Weeks<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					<li class="tsd-signature tsd-kind-icon">To<wbr>Weeks<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:577</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:429</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4434,7 +3873,7 @@ img {
 								<h5>num: <span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li>
-								<h5>currentUnit: <a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
+								<h5>currentUnit: <a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4442,16 +3881,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="toyears" class="tsd-anchor"></a>
+				<a name="ToYears" class="tsd-anchor"></a>
 				<h3>To<wbr>Years</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">To<wbr>Years<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					<li class="tsd-signature tsd-kind-icon">To<wbr>Years<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currentUnit<span class="tsd-signature-symbol">: </span><a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:585</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:437</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4460,7 +3899,7 @@ img {
 								<h5>num: <span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li>
-								<h5>currentUnit: <a href="../enums/libs_enums.timeunit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
+								<h5>currentUnit: <a href="../enums/libs_Enums.TimeUnit.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TimeUnit</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4468,7 +3907,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="trimall" class="tsd-anchor"></a>
+				<a name="TrimAll" class="tsd-anchor"></a>
 				<h3>Trim<wbr>All</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Trim<wbr>All<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, trim<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, max<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -4477,7 +3916,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:223</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:75</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4497,7 +3936,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="trimend" class="tsd-anchor"></a>
+				<a name="TrimEnd" class="tsd-anchor"></a>
 				<h3>Trim<wbr>End</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">Trim<wbr>End<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, trim<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, max<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -4506,7 +3945,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:208</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:60</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4526,7 +3965,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="utf8encode" class="tsd-anchor"></a>
+				<a name="UTF8Encode" class="tsd-anchor"></a>
 				<h3>UTF8<wbr>Encode</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">UTF8<wbr>Encode<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -4535,7 +3974,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:405</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:257</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4549,7 +3988,7 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-				<a name="padstart" class="tsd-anchor"></a>
+				<a name="padStart" class="tsd-anchor"></a>
 				<h3>pad<wbr>Start</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">pad<wbr>Start<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, padString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -4558,7 +3997,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in libs/KavenBasic.Extension.ts:228</li>
+								<li>Defined in libs/KavenBasic.Extension.ts:80</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4583,6 +4022,7 @@ img {
 				<h2>Legend</h2>
 				<div class="tsd-legend-group">
 					<ul class="tsd-legend">
+						<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 						<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 						<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
@@ -4746,7 +4186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop === 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop <= 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
 
 /***/ }),
 

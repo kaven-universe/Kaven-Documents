@@ -6,7 +6,29 @@
 	<title>DSP | kaven-basic</title>
 	<meta name="description" content="Documentation for kaven-basic">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+	<style type="text/css">:root {
+  --color-background: #fdfdfd;
+  --color-text: #222;
+  --color-text-aside: #707070;
+  --color-link: #4da6ff;
+  --color-menu-divider: #eee;
+  --color-menu-divider-focus: #000;
+  --color-menu-label: #707070;
+  --color-panel: #fff;
+  --color-panel-divider: #eee;
+  --color-comment-tag: #707070;
+  --color-comment-tag-text: #fff;
+  --color-code-background: rgba(0, 0, 0, 0.04);
+  --color-ts: #9600ff;
+  --color-ts-interface: #647f1b;
+  --color-ts-enum: #937210;
+  --color-ts-class: #0672de;
+  --color-ts-private: #707070;
+  --color-toolbar: #fff;
+  --color-toolbar-text: #333;
+}
+
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
  * * HTML5 display definitions
  * * ========================================================================== */
@@ -1593,14 +1615,14 @@ ul.tsd-descriptions > li > :last-child > :last-child > :last-child,
   }
 }
 body {
-  background: #fdfdfd;
+  background: var(--color-background);
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
-  color: #222;
+  color: var(--color-text);
 }
 
 a {
-  color: #4da6ff;
+  color: var(--color-link);
   text-decoration: none;
 }
 a:hover {
@@ -1612,7 +1634,7 @@ code, pre {
   padding: 0.2em;
   margin: 0;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: var(--color-code-background);
 }
 
 pre {
@@ -1678,7 +1700,7 @@ blockquote {
     padding: 20px 20px 0 0;
     max-width: 450px;
     visibility: hidden;
-    background-color: #fff;
+    background-color: var(--color-panel);
     transform: translate(100%, 0);
   }
   html.default .col-menu > *:last-child {
@@ -1738,7 +1760,7 @@ html.default.has-menu .col-content {
 .tsd-page-title {
   padding: 70px 0 20px 0;
   margin: 0 0 40px 0;
-  background: #fff;
+  background: var(--color-panel);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 .tsd-page-title h1 {
@@ -1748,10 +1770,10 @@ html.default.has-menu .col-content {
 .tsd-breadcrumb {
   margin: 0;
   padding: 0;
-  color: #707070;
+  color: var(--color-text-aside);
 }
 .tsd-breadcrumb a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: none;
 }
 .tsd-breadcrumb a:hover {
@@ -1824,8 +1846,8 @@ dl.tsd-comment-tags dt {
   padding: 1px 5px;
   margin: 0 10px 0 0;
   border-radius: 4px;
-  border: 1px solid #707070;
-  color: #707070;
+  border: 1px solid var(--color-comment-tag);
+  color: var(--color-comment-tag);
   font-size: 0.8em;
   font-weight: normal;
 }
@@ -1895,7 +1917,7 @@ dl.tsd-comment-tags p {
     top: 40px;
     right: 20px;
     height: auto;
-    background-color: #fff;
+    background-color: var(--color-panel);
     visibility: hidden;
     transform: translate(50%, 0);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
@@ -1917,11 +1939,11 @@ dl.tsd-comment-tags p {
 }
 
 footer {
-  border-top: 1px solid #eee;
-  background-color: #fff;
+  border-top: 1px solid var(--color-panel-divider);
+  background-color: var(--color-panel);
 }
 footer.with-border-bottom {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 footer .tsd-legend-group {
   font-size: 0;
@@ -1959,7 +1981,7 @@ footer .tsd-legend {
 .tsd-index-panel h3 {
   margin: 0 -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-index-panel ul.tsd-index-list {
   -webkit-column-count: 3;
@@ -2003,39 +2025,39 @@ footer .tsd-legend {
 }
 .tsd-index-panel a,
 .tsd-index-panel .tsd-parent-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-parent-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-parent-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-parent-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-kind-module a {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-index-panel .tsd-kind-interface a {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-index-panel .tsd-kind-enum a {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-index-panel .tsd-kind-class a {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-index-panel .tsd-is-private a {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-flag {
   display: inline-block;
   padding: 1px 5px;
   border-radius: 4px;
-  color: #fff;
-  background-color: #707070;
+  color: var(--color-comment-tag-text);
+  background-color: var(--color-comment-tag);
   text-indent: 0;
   font-size: 14px;
   font-weight: normal;
@@ -2055,19 +2077,19 @@ footer .tsd-legend {
   border-bottom: none;
 }
 .tsd-member a[data-tsd-kind] {
-  color: #9600ff;
+  color: var(--color-ts);
 }
 .tsd-member a[data-tsd-kind=Interface] {
-  color: #647F1B;
+  color: var(--color-ts-interface);
 }
 .tsd-member a[data-tsd-kind=Enum] {
-  color: #937210;
+  color: var(--color-ts-enum);
 }
 .tsd-member a[data-tsd-kind=Class] {
-  color: #0672DE;
+  color: var(--color-ts-class);
 }
 .tsd-member a[data-tsd-kind=Private] {
-  color: #707070;
+  color: var(--color-ts-private);
 }
 
 .tsd-navigation {
@@ -2078,7 +2100,7 @@ footer .tsd-legend {
   padding-top: 2px;
   padding-bottom: 2px;
   border-left: 2px solid transparent;
-  color: #222;
+  color: var(--color-text);
   text-decoration: none;
   transition: border-left-color 0.1s;
 }
@@ -2121,10 +2143,10 @@ footer .tsd-legend {
   padding-left: 105px;
 }
 .tsd-navigation.primary > ul {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-panel-divider);
 }
 .tsd-navigation.primary li.current > a {
   font-weight: bold;
@@ -2132,7 +2154,7 @@ footer .tsd-legend {
 .tsd-navigation.primary li.label span {
   display: block;
   padding: 20px 0 6px 5px;
-  color: #707070;
+  color: var(--color-menu-label);
 }
 .tsd-navigation.primary li.globals + li > span, .tsd-navigation.primary li.globals + li > a {
   padding-top: 20px;
@@ -2172,16 +2194,16 @@ footer .tsd-legend {
   padding-left: 125px;
 }
 .tsd-navigation.secondary ul.current a {
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.focus > a,
 .tsd-navigation.secondary ul.current li.focus > a {
-  border-left-color: #000;
+  border-left-color: var(--color-menu-divider-focus);
 }
 .tsd-navigation.secondary li.current {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left-color: #eee;
+  border-left-color: var(--color-panel-divider);
 }
 .tsd-navigation.secondary li.current > a {
   font-weight: bold;
@@ -2196,7 +2218,7 @@ footer .tsd-legend {
 .tsd-panel {
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--color-panel);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 .tsd-panel:empty {
@@ -2205,7 +2227,7 @@ footer .tsd-legend {
 .tsd-panel > h1, .tsd-panel > h2, .tsd-panel > h3 {
   margin: 1.5em -20px 10px -20px;
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-panel-divider);
 }
 .tsd-panel > h1.tsd-before-signature, .tsd-panel > h2.tsd-before-signature, .tsd-panel > h3.tsd-before-signature {
   margin-bottom: 0;
@@ -2267,7 +2289,7 @@ footer .tsd-legend {
   outline: 0;
   border: 0;
   background: transparent;
-  color: #222;
+  color: var(--color-text);
 }
 #tsd-search .field label {
   position: absolute;
@@ -2290,17 +2312,17 @@ footer .tsd-legend {
 }
 #tsd-search .results li {
   padding: 0 10px;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 #tsd-search .results li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 #tsd-search .results li.state {
   display: none;
 }
 #tsd-search .results li.current,
 #tsd-search .results li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search .results a {
   display: block;
@@ -2309,11 +2331,11 @@ footer .tsd-legend {
   top: 10px;
 }
 #tsd-search .results span.parent {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 #tsd-search.has-focus {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 #tsd-search.has-focus .field input {
   top: 0;
@@ -2336,7 +2358,7 @@ footer .tsd-legend {
 .tsd-signature {
   margin: 0 0 1em 0;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 14px;
   overflow-x: auto;
@@ -2361,7 +2383,7 @@ footer .tsd-legend {
 }
 
 .tsd-signature-symbol {
-  color: #707070;
+  color: var(--color-text-aside);
   font-weight: normal;
 }
 
@@ -2373,7 +2395,7 @@ footer .tsd-legend {
 .tsd-signatures {
   padding: 0;
   margin: 0 0 1em 0;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-panel-divider);
 }
 .tsd-signatures .tsd-signature {
   margin: 0;
@@ -2384,7 +2406,7 @@ footer .tsd-legend {
   border-top-width: 0;
 }
 .tsd-signatures .tsd-signature.current {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-signatures.active > .tsd-signature {
   cursor: pointer;
@@ -2458,11 +2480,11 @@ ul.tsd-type-parameters .tsd-comment {
 
 .tsd-sources {
   font-size: 14px;
-  color: #707070;
+  color: var(--color-text-aside);
   margin: 0 0 1em 0;
 }
 .tsd-sources a {
-  color: #707070;
+  color: var(--color-text-aside);
   text-decoration: underline;
 }
 .tsd-sources ul, .tsd-sources p {
@@ -2480,13 +2502,13 @@ ul.tsd-type-parameters .tsd-comment {
   left: 0;
   width: 100%;
   height: 40px;
-  color: #333;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  color: var(--color-toolbar-text);
+  background: var(--color-toolbar);
+  border-bottom: 1px solid var(--color-panel-divider);
   transition: transform 0.3s linear;
 }
 .tsd-page-toolbar a {
-  color: #333;
+  color: var(--color-toolbar-text);
   text-decoration: none;
 }
 .tsd-page-toolbar a.title {
@@ -2546,7 +2568,7 @@ ul.tsd-type-parameters .tsd-comment {
 }
 .tsd-widget.active {
   opacity: 1;
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-widget.no-caption {
   width: 40px;
@@ -2615,16 +2637,16 @@ input[type=checkbox]:checked + .tsd-widget:before {
 }
 .tsd-select .tsd-select-list li {
   padding: 0 20px 0 0;
-  background-color: #fdfdfd;
+  background-color: var(--color-background);
 }
 .tsd-select .tsd-select-list li:before {
   background-position: 40px 0;
 }
 .tsd-select .tsd-select-list li:nth-child(even) {
-  background-color: #fff;
+  background-color: var(--color-panel);
 }
 .tsd-select .tsd-select-list li:hover {
-  background-color: #eee;
+  background-color: var(--color-panel-divider);
 }
 .tsd-select .tsd-select-list li.selected:before {
   background-position: -200px 0;
@@ -2683,85 +2705,85 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class="current tsd-kind-enum tsd-parent-kind-module">
-			<a href="libs_dsp_common.dsp.html" class="tsd-kind-icon">DSP</a>
+			<a href="libs_dsp_Common.DSP.html" class="tsd-kind-icon">DSP</a>
 			<ul>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#bandpass" class="tsd-kind-icon">BANDPASS</a>
+					<a href="libs_dsp_Common.DSP.html#BANDPASS" class="tsd-kind-icon">BANDPASS</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#bartlett" class="tsd-kind-icon">BARTLETT</a>
+					<a href="libs_dsp_Common.DSP.html#BARTLETT" class="tsd-kind-icon">BARTLETT</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#bartletthann" class="tsd-kind-icon">BARTLETTHANN</a>
+					<a href="libs_dsp_Common.DSP.html#BARTLETTHANN" class="tsd-kind-icon">BARTLETTHANN</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#blackman" class="tsd-kind-icon">BLACKMAN</a>
+					<a href="libs_dsp_Common.DSP.html#BLACKMAN" class="tsd-kind-icon">BLACKMAN</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#bw" class="tsd-kind-icon">BW</a>
+					<a href="libs_dsp_Common.DSP.html#BW" class="tsd-kind-icon">BW</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#cosine" class="tsd-kind-icon">COSINE</a>
+					<a href="libs_dsp_Common.DSP.html#COSINE" class="tsd-kind-icon">COSINE</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#fw" class="tsd-kind-icon">FW</a>
+					<a href="libs_dsp_Common.DSP.html#FW" class="tsd-kind-icon">FW</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#fwbw" class="tsd-kind-icon">FWBW</a>
+					<a href="libs_dsp_Common.DSP.html#FWBW" class="tsd-kind-icon">FWBW</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#gauss" class="tsd-kind-icon">GAUSS</a>
+					<a href="libs_dsp_Common.DSP.html#GAUSS" class="tsd-kind-icon">GAUSS</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#hamming" class="tsd-kind-icon">HAMMING</a>
+					<a href="libs_dsp_Common.DSP.html#HAMMING" class="tsd-kind-icon">HAMMING</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#hann" class="tsd-kind-icon">HANN</a>
+					<a href="libs_dsp_Common.DSP.html#HANN" class="tsd-kind-icon">HANN</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#highpass" class="tsd-kind-icon">HIGHPASS</a>
+					<a href="libs_dsp_Common.DSP.html#HIGHPASS" class="tsd-kind-icon">HIGHPASS</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#lanczos" class="tsd-kind-icon">LANCZOS</a>
+					<a href="libs_dsp_Common.DSP.html#LANCZOS" class="tsd-kind-icon">LANCZOS</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#left" class="tsd-kind-icon">LEFT</a>
+					<a href="libs_dsp_Common.DSP.html#LEFT" class="tsd-kind-icon">LEFT</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#lowpass" class="tsd-kind-icon">LOWPASS</a>
+					<a href="libs_dsp_Common.DSP.html#LOWPASS" class="tsd-kind-icon">LOWPASS</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#mix" class="tsd-kind-icon">MIX</a>
+					<a href="libs_dsp_Common.DSP.html#MIX" class="tsd-kind-icon">MIX</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#notch" class="tsd-kind-icon">NOTCH</a>
+					<a href="libs_dsp_Common.DSP.html#NOTCH" class="tsd-kind-icon">NOTCH</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#off" class="tsd-kind-icon">OFF</a>
+					<a href="libs_dsp_Common.DSP.html#OFF" class="tsd-kind-icon">OFF</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#rectangular" class="tsd-kind-icon">RECTANGULAR</a>
+					<a href="libs_dsp_Common.DSP.html#RECTANGULAR" class="tsd-kind-icon">RECTANGULAR</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#right" class="tsd-kind-icon">RIGHT</a>
+					<a href="libs_dsp_Common.DSP.html#RIGHT" class="tsd-kind-icon">RIGHT</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#saw" class="tsd-kind-icon">SAW</a>
+					<a href="libs_dsp_Common.DSP.html#SAW" class="tsd-kind-icon">SAW</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#sine" class="tsd-kind-icon">SINE</a>
+					<a href="libs_dsp_Common.DSP.html#SINE" class="tsd-kind-icon">SINE</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#square" class="tsd-kind-icon">SQUARE</a>
+					<a href="libs_dsp_Common.DSP.html#SQUARE" class="tsd-kind-icon">SQUARE</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#triangle" class="tsd-kind-icon">TRIANGLE</a>
+					<a href="libs_dsp_Common.DSP.html#TRIANGLE" class="tsd-kind-icon">TRIANGLE</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#triangular" class="tsd-kind-icon">TRIANGULAR</a>
+					<a href="libs_dsp_Common.DSP.html#TRIANGULAR" class="tsd-kind-icon">TRIANGULAR</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="libs_dsp_common.dsp.html#two_pi" class="tsd-kind-icon">TWO_<wbr>PI</a>
+					<a href="libs_dsp_Common.DSP.html#TWO_PI" class="tsd-kind-icon">TWO_<wbr>PI</a>
 				</li>
 			</ul>
 		</li>
@@ -2783,32 +2805,32 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Enumeration members</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#bandpass" class="tsd-kind-icon">BANDPASS</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#bartlett" class="tsd-kind-icon">BARTLETT</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#bartletthann" class="tsd-kind-icon">BARTLETTHANN</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#blackman" class="tsd-kind-icon">BLACKMAN</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#bw" class="tsd-kind-icon">BW</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#cosine" class="tsd-kind-icon">COSINE</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#fw" class="tsd-kind-icon">FW</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#fwbw" class="tsd-kind-icon">FWBW</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#gauss" class="tsd-kind-icon">GAUSS</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#hamming" class="tsd-kind-icon">HAMMING</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#hann" class="tsd-kind-icon">HANN</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#highpass" class="tsd-kind-icon">HIGHPASS</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#lanczos" class="tsd-kind-icon">LANCZOS</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#left" class="tsd-kind-icon">LEFT</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#lowpass" class="tsd-kind-icon">LOWPASS</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#mix" class="tsd-kind-icon">MIX</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#notch" class="tsd-kind-icon">NOTCH</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#off" class="tsd-kind-icon">OFF</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#rectangular" class="tsd-kind-icon">RECTANGULAR</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#right" class="tsd-kind-icon">RIGHT</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#saw" class="tsd-kind-icon">SAW</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#sine" class="tsd-kind-icon">SINE</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#square" class="tsd-kind-icon">SQUARE</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#triangle" class="tsd-kind-icon">TRIANGLE</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#triangular" class="tsd-kind-icon">TRIANGULAR</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_common.dsp.html#two_pi" class="tsd-kind-icon">TWO_<wbr>PI</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#BANDPASS" class="tsd-kind-icon">BANDPASS</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#BARTLETT" class="tsd-kind-icon">BARTLETT</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#BARTLETTHANN" class="tsd-kind-icon">BARTLETTHANN</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#BLACKMAN" class="tsd-kind-icon">BLACKMAN</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#BW" class="tsd-kind-icon">BW</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#COSINE" class="tsd-kind-icon">COSINE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#FW" class="tsd-kind-icon">FW</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#FWBW" class="tsd-kind-icon">FWBW</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#GAUSS" class="tsd-kind-icon">GAUSS</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#HAMMING" class="tsd-kind-icon">HAMMING</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#HANN" class="tsd-kind-icon">HANN</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#HIGHPASS" class="tsd-kind-icon">HIGHPASS</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#LANCZOS" class="tsd-kind-icon">LANCZOS</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#LEFT" class="tsd-kind-icon">LEFT</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#LOWPASS" class="tsd-kind-icon">LOWPASS</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#MIX" class="tsd-kind-icon">MIX</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#NOTCH" class="tsd-kind-icon">NOTCH</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#OFF" class="tsd-kind-icon">OFF</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#RECTANGULAR" class="tsd-kind-icon">RECTANGULAR</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#RIGHT" class="tsd-kind-icon">RIGHT</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#SAW" class="tsd-kind-icon">SAW</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#SINE" class="tsd-kind-icon">SINE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#SQUARE" class="tsd-kind-icon">SQUARE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#TRIANGLE" class="tsd-kind-icon">TRIANGLE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#TRIANGULAR" class="tsd-kind-icon">TRIANGULAR</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="libs_dsp_Common.DSP.html#TWO_PI" class="tsd-kind-icon">TWO_<wbr>PI</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2817,7 +2839,7 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Enumeration members</h2>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="bandpass" class="tsd-anchor"></a>
+				<a name="BANDPASS" class="tsd-anchor"></a>
 				<h3>BANDPASS</h3>
 				<div class="tsd-signature tsd-kind-icon">BANDPASS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 				<aside class="tsd-sources">
@@ -2827,7 +2849,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="bartlett" class="tsd-anchor"></a>
+				<a name="BARTLETT" class="tsd-anchor"></a>
 				<h3>BARTLETT</h3>
 				<div class="tsd-signature tsd-kind-icon">BARTLETT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 				<aside class="tsd-sources">
@@ -2837,7 +2859,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="bartletthann" class="tsd-anchor"></a>
+				<a name="BARTLETTHANN" class="tsd-anchor"></a>
 				<h3>BARTLETTHANN</h3>
 				<div class="tsd-signature tsd-kind-icon">BARTLETTHANN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 				<aside class="tsd-sources">
@@ -2847,7 +2869,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="blackman" class="tsd-anchor"></a>
+				<a name="BLACKMAN" class="tsd-anchor"></a>
 				<h3>BLACKMAN</h3>
 				<div class="tsd-signature tsd-kind-icon">BLACKMAN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 				<aside class="tsd-sources">
@@ -2857,7 +2879,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="bw" class="tsd-anchor"></a>
+				<a name="BW" class="tsd-anchor"></a>
 				<h3>BW</h3>
 				<div class="tsd-signature tsd-kind-icon">BW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 				<aside class="tsd-sources">
@@ -2867,7 +2889,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="cosine" class="tsd-anchor"></a>
+				<a name="COSINE" class="tsd-anchor"></a>
 				<h3>COSINE</h3>
 				<div class="tsd-signature tsd-kind-icon">COSINE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 4</span></div>
 				<aside class="tsd-sources">
@@ -2877,7 +2899,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="fw" class="tsd-anchor"></a>
+				<a name="FW" class="tsd-anchor"></a>
 				<h3>FW</h3>
 				<div class="tsd-signature tsd-kind-icon">FW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 				<aside class="tsd-sources">
@@ -2887,7 +2909,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="fwbw" class="tsd-anchor"></a>
+				<a name="FWBW" class="tsd-anchor"></a>
 				<h3>FWBW</h3>
 				<div class="tsd-signature tsd-kind-icon">FWBW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 				<aside class="tsd-sources">
@@ -2897,7 +2919,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="gauss" class="tsd-anchor"></a>
+				<a name="GAUSS" class="tsd-anchor"></a>
 				<h3>GAUSS</h3>
 				<div class="tsd-signature tsd-kind-icon">GAUSS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 5</span></div>
 				<aside class="tsd-sources">
@@ -2907,7 +2929,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="hamming" class="tsd-anchor"></a>
+				<a name="HAMMING" class="tsd-anchor"></a>
 				<h3>HAMMING</h3>
 				<div class="tsd-signature tsd-kind-icon">HAMMING<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 6</span></div>
 				<aside class="tsd-sources">
@@ -2917,7 +2939,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="hann" class="tsd-anchor"></a>
+				<a name="HANN" class="tsd-anchor"></a>
 				<h3>HANN</h3>
 				<div class="tsd-signature tsd-kind-icon">HANN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 7</span></div>
 				<aside class="tsd-sources">
@@ -2927,7 +2949,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="highpass" class="tsd-anchor"></a>
+				<a name="HIGHPASS" class="tsd-anchor"></a>
 				<h3>HIGHPASS</h3>
 				<div class="tsd-signature tsd-kind-icon">HIGHPASS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 				<aside class="tsd-sources">
@@ -2937,7 +2959,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="lanczos" class="tsd-anchor"></a>
+				<a name="LANCZOS" class="tsd-anchor"></a>
 				<h3>LANCZOS</h3>
 				<div class="tsd-signature tsd-kind-icon">LANCZOS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 8</span></div>
 				<aside class="tsd-sources">
@@ -2947,7 +2969,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="left" class="tsd-anchor"></a>
+				<a name="LEFT" class="tsd-anchor"></a>
 				<h3>LEFT</h3>
 				<div class="tsd-signature tsd-kind-icon">LEFT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 				<aside class="tsd-sources">
@@ -2957,7 +2979,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="lowpass" class="tsd-anchor"></a>
+				<a name="LOWPASS" class="tsd-anchor"></a>
 				<h3>LOWPASS</h3>
 				<div class="tsd-signature tsd-kind-icon">LOWPASS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 				<aside class="tsd-sources">
@@ -2967,7 +2989,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="mix" class="tsd-anchor"></a>
+				<a name="MIX" class="tsd-anchor"></a>
 				<h3>MIX</h3>
 				<div class="tsd-signature tsd-kind-icon">MIX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 				<aside class="tsd-sources">
@@ -2977,7 +2999,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="notch" class="tsd-anchor"></a>
+				<a name="NOTCH" class="tsd-anchor"></a>
 				<h3>NOTCH</h3>
 				<div class="tsd-signature tsd-kind-icon">NOTCH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 				<aside class="tsd-sources">
@@ -2987,7 +3009,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="off" class="tsd-anchor"></a>
+				<a name="OFF" class="tsd-anchor"></a>
 				<h3>OFF</h3>
 				<div class="tsd-signature tsd-kind-icon">OFF<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 				<aside class="tsd-sources">
@@ -2997,7 +3019,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="rectangular" class="tsd-anchor"></a>
+				<a name="RECTANGULAR" class="tsd-anchor"></a>
 				<h3>RECTANGULAR</h3>
 				<div class="tsd-signature tsd-kind-icon">RECTANGULAR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 9</span></div>
 				<aside class="tsd-sources">
@@ -3007,7 +3029,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="right" class="tsd-anchor"></a>
+				<a name="RIGHT" class="tsd-anchor"></a>
 				<h3>RIGHT</h3>
 				<div class="tsd-signature tsd-kind-icon">RIGHT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 				<aside class="tsd-sources">
@@ -3017,7 +3039,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="saw" class="tsd-anchor"></a>
+				<a name="SAW" class="tsd-anchor"></a>
 				<h3>SAW</h3>
 				<div class="tsd-signature tsd-kind-icon">SAW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 				<aside class="tsd-sources">
@@ -3027,7 +3049,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="sine" class="tsd-anchor"></a>
+				<a name="SINE" class="tsd-anchor"></a>
 				<h3>SINE</h3>
 				<div class="tsd-signature tsd-kind-icon">SINE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 				<aside class="tsd-sources">
@@ -3037,7 +3059,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="square" class="tsd-anchor"></a>
+				<a name="SQUARE" class="tsd-anchor"></a>
 				<h3>SQUARE</h3>
 				<div class="tsd-signature tsd-kind-icon">SQUARE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 4</span></div>
 				<aside class="tsd-sources">
@@ -3047,7 +3069,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="triangle" class="tsd-anchor"></a>
+				<a name="TRIANGLE" class="tsd-anchor"></a>
 				<h3>TRIANGLE</h3>
 				<div class="tsd-signature tsd-kind-icon">TRIANGLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 				<aside class="tsd-sources">
@@ -3057,7 +3079,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="triangular" class="tsd-anchor"></a>
+				<a name="TRIANGULAR" class="tsd-anchor"></a>
 				<h3>TRIANGULAR</h3>
 				<div class="tsd-signature tsd-kind-icon">TRIANGULAR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 10</span></div>
 				<aside class="tsd-sources">
@@ -3067,7 +3089,7 @@ img {
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="two_pi" class="tsd-anchor"></a>
+				<a name="TWO_PI" class="tsd-anchor"></a>
 				<h3>TWO_<wbr>PI</h3>
 				<div class="tsd-signature tsd-kind-icon">TWO_<wbr>PI<span class="tsd-signature-symbol">:</span></div>
 				<aside class="tsd-sources">
@@ -3082,6 +3104,7 @@ img {
 				<h2>Legend</h2>
 				<div class="tsd-legend-group">
 					<ul class="tsd-legend">
+						<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 						<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 						<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
@@ -3245,7 +3268,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop === 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Viewport\": () => /* binding */ Viewport\n/* harmony export */ });\n/* harmony import */ var _EventTarget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../EventTarget */ \"./default/assets/js/src/typedoc/EventTarget.ts\");\n/* harmony import */ var _utils_trottle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trottle */ \"./default/assets/js/src/typedoc/utils/trottle.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n/**\n * A global service that monitors the window size and scroll position.\n */\nvar Viewport = /** @class */ (function (_super) {\n    __extends(Viewport, _super);\n    /**\n     * Create new Viewport instance.\n     */\n    function Viewport() {\n        var _this = _super.call(this) || this;\n        /**\n         * The current scroll position.\n         */\n        _this.scrollTop = 0;\n        /**\n         * The previous scrollTop.\n         */\n        _this.lastY = 0;\n        /**\n         * The width of the window.\n         */\n        _this.width = 0;\n        /**\n         * The height of the window.\n         */\n        _this.height = 0;\n        /**\n         * Boolean indicating whether the toolbar is shown.\n         */\n        _this.showToolbar = true;\n        _this.toolbar = (document.querySelector(\".tsd-page-toolbar\"));\n        _this.secondaryNav = (document.querySelector(\".tsd-navigation.secondary\"));\n        window.addEventListener(\"scroll\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onScroll(); }, 10));\n        window.addEventListener(\"resize\", (0,_utils_trottle__WEBPACK_IMPORTED_MODULE_1__.throttle)(function () { return _this.onResize(); }, 10));\n        _this.onResize();\n        _this.onScroll();\n        return _this;\n    }\n    /**\n     * Trigger a resize event.\n     */\n    Viewport.prototype.triggerResize = function () {\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the size of the window has changed.\n     */\n    Viewport.prototype.onResize = function () {\n        this.width = window.innerWidth || 0;\n        this.height = window.innerHeight || 0;\n        var event = new CustomEvent(\"resize\", {\n            detail: {\n                width: this.width,\n                height: this.height,\n            },\n        });\n        this.dispatchEvent(event);\n    };\n    /**\n     * Triggered when the user scrolled the viewport.\n     */\n    Viewport.prototype.onScroll = function () {\n        this.scrollTop = window.scrollY || 0;\n        var event = new CustomEvent(\"scroll\", {\n            detail: {\n                scrollTop: this.scrollTop,\n            },\n        });\n        this.dispatchEvent(event);\n        this.hideShowToolbar();\n    };\n    /**\n     * Handle hiding/showing of the toolbar.\n     */\n    Viewport.prototype.hideShowToolbar = function () {\n        var isShown = this.showToolbar;\n        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop <= 0;\n        if (isShown !== this.showToolbar) {\n            this.toolbar.classList.toggle(\"tsd-page-toolbar--hide\");\n            this.secondaryNav.classList.toggle(\"tsd-navigation--toolbar-hide\");\n        }\n        this.lastY = this.scrollTop;\n    };\n    Viewport.instance = new Viewport();\n    return Viewport;\n}(_EventTarget__WEBPACK_IMPORTED_MODULE_0__.EventTarget));\n\n\n\n//# sourceURL=webpack:///./default/assets/js/src/typedoc/services/Viewport.ts?");
 
 /***/ }),
 
