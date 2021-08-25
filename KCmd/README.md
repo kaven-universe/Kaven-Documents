@@ -1,14 +1,15 @@
-﻿# KCmd
+# [KCmd](https://doc.kaven.xyz/KCmd/)
 
 ## Install
 
 ```sh
+# install
 dotnet tool install --global KCmd
-```
 
-## Uninstall
+# update
+dotnet tool update KCmd -g
 
-```sh
+# uninstall
 dotnet tool uninstall KCmd -g
 ```
 
@@ -35,17 +36,21 @@ kcmd copy|cp src dest [name:value]
 
 #### Optional Parameters(Copy)
 
-| Name                                | Alias | Default | Definition                                 |
-| ----------------------------------- | ----- | ------- | ------------------------------------------ |
-| AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)    |
-| ExcludeFileNameStartsWith           |       |         |                                            |
-| ExcludeFileNameStartsWithIgnoreCase |       |         |                                            |
-| IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible) |
-| Include                             | I     |         | [Include](#include)                        |
-| OverrideFile                        | O     | true    |                                            |
-| Recursive                           | R     | false   |                                            |
-| Silent                              | S     | false   |                                            |
-| SrcSearchPattern                    |       | *       |                                            |
+| Name                                | Alias | Default | Definition                                           |
+| ----------------------------------- | ----- | ------- | ---------------------------------------------------- |
+| AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)              |
+| ExcludeFileNameStartsWith           |       |         |                                                      |
+| ExcludeFileNameStartsWithIgnoreCase |       |         |                                                      |
+| IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible)           |
+| Include                             | I     |         | [Include](#include)                                  |
+| OverrideFile                        | O     | true    |                                                      |
+| Recursive                           | R     | false   |                                                      |
+| Silent                              | S     | false   |                                                      |
+| SrcSearchPattern                    |       | *       |                                                      |
+| WhenDirectoryExists                 |       |         | [WhenDirectoryExists](#when-directory-exists)        |
+| WhenDirectoryNotExists              |       |         | [WhenDirectoryNotExists](#when-directory-not-exists) |
+| WhenFileExists                      |       |         | [WhenFileExists](#when-file-exists)                  |
+| WhenFileNotExists                   |       |         | [WhenFileNotExists](#when-file-not-exists)           |
 
 #### Remarks(Copy)
 
@@ -82,17 +87,21 @@ kcmd move/mv src dest [name:value]
 
 #### Optional Parameters(Move)
 
-| Name                                | Alias | Default | Definition                                 |
-| ----------------------------------- | ----- | ------- | ------------------------------------------ |
-| AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)    |
-| ExcludeFileNameStartsWith           |       |         |                                            |
-| ExcludeFileNameStartsWithIgnoreCase |       |         |                                            |
-| IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible) |
-| Include                             | I     |         | [Include](#include)                        |
-| OverrideFile                        | O     | true    |                                            |
-| Recursive                           | R     | false   |                                            |
-| Silent                              | S     | false   |                                            |
-| SrcSearchPattern                    |       | *       |                                            |
+| Name                                | Alias | Default | Definition                                           |
+| ----------------------------------- | ----- | ------- | ---------------------------------------------------- |
+| AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)              |
+| ExcludeFileNameStartsWith           |       |         |                                                      |
+| ExcludeFileNameStartsWithIgnoreCase |       |         |                                                      |
+| IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible)           |
+| Include                             | I     |         | [Include](#include)                                  |
+| OverrideFile                        | O     | true    |                                                      |
+| Recursive                           | R     | false   |                                                      |
+| Silent                              | S     | false   |                                                      |
+| SrcSearchPattern                    |       | *       |                                                      |
+| WhenDirectoryExists                 |       |         | [WhenDirectoryExists](#when-directory-exists)        |
+| WhenDirectoryNotExists              |       |         | [WhenDirectoryNotExists](#when-directory-not-exists) |
+| WhenFileExists                      |       |         | [WhenFileExists](#when-file-exists)                  |
+| WhenFileNotExists                   |       |         | [WhenFileNotExists](#when-file-not-exists)           |
 
 #### Remarks(Move)
 
@@ -125,17 +134,21 @@ kcmd delete/rm src [name:value]
 
 #### Optional Parameters(Delete)
 
-| Name                                | Alias | Default | Definition                                 |
-| ----------------------------------- | ----- | ------- | ------------------------------------------ |
-| AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)    |
-| ExcludeFileNameStartsWith           |       |         |                                            |
-| ExcludeFileNameStartsWithIgnoreCase |       |         |                                            |
-| IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible) |
-| Include                             | I     |         | [Include](#include)                        |
-| OverrideFile                        | O     | true    |                                            |
-| Recursive                           | R     | false   |                                            |
-| Silent                              | S     | false   |                                            |
-| SrcSearchPattern                    |       | *       |                                            |
+| Name                                | Alias | Default | Definition                                           |
+| ----------------------------------- | ----- | ------- | ---------------------------------------------------- |
+| AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)              |
+| ExcludeFileNameStartsWith           |       |         |                                                      |
+| ExcludeFileNameStartsWithIgnoreCase |       |         |                                                      |
+| IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible)           |
+| Include                             | I     |         | [Include](#include)                                  |
+| OverrideFile                        | O     | true    |                                                      |
+| Recursive                           | R     | false   |                                                      |
+| Silent                              | S     | false   |                                                      |
+| SrcSearchPattern                    |       | *       |                                                      |
+| WhenDirectoryExists                 |       |         | [WhenDirectoryExists](#when-directory-exists)        |
+| WhenDirectoryNotExists              |       |         | [WhenDirectoryNotExists](#when-directory-not-exists) |
+| WhenFileExists                      |       |         | [WhenFileExists](#when-file-exists)                  |
+| WhenFileNotExists                   |       |         | [WhenFileNotExists](#when-file-not-exists)           |
 
 #### Remarks(Delete)
 
@@ -169,22 +182,26 @@ kcmd archive src [name:value]
 
 #### Optional Parameters(Archive)
 
-| Name                                | Alias | Default  | **Definition**                             |
-| ----------------------------------- | ----- | -------- | ------------------------------------------ |
-| AttributesToSkip                    |       | 0        | [AttributesToSkip](#attributes-to-skip)    |
-| CompressionLevel                    |       | Optimal  | [CompressionLevel](#compression-level)     |
-| Dest                                | D     |          |                                            |
-| Encoding                            | E     | utf-8    | [Encoding](#encoding)                      |
-| ExcludeBaseDirectory                |       | true     |                                            |
-| ExcludeFileNameStartsWith           |       |          |                                            |
-| ExcludeFileNameStartsWithIgnoreCase |       |          |                                            |
-| IgnoreInaccessible                  |       | true     | [IgnoreInaccessible](#ignore-inaccessible) |
-| Include                             | I     |          | [Include](#include)                        |
-| IncludeBaseDirectory                |       | false    |                                            |
-| OverrideFile                        | O     | true     |                                            |
-| Recursive                           | R     | **true** |                                            |
-| Silent                              | S     | false    |                                            |
-| SrcSearchPattern                    |       | *        |                                            |
+| Name                                | Alias | Default  | **Definition**                                       |
+| ----------------------------------- | ----- | -------- | ---------------------------------------------------- |
+| AttributesToSkip                    |       | 0        | [AttributesToSkip](#attributes-to-skip)              |
+| CompressionLevel                    |       | Optimal  | [CompressionLevel](#compression-level)               |
+| Dest                                | D     |          |                                                      |
+| Encoding                            | E     | utf-8    | [Encoding](#encoding)                                |
+| ExcludeBaseDirectory                |       | true     |                                                      |
+| ExcludeFileNameStartsWith           |       |          |                                                      |
+| ExcludeFileNameStartsWithIgnoreCase |       |          |                                                      |
+| IgnoreInaccessible                  |       | true     | [IgnoreInaccessible](#ignore-inaccessible)           |
+| Include                             | I     |          | [Include](#include)                                  |
+| IncludeBaseDirectory                |       | false    |                                                      |
+| OverrideFile                        | O     | true     |                                                      |
+| Recursive                           | R     | **true** |                                                      |
+| Silent                              | S     | false    |                                                      |
+| SrcSearchPattern                    |       | *        |                                                      |
+| WhenDirectoryExists                 |       |          | [WhenDirectoryExists](#when-directory-exists)        |
+| WhenDirectoryNotExists              |       |          | [WhenDirectoryNotExists](#when-directory-not-exists) |
+| WhenFileExists                      |       |          | [WhenFileExists](#when-file-exists)                  |
+| WhenFileNotExists                   |       |          | [WhenFileNotExists](#when-file-not-exists)           |
 
 #### Remarks(Archive)
 
@@ -232,14 +249,18 @@ kcmd archive-extract/extract src [name:value]
 
 #### Optional Parameters(Archive-Extract)
 
-| Name                                | Alias | Default | **Definition**        |
-| ----------------------------------- | ----- | ------- | --------------------- |
-| Dest                                | D     |         |                       |
-| Encoding                            | E     | utf-8   | [Encoding](#encoding) |
-| ExcludeFileNameStartsWith           |       |         |                       |
-| ExcludeFileNameStartsWithIgnoreCase |       |         |                       |
-| OverrideFile                        | O     | true    |                       |
-| Silent                              | S     | false   |                       |
+| Name                                | Alias | Default | **Definition**                                       |
+| ----------------------------------- | ----- | ------- | ---------------------------------------------------- |
+| Dest                                | D     |         |                                                      |
+| Encoding                            | E     | utf-8   | [Encoding](#encoding)                                |
+| ExcludeFileNameStartsWith           |       |         |                                                      |
+| ExcludeFileNameStartsWithIgnoreCase |       |         |                                                      |
+| OverrideFile                        | O     | true    |                                                      |
+| Silent                              | S     | false   |                                                      |
+| WhenDirectoryExists                 |       |         | [WhenDirectoryExists](#when-directory-exists)        |
+| WhenDirectoryNotExists              |       |         | [WhenDirectoryNotExists](#when-directory-not-exists) |
+| WhenFileExists                      |       |         | [WhenFileExists](#when-file-exists)                  |
+| WhenFileNotExists                   |       |         | [WhenFileNotExists](#when-file-not-exists)           |
 
 #### Examples(Archive-Extract)
 
@@ -253,6 +274,20 @@ kcmd extract xxx/file.zip Dest:yyy/dir Encoding:gb2312
 kcmd extract xxx/file.zip Dest:yyy/dir Encoding:936
 kcmd extract xxx/file.zip Dest:yyy/dir -E:gb2312
 kcmd extract xxx/file.zip Dest:yyy/dir e:936
+```
+
+### Others
+
+#### Where
+
+```sh
+kcmd where [open]
+```
+
+#### Help
+
+```sh
+kcmd help
 ```
 
 ## Common Parameters
@@ -322,3 +357,23 @@ kcmd archive xxx/src_dir i:file-list.txt
 ### Encoding
 
 - [List of encodings](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding?view=net-5.0#list-of-encodings)
+
+### When Directory Exists
+
+Specify a directory path, execute the command only if the path exists.
+
+```sh
+kcmd cp README.md ../doc/KCmd/README.md WhenDirectoryExists:../doc
+```
+
+### When Directory Not Exists
+
+Specify a directory path, execute the command only if the path dose not exists.
+
+### When File Exists
+
+Specify a file path, execute the command only if the path exists.
+
+### When File Not Exists
+
+Specify a file path, execute the command only if the path dose not exists.
