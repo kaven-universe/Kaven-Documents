@@ -1,4 +1,4 @@
-﻿﻿# KCmd
+﻿# KCmd
 
 ## Install
 
