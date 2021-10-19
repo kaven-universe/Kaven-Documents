@@ -39,6 +39,9 @@ kcmd copy|cp src dest [name:value]
 | Name                                | Alias | Default | Definition                                           |
 | ----------------------------------- | ----- | ------- | ---------------------------------------------------- |
 | AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)              |
+| ExcludeExe                          |       | false   | [ExcludeExe](#exclude-exe)                           |
+| ExcludeExeFiles                     |       | false   | [ExcludeExeFiles](#exclude-exe-files)                |
+| ExcludeExeRelatedFiles              |       | false   | [ExcludeExeRelatedFiles](#exclude-exe-related-files) |
 | ExcludeFileNameStartsWith           |       |         |                                                      |
 | ExcludeFileNameStartsWithIgnoreCase |       |         |                                                      |
 | IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible)           |
@@ -90,6 +93,9 @@ kcmd move/mv src dest [name:value]
 | Name                                | Alias | Default | Definition                                           |
 | ----------------------------------- | ----- | ------- | ---------------------------------------------------- |
 | AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)              |
+| ExcludeExe                          |       | false   | [ExcludeExe](#exclude-exe)                           |
+| ExcludeExeFiles                     |       | false   | [ExcludeExeFiles](#exclude-exe-files)                |
+| ExcludeExeRelatedFiles              |       | false   | [ExcludeExeRelatedFiles](#exclude-exe-related-files) |
 | ExcludeFileNameStartsWith           |       |         |                                                      |
 | ExcludeFileNameStartsWithIgnoreCase |       |         |                                                      |
 | IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible)           |
@@ -137,6 +143,9 @@ kcmd delete/rm src [name:value]
 | Name                                | Alias | Default | Definition                                           |
 | ----------------------------------- | ----- | ------- | ---------------------------------------------------- |
 | AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)              |
+| ExcludeExe                          |       | false   | [ExcludeExe](#exclude-exe)                           |
+| ExcludeExeFiles                     |       | false   | [ExcludeExeFiles](#exclude-exe-files)                |
+| ExcludeExeRelatedFiles              |       | false   | [ExcludeExeRelatedFiles](#exclude-exe-related-files) |
 | ExcludeFileNameStartsWith           |       |         |                                                      |
 | ExcludeFileNameStartsWithIgnoreCase |       |         |                                                      |
 | IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible)           |
@@ -189,6 +198,9 @@ kcmd archive src [name:value]
 | Dest                                | D     |          |                                                      |
 | Encoding                            | E     | utf-8    | [Encoding](#encoding)                                |
 | ExcludeBaseDirectory                |       | true     |                                                      |
+| ExcludeExe                          |       | false    | [ExcludeExe](#exclude-exe)                           |
+| ExcludeExeFiles                     |       | false    | [ExcludeExeFiles](#exclude-exe-files)                |
+| ExcludeExeRelatedFiles              |       | false    | [ExcludeExeRelatedFiles](#exclude-exe-related-files) |
 | ExcludeFileNameStartsWith           |       |          |                                                      |
 | ExcludeFileNameStartsWithIgnoreCase |       |          |                                                      |
 | IgnoreInaccessible                  |       | true     | [IgnoreInaccessible](#ignore-inaccessible)           |
@@ -253,6 +265,9 @@ kcmd archive-extract/extract src [name:value]
 | ----------------------------------- | ----- | ------- | ---------------------------------------------------- |
 | Dest                                | D     |         |                                                      |
 | Encoding                            | E     | utf-8   | [Encoding](#encoding)                                |
+| ExcludeExe                          |       | false   | [ExcludeExe](#exclude-exe)                           |
+| ExcludeExeFiles                     |       | false   | [ExcludeExeFiles](#exclude-exe-files)                |
+| ExcludeExeRelatedFiles              |       | false   | [ExcludeExeRelatedFiles](#exclude-exe-related-files) |
 | ExcludeFileNameStartsWith           |       |         |                                                      |
 | ExcludeFileNameStartsWithIgnoreCase |       |         |                                                      |
 | OverrideFile                        | O     | true    |                                                      |
@@ -276,6 +291,100 @@ kcmd extract xxx/file.zip Dest:yyy/dir -E:gb2312
 kcmd extract xxx/file.zip Dest:yyy/dir e:936
 ```
 
+### Format
+
+#### Syntax(Format)
+
+```sh
+kcmd format src type [name:value]
+```
+
+#### Required Parameters(Format)
+
+| Position | Value             |
+| -------- | ----------------- |
+| src      | file or directory |
+| type     | xml \| utf8 |
+
+#### Optional Parameters(Format)
+
+| Name                                | Alias | Default | Definition                                           |
+| ----------------------------------- | ----- | ------- | ---------------------------------------------------- |
+| AttributesToSkip                    |       | 0       | [AttributesToSkip](#attributes-to-skip)              |
+| Encoding                            | E     | utf-8   | [Encoding](#encoding)                                |
+| ExcludeExe                          |       | false   | [ExcludeExe](#exclude-exe)                           |
+| ExcludeExeFiles                     |       | false   | [ExcludeExeFiles](#exclude-exe-files)                |
+| ExcludeExeRelatedFiles              |       | false   | [ExcludeExeRelatedFiles](#exclude-exe-related-files) |
+| ExcludeFileNameStartsWith           |       |         |                                                      |
+| ExcludeFileNameStartsWithIgnoreCase |       |         |                                                      |
+| IgnoreInaccessible                  |       | true    | [IgnoreInaccessible](#ignore-inaccessible)           |
+| Include                             | I     |         | [Include](#include)                                  |
+| OverrideFile                        | O     | true    |                                                      |
+| Recursive                           | R     | false   |                                                      |
+| Silent                              | S     | false   |                                                      |
+| SrcSearchPattern                    |       | *       |                                                      |
+| WhenDirectoryExists                 |       |         | [WhenDirectoryExists](#when-directory-exists)        |
+| WhenDirectoryNotExists              |       |         | [WhenDirectoryNotExists](#when-directory-not-exists) |
+| WhenFileExists                      |       |         | [WhenFileExists](#when-file-exists)                  |
+| WhenFileNotExists                   |       |         | [WhenFileNotExists](#when-file-not-exists)           |
+
+#### Remarks(Format)
+
+#### Examples(Format)
+
+```sh
+kcmd format ./KCmd.csproj xml
+kcmd format ./ xml SrcSearchPattern:*.csproj -R
+
+kcmd format ./common.h utf8 encoding:gb2312
+kcmd format ./common.h utf8 encoding:gb2312 backup:false
+
+kcmd format ./ utf8 SrcSearchPattern:*.cs Backup:false Recursive
+kcmd format ./ utf8 SrcSearchPattern:"*.h;*.cpp" Backup:false Recursive
+```
+
+### Telnet
+
+#### Syntax(Telnet)
+
+```sh
+kcmd telnet [name:value]
+```
+
+#### Required Parameters(Telnet)
+
+none
+
+#### Optional Parameters(Telnet)
+
+| Name        | Alias | Default   | Definition                  |
+| ----------- | ----- | --------- | --------------------------- |
+| Host        | h     | localhost |                             |
+| Port        | p     | 23        |                             |
+| UserName    | u     |           |                             |
+| Password    | pwd   |           |                             |
+| Type        | t     | 0(None)   | 0\|1, None\|AndroidEmulator |
+| CommandFile | cf    |           |                             |
+
+#### Remarks(Telnet)
+
+#### Examples(Telnet)
+
+```sh
+kcmd telnet h:localhost p:23 u:root pwd:admin
+
+kcmd telnet Type:AndroidEmulator CommandFile:./cmd-line-by-line.txt Port:5554
+kcmd telnet t:1 cf:./cmd-line-by-line.txt h:localhost p:5554
+```
+
+cmd-line-by-line.txt:
+
+```txt
+redir add tcp:18080:8080
+redir add tcp:18081:8081
+redir list
+```
+
 ### Others
 
 #### Where
@@ -292,6 +401,10 @@ kcmd help
 
 ## Common Parameters
 
+### Attributes To Skip
+
+- [AttributesToSkip](https://docs.microsoft.com/en-us/dotnet/api/system.io.enumerationoptions.attributestoskip?view=net-5.0)
+
 ### Compression Level
 
 - [CompressionLevel](https://docs.microsoft.com/en-us/dotnet/api/system.io.compression.compressionlevel?view=net-5.0)
@@ -302,30 +415,33 @@ kcmd help
 | NoCompression | 2     | No compression should be performed on the file.              |
 | Optimal       | 0     | The compression operation should be optimally compressed, even if the operation takes a longer time to complete. |
 
-### Include
+### Encoding
 
-Use `Include` to include multiple files/directories under the `Src` directory.
+- [List of encodings](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding?view=net-5.0#list-of-encodings)
 
-file-list.txt(relative to `Src`):
+### Exclude Exe
 
-```txt
-dir1
-dir3/file1
-dir5/subDir/
-file
-...
+[ExcludeExeFiles](#exclude-exe-files) and [ExcludeExeRelatedFiles](#exclude-exe-related-files)
+
+### Exclude Exe Files
+
+Exclude all `.exe` files;
+
+```eg
+KCmd.exe
 ```
 
-```sh
-kcmd mv xxx/src_dir yyy/dest_dir -include:file-list.txt
-kcmd cp xxx/src_dir yyy/dest_dir Include:file-list.txt
-kcmd rm xxx/src_dir I:file-list.txt
-kcmd archive xxx/src_dir i:file-list.txt
+### Exclude Exe Related Files
+
+Exclude all `.exe` related files.
+
+```eg
+KCmd.deps.json
+KCmd.dll
+KCmd.pdb
+KCmd.runtimeconfig.dev.json
+KCmd.runtimeconfig.json
 ```
-
-### Attributes To Skip
-
-- [AttributesToSkip](https://docs.microsoft.com/en-us/dotnet/api/system.io.enumerationoptions.attributestoskip?view=net-5.0)
 
 ### File Attributes
 
@@ -354,9 +470,26 @@ kcmd archive xxx/src_dir i:file-list.txt
 
 - [IgnoreInaccessible](https://docs.microsoft.com/en-us/dotnet/api/system.io.enumerationoptions.ignoreinaccessible?view=net-5.0)
 
-### Encoding
+### Include
 
-- [List of encodings](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding?view=net-5.0#list-of-encodings)
+Use `Include` to include multiple files/directories under the `Src` directory.
+
+file-list.txt(relative to `Src`):
+
+```txt
+dir1
+dir3/file1
+dir5/subDir/
+file
+...
+```
+
+```sh
+kcmd mv xxx/src_dir yyy/dest_dir -include:file-list.txt
+kcmd cp xxx/src_dir yyy/dest_dir Include:file-list.txt
+kcmd rm xxx/src_dir I:file-list.txt
+kcmd archive xxx/src_dir i:file-list.txt
+```
 
 ### When Directory Exists
 
