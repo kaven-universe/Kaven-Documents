@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>KavenUtility.zip | kaven-utils</title>
+	<title>KavenUtility.Archive | kaven-utils</title>
 	<meta name="description" content="Documentation for kaven-utils">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
@@ -2705,7 +2705,16 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
-			<a href="KavenUtility_zip.html#ZipFolder" class="tsd-kind-icon">Zip<wbr>Folder</a>
+			<a href="KavenUtility_Archive.html#Run7zCommand" class="tsd-kind-icon">Run7z<wbr>Command</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_Archive.html#SevenZipFiles" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Files</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_Archive.html#SevenZipFolder" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Folder</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="KavenUtility_Archive.html#ZipFolder" class="tsd-kind-icon">Zip<wbr>Folder</a>
 		</li>
 	</ul>
 </nav>
@@ -2718,7 +2727,10 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_zip.html#ZipFolder" class="tsd-kind-icon">Zip<wbr>Folder</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_Archive.html#Run7zCommand" class="tsd-kind-icon">Run7z<wbr>Command</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_Archive.html#SevenZipFiles" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Files</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_Archive.html#SevenZipFolder" class="tsd-kind-icon">Seven<wbr>Zip<wbr>Folder</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="KavenUtility_Archive.html#ZipFolder" class="tsd-kind-icon">Zip<wbr>Folder</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2726,6 +2738,131 @@ img {
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="Run7zCommand" class="tsd-anchor"></a>
+				<h3>Run7z<wbr>Command</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Run7z<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, switches<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.Archive.ts:189</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>You must have the 7z executable available in your PATH or in the same directory of your package.json file.
+									On Debian and Ubuntu install the p7zip-full package.
+									On Windows use the 7z.exe binary.
+								On Mac OSX use Homebrew brew install p7zip</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>version</dt>
+								<dd><p>1.0.0</p>
+								</dd>
+								<dt>since</dt>
+								<dd><p>1.0.5</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>command: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> switches: <span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="SevenZipFiles" class="tsd-anchor"></a>
+				<h3>Seven<wbr>Zip<wbr>Files</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Seven<wbr>Zip<wbr>Files<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.Archive.ts:354</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>version</dt>
+								<dd><p>1.0.0</p>
+								</dd>
+								<dt>since</dt>
+								<dd><p>1.0.5</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li>
+								<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> password: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="SevenZipFolder" class="tsd-anchor"></a>
+				<h3>Seven<wbr>Zip<wbr>Folder</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">Seven<wbr>Zip<wbr>Folder<span class="tsd-signature-symbol">(</span>folderPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/KavenUtility.Archive.ts:166</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>version</dt>
+								<dd><p>1.0.0</p>
+								</dd>
+								<dt>since</dt>
+								<dd><p>1.0.5</p>
+								</dd>
+								<dt>example</dt>
+								<dd><pre><code><span style="color: #000000"> </span><span style="color: #795E26">SevenZipFolder</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;./dist/&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;dist.7z&quot;</span><span style="color: #000000">)</span>
+<span style="color: #000000"> </span><span style="color: #795E26">SevenZipFolder</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;./dist/*&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;dist.7z&quot;</span><span style="color: #000000">)</span>
+</code></pre>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>folderPath: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> password: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 				<a name="ZipFolder" class="tsd-anchor"></a>
 				<h3>Zip<wbr>Folder</h3>
@@ -2736,7 +2873,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/KavenUtility.zip.ts:35</li>
+								<li>Defined in src/KavenUtility.Archive.ts:42</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
