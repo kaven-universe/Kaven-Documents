@@ -4,4 +4,4 @@
 
 ## [Kaven-Utils](https://doc.kaven.xyz/kaven-utils/)
 
-## [KCmd]()https://doc.kaven.xyz/KCmd/)
+## [KCmd](https://doc.kaven.xyz/KCmd/)
