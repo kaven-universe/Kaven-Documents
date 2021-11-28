@@ -304,7 +304,7 @@ kcmd format src type [name:value]
 | Position | Value             |
 | -------- | ----------------- |
 | src      | file or directory |
-| type     | xml \| utf8 |
+| type     | [FileFormatType](#file-format-type) |
 
 #### Optional Parameters(Format)
 
@@ -330,6 +330,14 @@ kcmd format src type [name:value]
 
 #### Remarks(Format)
 
+##### File Format Type
+
+| Name               | Value | Description |
+| ------------------ | ----- | ----------- |
+| Xml                | 1     |             |
+| Utf8               | 2     |             |
+| PreferDoubleQuotes | 10    |             |
+
 #### Examples(Format)
 
 ```sh
@@ -341,6 +349,10 @@ kcmd format ./common.h utf8 encoding:gb2312 backup:false
 
 kcmd format ./ utf8 SrcSearchPattern:*.cs Backup:false Recursive
 kcmd format ./ utf8 SrcSearchPattern:"*.h;*.cpp" Backup:false Recursive
+
+kcmd format ./lib/app.dart 10
+kcmd format ./lib PreferDoubleQuotes SrcSearchPattern:*.dart Recursive
+kcmd format ./lib PreferDoubleQuotes SrcSearchPattern:*.dart Recursive i:./lib/file-list.txt
 ```
 
 ### Telnet
@@ -383,6 +395,84 @@ cmd-line-by-line.txt:
 redir add tcp:18080:8080
 redir add tcp:18081:8081
 redir list
+```
+
+### List
+
+#### Syntax(List)
+
+```sh
+kcmd list dir [name:value]
+```
+
+#### Required Parameters(List)
+
+| Position | Value             |
+| -------- | ----------------- |
+| dir      | directory         |
+
+#### Optional Parameters(List)
+
+| Name            | Alias | Default | Definition        |
+| --------------- | ----- | ------- | ----------------- |
+| OnlyDirectories |       | false   |                   |
+| OnlyFiles       |       | false   |                   |
+| Level           |       | 0       | for sub-directory |
+| Output          | O     |         | output file       |
+| Relative        |       | false   | use relative path |
+
+#### Remarks(List)
+
+#### Examples(List)
+
+```sh
+kcmd list ./
+
+kcmd list ./lib relative o:./lib/file-list.txt
+```
+
+### Upload
+
+#### Syntax(Upload)
+
+```sh
+kcmd upload src server [name:value]
+```
+
+#### Required Parameters(Upload)
+
+| Position | Value             |
+| -------- | ----------------- |
+| src      | file or directory |
+| server   | http url          |
+
+#### Optional Parameters(Upload)
+
+| Name                   | Alias   | Default | Definition |
+| ---------------------- | ------- | ------- | ---------- |
+| Destination            | Dest, D |         |            |
+| KeepDirectoryStructure | Keep    | false   |            |
+| Recursive              | R       | false   |            |
+| AuthenticationType     | Auth    |         |            |
+| UserName               | User, U |         |            |
+| Password               | Pass, P |         |            |
+
+#### Remarks(Upload)
+
+This command is mainly used for [kaven-file-server](https://github.com/Kaven-Universe/kaven-file-server).
+
+If `Destination` is a directory, make sure it ends with a slash.
+
+#### Examples(Upload)
+
+```sh
+kcmd upload ./file.txt http://localhost:3000/file
+
+kcmd upload ./ http://127.0.0.1/file Destination:sub/dir -r -keep
+
+kcmd upload ./build/app-release.apk http://localhost:3000/file dest:"My App {{Version}}.apk"
+
+kcmd upload ./file.txt http://127.0.0.1/file auth:Digest u:username p:password
 ```
 
 ### Others
