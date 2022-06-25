@@ -7,3 +7,5 @@
 ## [4.1.0](4.1.0/modules.html)
 
 ## [4.1.1](4.1.1/modules.html)
+
+## [4.1.2](4.1.2/modules.html)
