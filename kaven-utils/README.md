@@ -11,3 +11,5 @@
 ## [4.1.2](4.1.2/modules.html)
 
 ## [4.2.0](4.2.0/modules.html)
+
+## [4.3.0](4.3.0/modules.html)
