@@ -1,0 +1,953 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="./"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>kaven-utils - v6.1.8</title><meta name="description" content="Documentation for kaven-utils"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script><script async src="assets/hierarchy.js" id="tsd-hierarchy-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container"><a href="index.html" class="title">kaven-utils - v6.1.8</a>
+<div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/>
+<ul role="listbox" id="tsd-search-results"></ul>
+<div id="tsd-search-status" aria-live="polite" aria-atomic="true">
+<div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></header>
+<div class="container container-main">
+<div class="col-content">
+<div class="tsd-page-title">
+<h1>kaven-utils - v6.1.8</h1></div>
+<div class="tsd-panel tsd-typography"><h1 id="kaven-utils" class="tsd-anchor-link">Kaven-Utils<a href="#kaven-utils" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1>
+<h2 id="installation" class="tsd-anchor-link">Installation<a href="#installation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<pre><code class="sh"><span class="hl-0"># npm</span><br/><span class="hl-1">npm</span><span class="hl-2"> </span><span class="hl-3">i</span><span class="hl-2"> </span><span class="hl-3">kaven-utils</span><span class="hl-2"> </span><span class="hl-4">--save</span><br/><br/><span class="hl-0"># yarn</span><br/><span class="hl-1">yarn</span><span class="hl-2"> </span><span class="hl-3">add</span><span class="hl-2"> </span><span class="hl-3">kaven-utils</span><br/><br/><span class="hl-0"># pnpm</span><br/><span class="hl-1">pnpm</span><span class="hl-2"> </span><span class="hl-3">i</span><span class="hl-2"> </span><span class="hl-3">kaven-utils</span>
+</code><button type="button">Copy</button></pre>
+
+<h2 id="documentation" class="tsd-anchor-link">Documentation<a href="#documentation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p><a href="https://doc.kaven.xyz/kaven-utils">Kaven-Utils</a></p>
+<h2 id="commands" class="tsd-anchor-link">Commands<a href="#commands" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>Both installed executable names are equivalent:</p>
+<pre><code class="sh"><span class="hl-1">kaven-utils</span><span class="hl-2"> &lt;</span><span class="hl-3">comman</span><span class="hl-2">d&gt;</span><br/><span class="hl-1">ku</span><span class="hl-2"> &lt;</span><span class="hl-3">comman</span><span class="hl-2">d&gt;</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Use <code>ku help [command]</code> or <code>ku &lt;command&gt; --help</code> for command-specific help.
+Use <code>ku --help</code> to list commands and <code>ku -v</code> or <code>ku --version</code> to print the
+installed version.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Aliases</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>copy [destination] [sourceFiles...]</code></td>
+<td><code>cp</code></td>
+<td>Copy files or directories.</td>
+</tr>
+<tr>
+<td><code>remove &lt;file&gt; [otherFiles...]</code></td>
+<td><code>rm</code>, <code>delete</code></td>
+<td>Remove files or directories.</td>
+</tr>
+<tr>
+<td><code>remove-files &lt;dir&gt; &lt;ext&gt; [otherExtensions...]</code></td>
+<td><code>remove_files</code>, <code>rm-files</code>, <code>rm_files</code>, <code>delete-files</code>, <code>delete_files</code></td>
+<td>Remove files with selected extensions below a directory.</td>
+</tr>
+<tr>
+<td><code>run &lt;command&gt; [otherCommands...]</code></td>
+<td>—</td>
+<td>Run commands concurrently or sequentially.</td>
+</tr>
+<tr>
+<td><code>gen-cert</code></td>
+<td><code>gen_cert</code></td>
+<td>Generate SSL/TLS certificates.</td>
+</tr>
+<tr>
+<td><code>proxy [dirOrFile]</code></td>
+<td>—</td>
+<td>Start the configurable local HTTP proxy.</td>
+</tr>
+<tr>
+<td><code>relay-proxy [dirOrFile]</code></td>
+<td>—</td>
+<td>Start a relay server, proxy client, or fixed TCP forwarder.</td>
+</tr>
+<tr>
+<td><code>ip</code></td>
+<td>—</td>
+<td>Print the current network's external IP address.</td>
+</tr>
+<tr>
+<td><code>ci</code></td>
+<td>—</td>
+<td>Publish generated documentation to a documentation repository.</td>
+</tr>
+<tr>
+<td><code>docker &lt;server&gt; [command]</code></td>
+<td>—</td>
+<td>List images and tags in a Docker registry.</td>
+</tr>
+<tr>
+<td><code>where</code></td>
+<td>—</td>
+<td>Print the path of the running CLI script.</td>
+</tr>
+<tr>
+<td><code>minify [file] [otherFiles...]</code></td>
+<td>—</td>
+<td>Minify JavaScript files.</td>
+</tr>
+<tr>
+<td><code>minify-css [file] [otherFiles...]</code></td>
+<td>—</td>
+<td>Minify CSS files.</td>
+</tr>
+<tr>
+<td><code>update-pug-resource-version [dir]</code></td>
+<td><code>uprv</code></td>
+<td>Add or update a version query parameter in Pug resource URLs.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_" class="tsd-anchor-link"><code>copy</code><a href="#_" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">copy</span><span class="hl-2"> [destination] [sourceFiles...]</span><br/><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">copy</span><span class="hl-2"> </span><span class="hl-4">--config</span><span class="hl-2"> &lt;</span><span class="hl-3">confi</span><span class="hl-2">g&gt;</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Copies all <code>sourceFiles</code> into <code>destination</code>. The <code>-c, --config &lt;config&gt;</code>
+option loads advanced copy entries from a JSON file. A command may use the
+config and positional source files together.</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;override&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;entries&quot;</span><span class="hl-2">: [</span><br/><span class="hl-2">        {</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;src&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./package.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;dest&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./backup/package.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;override&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><br/><span class="hl-2">        },</span><br/><span class="hl-2">        {</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;src&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;./src&quot;</span><span class="hl-2">, </span><span class="hl-3">&quot;./README.md&quot;</span><span class="hl-2">],</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;dest&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./backup&quot;</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    ]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Each entry's <code>override</code> value takes precedence over the top-level value. A
+string <code>src</code> copies to the exact <code>dest</code>; an array copies its items into the
+destination directory.</p>
+<h3 id="_-1" class="tsd-anchor-link"><code>remove</code><a href="#_-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">remove</span><span class="hl-2"> &lt;</span><span class="hl-3">fil</span><span class="hl-2">e&gt; [otherFiles...]</span><br/><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">remove</span><span class="hl-2"> </span><span class="hl-4">--recursive</span><span class="hl-2"> &lt;</span><span class="hl-3">fil</span><span class="hl-2">e&gt; [otherFiles...]</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Removes each supplied path. Without <code>-r, --recursive</code>, files and empty
+directories can be removed. Use <code>--recursive</code> to remove non-empty directories
+and their contents.</p>
+<h3 id="_-2" class="tsd-anchor-link"><code>remove-files</code><a href="#_-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">remove-files</span><span class="hl-2"> &lt;</span><span class="hl-3">di</span><span class="hl-2">r&gt; &lt;</span><span class="hl-3">ex</span><span class="hl-2">t&gt; [otherExtensions...]</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Recursively removes files matching one or more extensions under <code>dir</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--caseSensitive</code></td>
+<td>Match extensions with case sensitivity.</td>
+</tr>
+<tr>
+<td><code>--ignore [ignoreFolderNames...]</code></td>
+<td>Skip folders with the supplied names.</td>
+</tr>
+<tr>
+<td><code>--ignoreFolderNames [ignoreFolderNames...]</code></td>
+<td>Alias of <code>--ignore</code>.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">remove-files</span><span class="hl-2"> </span><span class="hl-3">./dist</span><span class="hl-2"> </span><span class="hl-3">.map</span><span class="hl-2"> </span><span class="hl-3">.ts</span><span class="hl-2"> </span><span class="hl-4">--ignore</span><span class="hl-2"> </span><span class="hl-3">node_modules</span><span class="hl-2"> </span><span class="hl-3">generated</span>
+</code><button type="button">Copy</button></pre>
+
+<h3 id="_-3" class="tsd-anchor-link"><code>run</code><a href="#_-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">run</span><span class="hl-2"> &lt;</span><span class="hl-3">comman</span><span class="hl-2">d&gt; [otherCommands...]</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Runs the supplied commands concurrently by default. Quote commands that
+contain spaces or shell operators.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-s, --sequential</code></td>
+<td>Wait for each command to finish before starting the next.</td>
+</tr>
+<tr>
+<td><code>-e, --encoding &lt;encoding&gt;</code></td>
+<td>Decode output with an <code>iconv-lite</code> encoding.</td>
+</tr>
+<tr>
+<td><code>--spawn</code></td>
+<td>Use <code>spawn</code> instead of <code>exec</code>.</td>
+</tr>
+<tr>
+<td><code>--shell [shell]</code></td>
+<td>Enable a shell or provide the shell executable.</td>
+</tr>
+<tr>
+<td><code>--win32commands &lt;win32commands...&gt;</code></td>
+<td>On Windows, replace the positional commands with this command list.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">run</span><span class="hl-2"> </span><span class="hl-3">&quot;pnpm run lint&quot;</span><span class="hl-2"> </span><span class="hl-3">&quot;pnpm run build&quot;</span><br/><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">run</span><span class="hl-2"> </span><span class="hl-4">--sequential</span><span class="hl-2"> </span><span class="hl-3">&quot;pnpm run lint&quot;</span><span class="hl-2"> </span><span class="hl-3">&quot;pnpm run test&quot;</span>
+</code><button type="button">Copy</button></pre>
+
+<h3 id="_-4" class="tsd-anchor-link"><code>gen-cert</code><a href="#_-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">gen-cert</span><span class="hl-2"> [options]</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Generates a CA, server certificate, and client certificate, then writes their
+metadata to <code>cert.json</code> in the output directory.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--dir [dir]</code></td>
+<td>Output directory. Defaults to <code>./generated</code>.</td>
+</tr>
+<tr>
+<td><code>--bits [bits]</code></td>
+<td>Certificate key size in bits.</td>
+</tr>
+<tr>
+<td><code>--days [days]</code></td>
+<td>Certificate validity period in days.</td>
+</tr>
+<tr>
+<td><code>--cn [cn]</code></td>
+<td>Certificate subject common name.</td>
+</tr>
+<tr>
+<td><code>--openssl [openssl]</code></td>
+<td>Path to the OpenSSL executable.</td>
+</tr>
+<tr>
+<td><code>--verbose</code></td>
+<td>Enable detailed logging.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">gen-cert</span><span class="hl-2"> </span><span class="hl-4">--dir</span><span class="hl-2"> </span><span class="hl-3">./certificates</span><span class="hl-2"> </span><span class="hl-4">--bits</span><span class="hl-2"> </span><span class="hl-6">2048</span><span class="hl-2"> </span><span class="hl-4">--days</span><span class="hl-2"> </span><span class="hl-6">365</span><span class="hl-2"> </span><span class="hl-4">--cn</span><span class="hl-2"> </span><span class="hl-3">localhost</span>
+</code><button type="button">Copy</button></pre>
+
+<h3 id="_-5" class="tsd-anchor-link"><code>proxy</code><a href="#_-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>Run an HTTP/HTTPS forward proxy over an encrypted TLS connection. It is useful
+when a local application should send proxy traffic through another machine
+before reaching the destination.</p>
+<p>The command has two roles, which may run in one process or on separate
+machines:</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>server</strong></td>
+<td>Accepts TLS connections from proxy clients, reads the requested <code>host:port</code>, and connects to that destination.</td>
+</tr>
+<tr>
+<td><strong>client</strong></td>
+<td>Listens locally as an HTTP proxy and tunnels each request to the TLS server. It supports regular HTTP requests and HTTPS <code>CONNECT</code> tunnels.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="mermaid">flowchart LR
+    app["Browser / app"]
+    client["Local proxy client<br/>127.0.0.1:8765"]
+    server["Proxy server<br/>public host"]
+    destination["Destination<br/>host:port"]
+
+    app --> client
+    client ==>|TLS on port 8558| server
+    server --> destination
+</code><button type="button">Copy</button></pre>
+
+<h4 id="proxy-usage" class="tsd-anchor-link">Proxy usage<a href="#proxy-usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">proxy</span><span class="hl-2"> [dirOrFile] [--mkdir]</span>
+</code><button type="button">Copy</button></pre>
+
+<ul>
+<li>If <code>dirOrFile</code> is a <strong>directory</strong> (or omitted, defaulting to the current
+directory), the command loads <code>kaven-proxy.config</code> from that directory.
+When the file does not exist, a working default config is generated and
+started.</li>
+<li>If <code>dirOrFile</code> is a <strong>file</strong>, that config file is loaded directly.</li>
+<li><code>--mkdir</code> creates <code>dirOrFile</code> as a directory when the path does not exist.</li>
+<li>Relative certificate paths are resolved from the config file's directory.</li>
+</ul>
+<h4 id="config-file-" class="tsd-anchor-link">Config file (<code>kaven-proxy.config</code>)<a href="#config-file-" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<p>At least one of <code>SERVER</code> or <code>CLIENT</code> must be <code>true</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SERVER</code></td>
+<td>Start the TLS proxy server in this process.</td>
+</tr>
+<tr>
+<td><code>SERVER_HOST</code></td>
+<td>Address the TLS server binds to. The generated default is <code>0.0.0.0</code>.</td>
+</tr>
+<tr>
+<td><code>SERVER_PORT</code></td>
+<td>Port the TLS server binds to. The generated default is <code>8558</code>.</td>
+</tr>
+<tr>
+<td><code>SERVER_CERT_GENERATE_DIR</code></td>
+<td>Directory in which certificates are generated when they do not exist. The generated default is <code>./generated</code>.</td>
+</tr>
+<tr>
+<td><code>SERVER_CERT_JSON_FILE</code></td>
+<td>Certificate metadata file loaded by the server. The generated default is <code>./generated/cert.json</code>.</td>
+</tr>
+<tr>
+<td><code>SERVER_VALID_CLIENTS</code></td>
+<td>Optional allowlist of client remote IP addresses. An empty array allows every address that completes the TLS connection.</td>
+</tr>
+<tr>
+<td><code>CLIENT</code></td>
+<td>Start the local HTTP proxy client in this process.</td>
+</tr>
+<tr>
+<td><code>CLIENT_CONNECT_HOST</code></td>
+<td>TLS proxy server hostname or IP address. The generated default is <code>127.0.0.1</code>.</td>
+</tr>
+<tr>
+<td><code>CLIENT_CONNECT_PORT</code></td>
+<td>TLS proxy server port. The generated default is <code>8558</code>.</td>
+</tr>
+<tr>
+<td><code>CLIENT_HTTP_HOST</code></td>
+<td>Address the local HTTP proxy binds to. The generated default is <code>127.0.0.1</code>.</td>
+</tr>
+<tr>
+<td><code>CLIENT_HTTP_PORT</code></td>
+<td>Port the local HTTP proxy binds to. The generated default is <code>8765</code>.</td>
+</tr>
+<tr>
+<td><code>CLIENT_CERT_JSON_FILE</code></td>
+<td>Certificate metadata file containing the CA and client certificate. The generated default is <code>./generated/cert.json</code>.</td>
+</tr>
+<tr>
+<td><code>CLIENT_VALID_SERVERS</code></td>
+<td>Optional allowlist of TLS server hostnames. An empty array accepts any hostname whose certificate is trusted by the configured CA.</td>
+</tr>
+<tr>
+<td><code>CLIENT_CHECK_CERT_CN</code></td>
+<td>Reserved config field. It is present in the schema but is not currently applied by <code>StartProxy</code>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="generated-all-in-one-config" class="tsd-anchor-link">Generated all-in-one config<a href="#generated-all-in-one-config" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<p>Running <code>ku proxy</code> in a directory without <code>kaven-proxy.config</code> creates and
+starts this default:</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;0.0.0.0&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_CERT_GENERATE_DIR&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_CERT_JSON_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_VALID_CLIENTS&quot;</span><span class="hl-2">: [],</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_CONNECT_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;127.0.0.1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_CONNECT_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_HTTP_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;127.0.0.1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_HTTP_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8765</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_CERT_JSON_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_CHECK_CERT_CN&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_VALID_SERVERS&quot;</span><span class="hl-2">: []</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<p>The server generates the CA, server certificate, and client certificate on
+first run and saves their metadata to <code>generated/cert.json</code>; certificate
+generation requires OpenSSL. Configure an application to use
+<code>127.0.0.1:8765</code> as its HTTP and HTTPS proxy.</p>
+<h4 id="separate-server-and-client-machines" class="tsd-anchor-link">Separate server and client machines<a href="#separate-server-and-client-machines" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<p>On the publicly reachable server, use:</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;0.0.0.0&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_CERT_GENERATE_DIR&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_CERT_JSON_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_VALID_CLIENTS&quot;</span><span class="hl-2">: [],</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Start it with:</p>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">proxy</span><span class="hl-2"> </span><span class="hl-3">./</span>
+</code><button type="button">Copy</button></pre>
+
+<p>After the first run, copy the server's <strong>entire <code>generated</code> directory</strong> to the
+client machine. The <code>cert.json</code> file refers to the generated PEM files, so
+copying only the JSON file is insufficient.</p>
+<p>On the client machine, use:</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_CONNECT_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;proxy.example.com&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_CONNECT_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_HTTP_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;127.0.0.1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_HTTP_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8765</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_CERT_JSON_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_CHECK_CERT_CN&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT_VALID_SERVERS&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;proxy.example.com&quot;</span><span class="hl-2">]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Then run:</p>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">proxy</span><span class="hl-2"> </span><span class="hl-3">./</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Allow inbound TCP traffic to <code>8558</code> on the server, but keep the client listener
+bound to <code>127.0.0.1</code> unless other devices must use it. If the local listener is
+exposed on a network interface, anyone who can reach it may be able to use the
+proxy.</p>
+<h4 id="tls-and-request-flow" class="tsd-anchor-link">TLS and request flow<a href="#tls-and-request-flow" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>The client-to-server connection is encrypted with TLS.</li>
+<li>The local application-to-client connection is a normal HTTP proxy
+connection. HTTPS payloads remain encrypted because they use <code>CONNECT</code>.</li>
+<li>The server-to-destination connection uses the protocol requested by the
+application. End-to-end payload encryption therefore depends on the
+destination using HTTPS or another secure protocol.</li>
+<li>The server requests a client certificate and the client loads its
+certificate and CA from <code>CLIENT_CERT_JSON_FILE</code>.</li>
+<li><code>SERVER_VALID_CLIENTS</code> filters by the remote socket address, while
+<code>CLIENT_VALID_SERVERS</code> filters the hostname used to connect to the server.</li>
+<li>The proxy server can connect to arbitrary destinations requested by an
+accepted client. Run it only on a trusted host and restrict network access
+to its listening port.</li>
+</ul>
+<h3 id="_-6" class="tsd-anchor-link"><code>relay-proxy</code><a href="#_-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>Tunnel TCP connections (or full HTTP-proxy traffic) between two machines
+through a relay server. It is useful when the two ends cannot reach each
+other directly but both can reach a third, publicly accessible host.</p>
+<p>There are three roles, each run as a separate <code>relay-proxy</code> process on a
+separate machine:</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>server</strong></td>
+<td>The relay. Accepts connections from both clients and forwards messages between them. Runs on a host reachable by both peers.</td>
+</tr>
+<tr>
+<td><strong>proxy-origin</strong></td>
+<td>Listens locally as an HTTP, SOCKS4, or SOCKS5 proxy. Each requested connection is sent through the relay to a proxy target.</td>
+</tr>
+<tr>
+<td><strong>proxy-target</strong></td>
+<td>Dials the destination requested through the selected proxy protocol and returns its traffic through the relay. It has no fixed destination.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="mermaid">flowchart LR
+    app["Browser / app"]
+    origin["PC A: proxy-origin"]
+    relay["PC C: relay server<br/>publicly reachable"]
+    target["PC B: proxy-target<br/>dials on demand"]
+    destination["Requested host:port<br/>for example, 127.0.0.1:80"]
+
+    app --> origin
+    origin <--> relay
+    relay <--> target
+    target --> destination
+</code><button type="button">Copy</button></pre>
+
+<h4 id="usage" class="tsd-anchor-link">Usage<a href="#usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">relay-proxy</span><span class="hl-2"> [dirOrFile] [--mkdir]</span>
+</code><button type="button">Copy</button></pre>
+
+<ul>
+<li>If <code>dirOrFile</code> is a <strong>directory</strong> (or omitted, defaulting to the current
+directory), the command looks for <code>kaven-relay-proxy.config</code> inside it. If
+the file does not exist, a working default is generated for you to edit.</li>
+<li>If <code>dirOrFile</code> is a <strong>file</strong>, that config file is loaded directly.</li>
+<li><code>--mkdir</code> creates <code>dirOrFile</code> when it does not exist.</li>
+<li>The process handles <code>SIGINT</code> and <code>SIGTERM</code> by stopping the relay cleanly.</li>
+</ul>
+<h4 id="config-file--1" class="tsd-anchor-link">Config file (<code>kaven-relay-proxy.config</code>)<a href="#config-file--1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<p>The config has a <code>SERVER</code> block and a <code>CLIENTS</code> array. Each client entry is a
+proxy listener, proxy dialer, raw forwarding listener, or raw forwarding
+dialer.</p>
+<p>The top-level fields are:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SERVER</code></td>
+<td><code>true</code> to start the relay server in this process.</td>
+</tr>
+<tr>
+<td><code>SERVER_HOST</code></td>
+<td>Host the relay server binds to (default <code>0.0.0.0</code>).</td>
+</tr>
+<tr>
+<td><code>SERVER_PORT</code></td>
+<td>Port the relay server binds to (e.g. <code>8558</code>). <code>0</code> picks a free port.</td>
+</tr>
+<tr>
+<td><code>SERVER_TLS</code></td>
+<td><code>true</code> (default) to accept TLS connections, encrypting the relay transport. Certificates are auto-generated into <code>SERVER_CERT_DIR</code> on first run (requires <code>openssl</code>). Set <code>false</code> for plain TCP.</td>
+</tr>
+<tr>
+<td><code>SERVER_CERT_DIR</code></td>
+<td>Directory for auto-generated TLS certificates (default <code>./generated</code>).</td>
+</tr>
+<tr>
+<td><code>SERVER_CERT_FILE</code></td>
+<td>Path to a <code>cert.json</code> holding the CA/server/client certs (default <code>./generated/cert.json</code>). Auto-generated when missing.</td>
+</tr>
+<tr>
+<td><code>CLIENT</code></td>
+<td><code>true</code> (default) to honor the <code>CLIENTS</code> array. <code>false</code> ignores it (server-only).</td>
+</tr>
+<tr>
+<td><code>CLIENTS</code></td>
+<td>Array of client entries (see below).</td>
+</tr>
+</tbody>
+</table>
+<p>Each <code>CLIENTS</code> entry supports:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TYPE</code></td>
+<td><code>&quot;proxy-origin&quot;</code> (HTTP/SOCKS proxy listener), <code>&quot;proxy-target&quot;</code> (dials the destination requested by each proxy connection), <code>&quot;forward-listen&quot;</code> (raw TCP listener), or <code>&quot;forward-dial&quot;</code> (fixed raw TCP dialer). See <a href="#port-forwarding-forward-listen--forward-dial">Port forwarding</a>.</td>
+</tr>
+<tr>
+<td><code>ENABLE</code></td>
+<td><code>false</code> to disable this entry. Defaults to <code>true</code>; every enabled entry is started in <code>CLIENTS</code> order.</td>
+</tr>
+<tr>
+<td><code>CONNECT_TO_HOST</code></td>
+<td>Relay server address this client connects to. Omit to use the local server.</td>
+</tr>
+<tr>
+<td><code>CONNECT_TO_PORT</code></td>
+<td>Relay server port this client connects to. Omit to use the local server.</td>
+</tr>
+<tr>
+<td><code>CONNECT_TO_TLS</code></td>
+<td><code>true</code> to connect to the relay server over TLS. Must match the server's <code>SERVER_TLS</code>.</td>
+</tr>
+<tr>
+<td><code>CERT_FILE</code></td>
+<td>Path to a <code>cert.json</code> holding the CA + client certificate for TLS. Reused automatically when the server runs in the same process; on a separate (client-only) machine, copy the server's <code>cert.json</code> here and point <code>CERT_FILE</code> at it.</td>
+</tr>
+<tr>
+<td><code>TCP_HOLE_PUNCH</code></td>
+<td><code>true</code> to try an encrypted direct TCP transport to the selected peer. Any failure automatically uses the relay server. Defaults to <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>TCP_HOLE_PUNCH_TIMEOUT</code></td>
+<td>Maximum direct-path setup time in milliseconds. Defaults to <code>3000</code>.</td>
+</tr>
+<tr>
+<td><code>LOCAL_PROXY_HOST</code></td>
+<td><em>(proxy-origin only)</em> Host the local proxy listener binds to (default <code>127.0.0.1</code>).</td>
+</tr>
+<tr>
+<td><code>LOCAL_PROXY_PORT</code></td>
+<td><em>(proxy-origin only)</em> Port the local proxy listener binds to. Connect your browser/app here.</td>
+</tr>
+<tr>
+<td><code>LOCAL_PROXY_TYPE_LIST</code></td>
+<td><em>(proxy-origin only)</em> Array of protocols accepted on the same listener: <code>&quot;http&quot;</code>, <code>&quot;socks4&quot;</code>, and/or <code>&quot;socks5&quot;</code>. Defaults to all three.</td>
+</tr>
+<tr>
+<td><code>TARGET_ID_LIST</code></td>
+<td>Names of the dialer clients this listener may tunnel to (see <code>ID</code> below). When empty/omitted, the listener binds to the first peer that joins.</td>
+</tr>
+<tr>
+<td><code>ID</code></td>
+<td>A name a dialer advertises so listeners with a matching <code>TARGET_ID_LIST</code> can select it.</td>
+</tr>
+<tr>
+<td><code>LISTEN_HOST</code></td>
+<td><em>(forward-listen only)</em> Host the raw forwarding listener binds to.</td>
+</tr>
+<tr>
+<td><code>LISTEN_PORT</code></td>
+<td><em>(forward-listen only)</em> Port the forward listener binds to. <code>0</code> selects a free port.</td>
+</tr>
+<tr>
+<td><code>DIAL_HOST</code></td>
+<td><em>(forward-dial only)</em> Fixed destination host. Defaults to <code>127.0.0.1</code>.</td>
+</tr>
+<tr>
+<td><code>DIAL_PORT</code></td>
+<td><em>(forward-dial only)</em> Fixed destination port. Required when enabled.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Dialer selection:</strong> when a relay has more than one dialer connected, a
+listener picks its dialer by name. Set <code>ID</code> on each dialer (e.g. <code>&quot;intranet&quot;</code>,
+<code>&quot;db&quot;</code>) and list the ones a listener may use in its <code>TARGET_ID_LIST</code>
+(e.g. <code>[&quot;intranet&quot;]</code>). With no <code>TARGET_ID_LIST</code>, the listener binds to the
+first peer that joins — fine for a single-dialer setup.</p>
+</blockquote>
+<h4 id="optional-direct-tcp-transport" class="tsd-anchor-link">Optional direct TCP transport<a href="#optional-direct-tcp-transport" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<p>Set <code>TCP_HOLE_PUNCH: true</code> on both matching listener and dialer entries to
+try TCP simultaneous-open before starting the local listener. The relay
+server coordinates the attempt using each probe connection's observed public
+IP address and port.</p>
+<p>When both peers have the same server-observed public IP address, they also
+exchange temporary LAN listener endpoints through the authenticated relay.
+The peers try both LAN connection directions before continuing with the public
+TCP simultaneous-open attempt. This avoids relying on NAT loopback support
+when both clients are on the same LAN. Matching public addresses are treated
+only as a hint: if VLANs, client isolation, firewalls, or carrier-grade NAT
+prevent the LAN connection, the public attempt and relay fallback still run.</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;TYPE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;forward-listen&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;TCP_HOLE_PUNCH&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;TCP_HOLE_PUNCH_TIMEOUT&quot;</span><span class="hl-2">: </span><span class="hl-6">3000</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;TARGET_ID_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;db&quot;</span><span class="hl-2">]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;TYPE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;forward-dial&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;TCP_HOLE_PUNCH&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;TCP_HOLE_PUNCH_TIMEOUT&quot;</span><span class="hl-2">: </span><span class="hl-6">3000</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;ID&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;db&quot;</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<p>The direct stream is authenticated and encrypted with a one-time key
+exchanged through the relay connection. If rendezvous, NAT traversal, direct
+authentication, or the setup timeout fails, tunnel traffic continues through
+the relay server without configuration changes. TCP hole punching depends on
+the operating systems, firewalls, and NAT mapping/filtering behavior, so it
+cannot be guaranteed. The relay server and both clients must run a version
+that supports direct-path rendezvous.</p>
+<p>Tunnel traffic uses a versioned hybrid wire protocol. Connection control
+messages remain JSON, while data frames carry raw bytes in a compact binary
+header without Base64 conversion. Per-connection credit flow control and
+socket drain handling use a 1 MiB window and 256 KiB maximum data
+frames, bounding queued data while keeping multiple frames in flight. Relay
+servers and clients must use the same build because this unreleased protocol
+does not include a compatibility mode.</p>
+<p>The relay is designed for a private, trusted deployment. Every client that can
+authenticate to the relay server can discover and request tunnels to other
+connected clients; it is not a multi-tenant authorization boundary. Keep TLS
+enabled, protect the generated client certificate, restrict access to the
+relay port, and do not share one relay server with untrusted users. Pending
+hole-punch rendezvous attempts are time-limited and globally bounded.</p>
+<p>At least one of <code>SERVER</code>, an enabled listener, or an enabled dialer must be
+present.</p>
+<h4 id="typical-setup-two-clients-and-one-server-on-three-machines" class="tsd-anchor-link">Typical setup — two clients and one server on three machines<a href="#typical-setup-two-clients-and-one-server-on-three-machines" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<p>Assume the relay server runs on <code>relay.example.com</code>. <strong>PC B</strong> can reach
+intranet destinations that <strong>PC A</strong> cannot. You want to access them from
+<strong>PC A</strong> through a local HTTP proxy on <code>127.0.0.1:18080</code>.</p>
+<p><strong>1. PC C — the relay server</strong> (publicly reachable, port <code>8558</code>)</p>
+<p><code>kaven-relay-proxy.config</code>:</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;0.0.0.0&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_TLS&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_CERT_DIR&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_CERT_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">relay-proxy</span><span class="hl-2"> </span><span class="hl-3">./</span>
+</code><button type="button">Copy</button></pre>
+
+<p><strong>2. PC B — the proxy target</strong> (dials each requested destination)</p>
+<p>Copy PC C's <strong>entire <code>generated/</code> directory</strong> (containing <code>cert.json</code> + the
+<code>.pem</code> files) to this machine first.</p>
+<p><code>kaven-relay-proxy.config</code>:</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENTS&quot;</span><span class="hl-2">: [</span><br/><span class="hl-2">        {</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TYPE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;proxy-target&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;relay.example.com&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_TLS&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CERT_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;ID&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;intranet&quot;</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    ]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">relay-proxy</span><span class="hl-2"> </span><span class="hl-3">./</span>
+</code><button type="button">Copy</button></pre>
+
+<p><strong>3. PC A — the proxy origin</strong> (local HTTP proxy for the browser)</p>
+<p>Copy PC C's <strong>entire <code>generated/</code> directory</strong> here too.</p>
+<p><code>kaven-relay-proxy.config</code>:</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENTS&quot;</span><span class="hl-2">: [</span><br/><span class="hl-2">        {</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TYPE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;proxy-origin&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;relay.example.com&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_TLS&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CERT_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;127.0.0.1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">18080</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_TYPE_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;http&quot;</span><span class="hl-2">],</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TARGET_ID_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;intranet&quot;</span><span class="hl-2">]</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    ]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">relay-proxy</span><span class="hl-2"> </span><span class="hl-3">./</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Then set the browser/system HTTP proxy on PC A to <code>127.0.0.1:18080</code>.
+Browsing to <code>http://intranet/</code> is tunneled through the relay to PC B, which
+resolves and dials <code>intranet:80</code> from its network.</p>
+<blockquote>
+<p>A single process can run both a proxy origin and proxy target (useful for
+testing). When <code>CONNECT_TO_*</code> is omitted, the client connects to the local
+<code>SERVER</code>.</p>
+</blockquote>
+<h4 id="socks4-and-socks5" class="tsd-anchor-link">SOCKS4 and SOCKS5<a href="#socks4-and-socks5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<p>Set <code>LOCAL_PROXY_TYPE_LIST</code> on a <code>proxy-origin</code> to choose the protocols accepted by its
+listener. HTTP, SOCKS4, and SOCKS5 clients can share the same host and port;
+the listener detects the protocol for each connection. The paired
+<code>proxy-target</code> does not need a protocol setting because the origin sends the
+requested destination through the relay.</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENTS&quot;</span><span class="hl-2">: [</span><br/><span class="hl-2">        {</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TYPE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;proxy-origin&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;relay.example.com&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_TLS&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CERT_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;127.0.0.1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">1080</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_TYPE_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;http&quot;</span><span class="hl-2">, </span><span class="hl-3">&quot;socks4&quot;</span><span class="hl-2">, </span><span class="hl-3">&quot;socks5&quot;</span><span class="hl-2">],</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TARGET_ID_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;intranet&quot;</span><span class="hl-2">]</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    ]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Configure HTTP, SOCKS4, or SOCKS5 applications to use <code>127.0.0.1:1080</code>.
+Remove protocols from <code>LOCAL_PROXY_TYPE_LIST</code> when they should not be accepted.</p>
+<ul>
+<li>SOCKS4 supports CONNECT with IPv4 addresses and SOCKS4a domain names.</li>
+<li>SOCKS5 supports CONNECT with IPv4, IPv6, and domain-name destinations.</li>
+<li>SOCKS5 currently supports the no-authentication method only.</li>
+<li>SOCKS BIND, UDP ASSOCIATE, and username/password authentication are not
+supported.</li>
+</ul>
+<h4 id="port-forwarding-" class="tsd-anchor-link">Port forwarding (<code>forward-listen</code> / <code>forward-dial</code>)<a href="#port-forwarding-" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<p>For fixed TCP port forwarding without HTTP-proxy parsing, use the
+<code>forward-listen</code> and <code>forward-dial</code> client types. Fixed destinations are
+supported only by <code>forward-dial</code>.</p>
+<p>The generated default config includes a disabled <code>forward-listen</code> /
+<code>forward-dial</code> pair using the example below. Set <code>ENABLE</code> to <code>true</code> on both
+entries after adjusting the listen and destination addresses.</p>
+<pre><code class="mermaid">flowchart LR
+    app["Application"]
+    listener["forward-listen<br/>LISTEN_HOST:LISTEN_PORT"]
+    relay["Relay server"]
+    dialer["forward-dial"]
+    destination["DIAL_HOST:DIAL_PORT"]
+
+    app --> listener
+    listener <--> relay
+    relay <--> dialer
+    dialer --> destination
+</code><button type="button">Copy</button></pre>
+
+<p><strong>Client A — <code>forward-listen</code></strong> (binds a fixed local port):</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENTS&quot;</span><span class="hl-2">: [</span><br/><span class="hl-2">        {</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TYPE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;forward-listen&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;relay.example.com&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_TLS&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CERT_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LISTEN_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;127.0.0.1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LISTEN_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">3306</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TARGET_ID_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;db&quot;</span><span class="hl-2">]</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    ]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<p><strong>Client B — <code>forward-dial</code></strong> (connects to the destination service):</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENTS&quot;</span><span class="hl-2">: [</span><br/><span class="hl-2">        {</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TYPE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;forward-dial&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;relay.example.com&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_TLS&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CERT_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;ID&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;db&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;DIAL_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;10.0.0.5&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;DIAL_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">3306</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    ]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Now connecting to <code>127.0.0.1:3306</code> on Client A is tunneled through the relay to
+Client B, which dials <code>10.0.0.5:3306</code> and pipes the bytes back — a fixed
+port forward between the two clients. <code>forward-listen</code> never parses HTTP; every
+byte is forwarded verbatim.</p>
+<h4 id="tls-encrypting-the-relay-transport" class="tsd-anchor-link">TLS (encrypting the relay transport)<a href="#tls-encrypting-the-relay-transport" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<p>TLS is enabled by default: the relay-server ↔ client connections are encrypted
+(mirroring the <code>proxy</code> command's TLS mode). On first run the server
+auto-generates a CA, server, and client certificate set into <code>SERVER_CERT_DIR</code>
+and caches it in <code>SERVER_CERT_FILE</code>. Set <code>SERVER_TLS: false</code> (and
+<code>CONNECT_TO_TLS: false</code> on clients) to revert to plain TCP.</p>
+<p>A complete TLS-enabled config looks like:</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;0.0.0.0&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_TLS&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_CERT_DIR&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER_CERT_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./generated/cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENTS&quot;</span><span class="hl-2">: [</span><br/><span class="hl-2">        {</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TYPE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;proxy-origin&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;relay.example.com&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_TLS&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;127.0.0.1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">18080</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_TYPE_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;http&quot;</span><span class="hl-2">],</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TARGET_ID_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;intranet&quot;</span><span class="hl-2">]</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    ]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<p>On each client, set <code>CONNECT_TO_TLS: true</code>. When the server runs in the same
+process, the cert set is reused automatically and <code>CERT_FILE</code> can be omitted.</p>
+<p><strong>Client certificates on a separate machine:</strong> in the typical three-machine
+setup each client is on its own machine, so you must copy the
+server's <strong>entire cert directory</strong> (the <code>cert.json</code> <em>plus</em> the <code>.pem</code> files it
+references — <code>cert.json</code> stores relative paths to them) to the client machine
+and point the client's <code>CERT_FILE</code> at the copied <code>cert.json</code>:</p>
+<pre><code class="json"><span class="hl-2">{</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;SERVER&quot;</span><span class="hl-2">: </span><span class="hl-4">false</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENT&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">&quot;CLIENTS&quot;</span><span class="hl-2">: [</span><br/><span class="hl-2">        {</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TYPE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;proxy-origin&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;relay.example.com&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">8558</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CONNECT_TO_TLS&quot;</span><span class="hl-2">: </span><span class="hl-4">true</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;CERT_FILE&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;./cert.json&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_HOST&quot;</span><span class="hl-2">: </span><span class="hl-3">&quot;127.0.0.1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_PORT&quot;</span><span class="hl-2">: </span><span class="hl-6">18080</span><span class="hl-2">,</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;LOCAL_PROXY_TYPE_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;http&quot;</span><span class="hl-2">],</span><br/><span class="hl-2">            </span><span class="hl-5">&quot;TARGET_ID_LIST&quot;</span><span class="hl-2">: [</span><span class="hl-3">&quot;intranet&quot;</span><span class="hl-2">]</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    ]</span><br/><span class="hl-2">}</span>
+</code><button type="button">Copy</button></pre>
+
+<blockquote>
+<p>TLS encrypts only the relay-server ↔ client connections. The proxy origin's
+local listener and proxy target's destination connection are not affected;
+use HTTPS for end-to-end payload encryption.</p>
+</blockquote>
+<h4 id="notes" class="tsd-anchor-link">Notes<a href="#notes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>The server forwards messages only between connected clients; it is not a
+general-purpose SOCKS/HTTP proxy itself.</li>
+<li>All traffic between the clients flows through the server. For sensitive
+data, enable TLS (see above) and run the server on a trusted host.</li>
+<li>Each process logs its role and bound addresses on startup.</li>
+</ul>
+<h3 id="_-7" class="tsd-anchor-link"><code>ip</code><a href="#_-7" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">ip</span><span class="hl-2"> [--UPnP] [--verbose]</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Prints the external IP address. By default it uses the standard external-IP
+lookup; <code>--UPnP</code> discovers the address through the local UPnP gateway.
+<code>--verbose</code> enables diagnostic logging.</p>
+<h3 id="_-8" class="tsd-anchor-link"><code>ci</code><a href="#_-8" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">ci</span><span class="hl-2"> [--config &lt;</span><span class="hl-3">confi</span><span class="hl-2">g&gt;</span><span class="hl-3">]</span><span class="hl-2"> [--variables &lt;</span><span class="hl-3">variables..</span><span class="hl-2">.&gt;</span><span class="hl-3">]</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Runs the documentation publishing workflow. Without a config file, it uses:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sourceDocumentFileOrDirectory</code></td>
+<td><code>./docs</code></td>
+</tr>
+<tr>
+<td><code>sourceVersionFile</code></td>
+<td><code>./dist/package.json</code></td>
+</tr>
+<tr>
+<td><code>targetRootDirectory</code></td>
+<td><code>../Kaven-Documents</code></td>
+</tr>
+<tr>
+<td><code>targetDirectoryName</code></td>
+<td>Name of the current directory</td>
+</tr>
+<tr>
+<td><code>updateReadmeFile</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>gitCommit</code></td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>--config &lt;config&gt;</code> merges a JSON config with these defaults. Relative paths
+are resolved from the config file's directory. <code>--variables</code> accepts
+space-separated <code>key:value</code> pairs and replaces the config's variables.</p>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">ci</span><span class="hl-2"> </span><span class="hl-4">--config</span><span class="hl-2"> </span><span class="hl-3">./ci.json</span><span class="hl-2"> </span><span class="hl-4">--variables</span><span class="hl-2"> </span><span class="hl-3">version:6.1.7</span><span class="hl-2"> </span><span class="hl-3">channel:latest</span>
+</code><button type="button">Copy</button></pre>
+
+<h3 id="_-9" class="tsd-anchor-link"><code>docker</code><a href="#_-9" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">docker</span><span class="hl-2"> &lt;</span><span class="hl-3">serve</span><span class="hl-2">r&gt; [command] [options]</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Connects to a Docker Registry API server. When <code>command</code> is omitted, it lists
+every image and its tags. The optional <code>command</code> argument is reserved and
+currently performs no action.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-u, --username &lt;username&gt;</code></td>
+<td>Registry username.</td>
+</tr>
+<tr>
+<td><code>-p, --password &lt;password&gt;</code></td>
+<td>Registry password.</td>
+</tr>
+</tbody>
+</table>
+<p>Authentication is used only when both username and password are supplied.</p>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">docker</span><span class="hl-2"> </span><span class="hl-3">https://registry.example.com</span><span class="hl-2"> </span><span class="hl-4">-u</span><span class="hl-2"> </span><span class="hl-3">user</span><span class="hl-2"> </span><span class="hl-4">-p</span><span class="hl-2"> </span><span class="hl-3">password</span>
+</code><button type="button">Copy</button></pre>
+
+<h3 id="_-10" class="tsd-anchor-link"><code>where</code><a href="#_-10" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">where</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Prints the absolute path of the CLI script currently being executed.</p>
+<h3 id="_-11" class="tsd-anchor-link"><code>minify</code><a href="#_-11" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">minify</span><span class="hl-2"> [file] [otherFiles...]</span><br/><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">minify</span><span class="hl-2"> </span><span class="hl-4">--config</span><span class="hl-2"> &lt;</span><span class="hl-3">confi</span><span class="hl-2">g&gt;</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Minifies JavaScript with Terser. The default configuration removes comments,
+uses ECMAScript 2015 output formatting, keeps source maps, updates
+<code>sourceMappingURL</code>, removes matching TypeScript declaration files, and excludes
+<code>node_modules</code>.</p>
+<p><code>--config &lt;config&gt;</code> loads a JSON config relative to the current directory. If
+the file does not exist, the command writes a starter config there and exits.
+When a config is loaded, its directory becomes the working directory for the
+minification operation.</p>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">minify</span><span class="hl-2"> </span><span class="hl-3">./dist/index.js</span><span class="hl-2"> </span><span class="hl-3">./dist/bin.js</span><br/><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">minify</span><span class="hl-2"> </span><span class="hl-4">--config</span><span class="hl-2"> </span><span class="hl-3">./minify.json</span>
+</code><button type="button">Copy</button></pre>
+
+<h3 id="_-12" class="tsd-anchor-link"><code>minify-css</code><a href="#_-12" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">minify-css</span><span class="hl-2"> [file] [otherFiles...]</span><br/><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">minify-css</span><span class="hl-2"> </span><span class="hl-4">--config</span><span class="hl-2"> &lt;</span><span class="hl-3">confi</span><span class="hl-2">g&gt;</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Minifies CSS with cssnano and excludes <code>node_modules</code> by default. The config
+behavior matches <code>minify</code>: an existing JSON file is loaded, while a missing
+file is generated with starter settings and the command exits.</p>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">minify-css</span><span class="hl-2"> </span><span class="hl-3">./public/site.css</span><span class="hl-2"> </span><span class="hl-3">./public/theme.css</span>
+</code><button type="button">Copy</button></pre>
+
+<h3 id="_-13" class="tsd-anchor-link"><code>update-pug-resource-version</code><a href="#_-13" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">update-pug-resource-version</span><span class="hl-2"> [dir] [options]</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Searches Pug files below <code>dir</code> and adds or updates a query parameter on
+resource URLs. The directory defaults to the current directory.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--name [name]</code></td>
+<td>Query parameter name. Defaults to <code>version</code>.</td>
+</tr>
+<tr>
+<td><code>--version [version]</code></td>
+<td>Query parameter value. Defaults to the current date in <code>YYYYMMDD</code> format.</td>
+</tr>
+<tr>
+<td><code>--verbose</code></td>
+<td>Log the search directory, parameter name, and value.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="sh"><span class="hl-1">ku</span><span class="hl-2"> </span><span class="hl-3">uprv</span><span class="hl-2"> </span><span class="hl-3">./views</span><span class="hl-2"> </span><span class="hl-4">--name</span><span class="hl-2"> </span><span class="hl-3">v</span><span class="hl-2"> </span><span class="hl-4">--version</span><span class="hl-2"> </span><span class="hl-6">6.1.7</span><span class="hl-2"> </span><span class="hl-4">--verbose</span>
+</code><button type="button">Copy</button></pre>
+
+</div></div>
+<div class="col-sidebar">
+<div class="page-menu">
+<div class="tsd-navigation settings">
+<details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
+<div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>On This Page</h3></summary>
+<div class="tsd-accordion-details"><a href="#kaven-utils"><span>Kaven-<wbr/>Utils</span></a>
+<ul>
+<li><a href="#installation"><span>Installation</span></a></li>
+<li><a href="#documentation"><span>Documentation</span></a></li>
+<li><a href="#commands"><span>Commands</span></a></li>
+<li>
+<ul>
+<li><a href="#_"><span></span></a></li>
+<li><a href="#_-1"><span></span></a></li>
+<li><a href="#_-2"><span></span></a></li>
+<li><a href="#_-3"><span></span></a></li>
+<li><a href="#_-4"><span></span></a></li>
+<li><a href="#_-5"><span></span></a></li>
+<li>
+<ul>
+<li><a href="#proxy-usage"><span>Proxy usage</span></a></li>
+<li><a href="#config-file-"><span>Config file ()</span></a></li>
+<li><a href="#generated-all-in-one-config"><span>Generated all-<wbr/>in-<wbr/>one config</span></a></li>
+<li><a href="#separate-server-and-client-machines"><span>Separate server and client machines</span></a></li>
+<li><a href="#tls-and-request-flow"><span>TLS and request flow</span></a></li></ul></li>
+<li><a href="#_-6"><span></span></a></li>
+<li>
+<ul>
+<li><a href="#usage"><span>Usage</span></a></li>
+<li><a href="#config-file--1"><span>Config file ()</span></a></li>
+<li><a href="#optional-direct-tcp-transport"><span>Optional direct <wbr/>TCP transport</span></a></li>
+<li><a href="#typical-setup-two-clients-and-one-server-on-three-machines"><span>Typical setup — two clients and one server on three machines</span></a></li>
+<li><a href="#socks4-and-socks5"><span>SOCKS4 and <wbr/>SOCKS5</span></a></li>
+<li><a href="#port-forwarding-"><span>Port forwarding ( / )</span></a></li>
+<li><a href="#tls-encrypting-the-relay-transport"><span>TLS (encrypting the relay transport)</span></a></li>
+<li><a href="#notes"><span>Notes</span></a></li></ul></li>
+<li><a href="#_-7"><span></span></a></li>
+<li><a href="#_-8"><span></span></a></li>
+<li><a href="#_-9"><span></span></a></li>
+<li><a href="#_-10"><span></span></a></li>
+<li><a href="#_-11"><span></span></a></li>
+<li><a href="#_-12"><span></span></a></li>
+<li><a href="#_-13"><span></span></a></li></ul></li></ul></div></details></div>
+<div class="site-menu">
+<nav class="tsd-navigation"><a href="modules.html">kaven-utils - v6.1.8</a>
+<ul class="tsd-small-nested-navigation" id="tsd-nav-container">
+<li>Loading...</li></ul></nav></div></div></div><footer>
+<p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer>
+<div class="overlay"></div></body></html>
